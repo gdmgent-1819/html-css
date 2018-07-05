@@ -1,7 +1,7 @@
 ---
 title: Afbeeldingen
 title_long: Afbeeldingen
-permalink: html/images/
+permalink: markup/html/images/
 abbreviations:
   - computer
   - education

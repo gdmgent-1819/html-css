@@ -1,6 +1,6 @@
 ---
 title: Kleursystemen
 title_long: Kleursystemen
-permalink: css/colorsystems/
+permalink: styles/css/colorsystems/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Tekst
 title_long: Tekst
-permalink: html/text/
+permalink: markup/html/text/
 ---
 
 Heading

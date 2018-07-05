@@ -1,6 +1,6 @@
 ---
 title: Tabellen
 title_long: Tabellen
-permalink: html/tables/
+permalink: markup/html/tables/
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Links
 title_long: Links
-permalink: html/links/
+permalink: markup/html/links/
 ---
 

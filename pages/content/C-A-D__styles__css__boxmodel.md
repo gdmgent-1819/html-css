@@ -1,6 +1,6 @@
 ---
 title: Boxmodel
 title_long: Boxmodel
-permalink: css/boxmodel/
+permalink: styles/css/boxmodel/
 ---
 

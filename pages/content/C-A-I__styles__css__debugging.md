@@ -1,6 +1,6 @@
 ---
 title: Debugging
 title_long: Debugging
-permalink: css/debugging/
+permalink: styles/css/debugging/
 ---
 

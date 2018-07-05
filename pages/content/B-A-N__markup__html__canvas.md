@@ -1,6 +1,6 @@
 ---
 title: Canvas
 title_long: Canvas
-permalink: html/extramarkup/canvas/
+permalink: markup/html/canvas/
 ---
 
