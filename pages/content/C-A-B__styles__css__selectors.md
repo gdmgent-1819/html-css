@@ -4,35 +4,6 @@ title_long: Selectoren
 permalink: styles/css/selectors/
 ---
 
-CSS-regelset
-------------
-
-Een regelset bestaat uit:
-
-  1. Een of meer **selectors** gescheiden door een **komma** *(Eng.: comma)* (`,`)
-  2. **declaratieblok** *(Eng.: declaration block)* afgebakend met **accolades** *(Eng.: curly braces)* (`{`…`}`) met daartussen:
-     - Een of meer **declaraties** *(Eng.: declarations)*  
-       Een declaratie bestaat uit:
-       1. een **eigenschap** *(Eng.: property)* gevolgd door een **dubbelepunt** *(Eng.: colon)* (`:`)
-       2. een **waarde** *(Eng.: value)* gevolgd door een **puntkomma** *(Eng.: semicolon)* (`;`)
-
-> Tip
-> ---
-> **Commentaar** schrijf je tussen `/*` en `*/` in CSS.
-{:.card.card-tip}
-
-{% highlight css linenos %}
-/* Dit is een commentaarregel */
-html,
-body {
-    font-family: Verdana, sans-serif;
-    background: pink;
-    /* Dit is nog een commentaarregel. */
-}
-{% endhighlight %}
-
-Wat doet een selector?
-----------------------
 
 Met een **selector** selecteer je bepaalde elementen in de **DOM** van een webpagina. Op de selectie kan je vervolgens een bepaalde stijl toepassen.
 
