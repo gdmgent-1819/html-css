@@ -46,7 +46,7 @@ We kunnen meerdere bronnen voor de video meegeven. Indien hij een `source` niet 
 | `autoplay`    | Geeft aan dat een video start met spelen wanneer het klaar is met laden.  |
 | `controls`    | Geeft aan dat de bedieningsknoppen, zoals play/pause, zichtbaar zijn.     |
 | `height`      | Geeft de hoogte weer                                                      |
-| `loop`        | Geeft aan dat de video zichzelf herhaalt als de video gedaan is met afspelen. |
+| `loop`        | Geeft aan dat de video zichzelf herhaalt als de video gedaan heeft met afspelen. |
 | `muted`       | Geeft aan dat het geluid van de video gedemt moet zijn.                   |
 | `src`         | Geeft de URL van de video weer                                            |
 | `width`       | Geeft de breedte weer                                                     |
