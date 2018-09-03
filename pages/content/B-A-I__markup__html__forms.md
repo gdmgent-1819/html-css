@@ -19,4 +19,22 @@ Het verwerken van de data op de server zal gebeuren met een andere taal, een ser
 
 Opbouw
 -------
+Een fomrulier wordt opgemaakt door het gebruik van de form-tags.  
+Binnen de form-tags staan alle elementen die we nodige hebben om de data te verzamelen van de gebruiker.
 
+### Input
+
+Input is het meest voorkomende form-element. 
+Door de waarde in het attribuut `type` aan te passen kan het verschillende doeleinden hebben. 
+Type-mogelijkheden: button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit,...
+
+Indien er geen ondersteuning is voor een bepaalde `type` dan zal de browser een gewoon tekst-vlak tonen.
+
+
+{% highlight html %}
+<form>
+    <input type="text">
+</form>
+{% endhighlight %}
+
+### label
