@@ -30,8 +30,8 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
 - Een descendant van `<body>`
 
 
-Span
------
+**Span**
+--------
 
 De volgende markupelementen hebben te maken met **paragrafen**:
 

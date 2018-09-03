@@ -25,8 +25,8 @@ De volgende markupelementen hebben te maken met afbeeldingen:
   - `<svg>`{:.e}
   - `<canvas>`{:.e}
 
-`<img>`{:.e}-element
---------------------
+**Im**a**g**e *(Ned.: Afbeeldig)*
+------------------------------
 
 Het `<img>`{:.e}-element wordt gebruikt om een afbeelding te plaatsen op een webpagina. Het bronbestand wordt opgegeven met een `src`{:.a}-attribuut *(Eng.: source).* We kunnen als waarde van dit attribuut de volgende waarden vermelden:
 
@@ -40,7 +40,11 @@ Het `<img>`{:.e}-element wordt gebruikt om een afbeelding te plaatsen op een web
 - **gegevens-URI**.  
 Integratie van de echte gegevens van de afbeelding. Zonder koppeling gewoon de pure data. We vermelden het type, de tekenset *(Eng.: tekenset),* de codering *(Eng.: encoding)* en tenslotte de gecodeerde gegevens *(Eng.: encoded data).*
 
-Naast het `src`{:.a}-attribuut bevat een afbeelding altijd het `alt`{:.a}-attribuut en meestal het `title`{:.a}-attribuut. Het `alt`{:.a}-attribuut is van belang wanneer de bron van de afbeelding niet geladen kan worden of voor slechtziende personen. Het `alt`{:.a}-attribuut staat voor **alternate text** of alternatieve tekst. Bij verkeerde bron wordt de waarde van dit attribuut getoond. Daarnaast is dit attribuut en ook de waarde ervan belangrijk voor slechtzienden. De waarde geeft een indicatie of synopsis van wat er te zien is op de afbeelding, maar niet in detail. De waarde van het `title`{:.a}-attribuut specifieert extra informatie over de afbeelding en wordt meestal visueel getoond in een tooltip.
+Naast het `src`{:.a}-attribuut bevat een afbeelding altijd het `alt`{:.a}-attribuut en meestal het `title`{:.a}-attribuut.  
+
+Het `alt`{:.a}-attribuut is van belang wanneer de bron van de afbeelding niet geladen kan worden of voor slechtziende personen. Het `alt`{:.a}-attribuut staat voor **alternate text** of alternatieve tekst. Bij verkeerde bron wordt de waarde van dit attribuut getoond. Daarnaast is dit attribuut en ook de waarde ervan belangrijk voor slechtzienden. De waarde geeft een indicatie of synopsis van wat er te zien is op de afbeelding, maar niet in detail.  
+
+De waarde van het `title`{:.a}-attribuut specifieert extra informatie over de afbeelding en wordt meestal visueel getoond in een tooltip.
 
 {% highlight html %}
 <img class="artist__image" src="https://nbocdn.akamaized.net/Assets/Images_Upload/2017/07/01/8e32e9fa-5dc8-11e7-aab3-014964ad3466_web_scale_0.0710227_0.0710227__.jpg?maxheight=513&maxwidth=767&scale=both" alt="Bazart: music group from Belgium" title="Bazart is een indie-popgroep uit België. De band maakt Nederlandstalige muziek.">
@@ -48,8 +52,19 @@ Naast het `src`{:.a}-attribuut bevat een afbeelding altijd het `alt`{:.a}-attrib
 
 In het bovenstaande voorbeeld definiëren we een afbeelding via het `<img>`{:.e}-element, identificeren we deze via het `class`{:.a}-attribuut met een specifieke waarde `artist__image`{:.v}, vermelden we de bron van de afbeelding met als waarde een absolute url van het `src`{:.a}-attribuut, het `alt`{:.a}-attribuut en tenslotte het `title`{:.a}-attribuut. We merken op dat de waarde van het `title`{:.a}-attribuut extra toelichting geeft over de afbeelding.
 
-`<figure>`{:.e}-element
------------------------
+| Attibuut      | Waarde         | Betekenis                                              |
+|---------------|----------------|--------------------------------------------------------|
+| `src`{:.a}    | `absolute koppeling`{:.v}     | Bevat zowel het protocol, domeinnaam, aanvullend pad en/of bestandsnaam. <br>Vb:  `http://lorempixel.com/400/200/sports/1`                 |
+|               | `relatieve koppeling`{:.v}     | T.o.v. de plaats van het huidig webdocument<br>Vb: `./assets/images/detail1_VanHoeckeJulie.png` |
+|               | `gegevens-URI`{:.v}     | Pure data: het type, de tekenset de codering en de gecodeerde gegevens<br>Vb: `data:image/gif;base64,R0lGODlhEAA … jIQA7` |
+|---------------|----------------|--------------------------------------------------------|
+| `alt`{:.a} | `alternatieve tekst`{:.v} | De waarde verschijnt in de browser als de afbeelding niet kan getoond worden. <br> Waarde kan ook gebruikt worden door `screen readers`.      |
+|---------------|----------------|--------------------------------------------------------|
+| `title`{:.a} | `aanvullende tekst`{:.v} | Beschrijft de afbeelding, de waarde van `title` wordt getoond in een tooltip.      |
+{:.table.table--primary}
+
+**Figure** *(Ned.: figuur)*
+------------------------------
 
 Child-elementen:
 
@@ -106,10 +121,27 @@ Willen we nog uitgebreide toelichting geven aan iedere artiest in het bovenstaan
 </figure>
 {% endhighlight %}
 
-`<picture>`{:.e}-element
-------------------------
+**Picture**
+------------
 
 Het `<picture>`{:.e}-element wordt gebruikt om meerdere versies van een afbeelding aan te bieden. Afhankelijk van het display van een device wordt een bepaalde versie van de afbeelding geactiveerd.
+
+- Een descendant van `<body>`{:.e}
+- Child-elementen:
+> - `<source>`{:.e}
+> - `<img>`{:.e}
+
+### Voorbeeld
+{% highlight html %}
+<picture>
+    <source media="(min-width: 650px)" srcset="./images/donald_duck.png">
+    <source media="(min-width: 465px)" srcset="./images/goofy.png">
+    <source srcset="./images/mickey_mouse.png">
+    <img src="./images/mickey_mouse.png" alt="Disney Creature" style="width:auto;">
+</picture>
+{% endhighlight %}
+
+*In bovenstaand voorbeeld zal een afbeelding van Donald Duck getoond worden als de viewport minstens 650px is. Bij kleinere schermformaten (groter dan of gelijk aan 465px maar kleiner dan 650px) wordt Goofy getoond. Indien de viewport nog kleiner is, zal Mickey Mouse verschijnen. De img-tag staat er als fallback indien de browser de `<picture`{:.e}-tag niet ondersteunt.*
 
 > Zie ook
 > ---
