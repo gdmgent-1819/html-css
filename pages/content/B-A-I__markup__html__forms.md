@@ -6,8 +6,8 @@ permalink: markup/html/forms/
 
 Een formulier laat de eindgebruiker toe data via je pagina te verzenden. 
 
-Hoe werken formulieren?
------------------------
+Werking
+--------
 
 - De gebruiker vult gegevens in, in een formulier op een webpagina.
 - De gebruiker verzend het formulier.
@@ -17,6 +17,6 @@ Hoe werken formulieren?
 
 Het verwerken van de data op de server zal gebeuren met een andere taal, een server-side taal zoals PHP.
 
-Opbouw formulier
------------------
+Opbouw
+-------
 
