@@ -140,7 +140,6 @@ Het `<picture>`{:.e}-element wordt gebruikt om meerdere versies van een afbeeldi
 > - <https://www.w3.org/WAI/tutorials/images/groups/>
 {:.card.card-link}
 
-{% comment %}
 
 Bestandsformaten
 ----------------
@@ -162,4 +161,3 @@ Speel met de kwaliteitsinstellingen om een goed compromis te vinden tussen besta
 > De gemiddelde webpagina is 3 tot 4 mb groot met alle afbeeldingen inbegrepen. Probeer hieronder te blijven, tenzij er een heel goede reden voor is (bijv. website van een fotograaf met heel veel kwalitatieve foto's).
 {:.card.card-tip}
 
-{% endcomment %}
