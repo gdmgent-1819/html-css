@@ -141,6 +141,7 @@ Het `<picture>`{:.e}-element wordt gebruikt om meerdere versies van een afbeeldi
 {:.card.card-link}
 
 {% comment %}
+
 Bestandsformaten
 ----------------
 
