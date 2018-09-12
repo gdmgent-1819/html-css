@@ -278,6 +278,9 @@ Op 2018-09-12 zijn er:
  - [**4,018463745 miljard** internetgebruikers](http://www.internetlivestats.com/internet-users/), ca. **52,5 %** van de wereldbevolking.
  - [**1,47 miljard** dagelijks actieve Facebook-gebruikers](http://newsroom.fb.com/company-info/) per maand.
 
+#### Meest bezochte websites (2018-09-12)
+
+
 
 
 Wat is een webpagina?
