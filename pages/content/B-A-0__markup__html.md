@@ -183,7 +183,7 @@ Boolean attributen zijn attributen die meestal geschreven worden zonder waarde e
 
 ### Globale attributen
 
-Globale attributen zijn toepasbaar op elk element.
+Globale attributen zijn attributen die toepasbaar op alle elementen (soms zonder effect te veroorzaken).
 
 | Attribuut      | Betekenis                                                             |
 |---------------:|-----------------------------------------------------------------------|
@@ -191,10 +191,15 @@ Globale attributen zijn toepasbaar op elk element.
 |      `id`{:.a} | Unieke identifier van het element.                                    |
 |    `lang`{:.a} | Taal *(Eng.: **lang**uage)* van de inhoud van het element.            |
 |   `style`{:.a} | Inline-stijlen met CSS. **Probeer dit zoveel mogelijk te vermijden!** |
+|   `title`{:.a} | Bevat additionele informatie, meestal advies, gerelateerd aan het element waartoe het behoort. |
+|   `hidden`{:.a} | Is een boolean attribuut om een indicatie te geven dat het element nog niet of niet meer relevant is. |
 {:.table.table--primary}
 
 {% highlight html %}
 <p id="alinea-1" class="cursief vet" lang="nl">In Gent</p>
 {% endhighlight %}
 
-
+> References
+> ---
+> - [Mozilla Developer Network: Global attributen](https://developer.mozilla.org/en-US/docs/Glossary/Global_attribute)
+{:.card.card-source}
