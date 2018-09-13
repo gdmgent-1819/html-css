@@ -19,6 +19,8 @@ Wat is het internet?
 
 [^internet]: Het internet schrijven we met een **onderkast** (kleine letter) omdat het de laatste twee decennia zo alomtegenwoordig geworden is.
 
+{% include shared/figure.html src="https://media.giphy.com/media/GrkrL1cGVv0FW/giphy.gif" alt="The internet: IT wrowd - Bron: Giphy.com" caption="The internet: IT wrowd - Bron: Giphy.com" %}
+
 ### Hoe moet je je dat voorstellen?
 
 Het internet is een wereld waarin alle aangesloten computers een eigen, **uniek adres** hebben en waarin alle aangesloten computers gegevens kunnen uitwisselen over een wereldomspannend wegennet voor het vervoer van computerbestanden. Het unieke adres van de aangesloten computers wordt het **IP-adres** genoemd. Al die computers bij elkaar vormen de grootste, virtuele harde schijf van de wereld en je hebt toegang tot een heel groot deel van die wereldwijde harde schijf.
@@ -280,7 +282,31 @@ Op 2018-09-12 zijn er:
 
 #### Meest bezochte websites (2018-09-12)
 
+Het World Wide Web
+------------------
 
+> Definitie
+> ---
+> Het WWW[^WWW], ook gekend als **W3** of het **Web** is een met elkaar verbonden systeem van webdocumenten (webpagina's) en andere bronnen of **resources** (documenten, afbeeldingen, video's, audio-bestanden en andere content) en is toegankelijk via het internet.
+{:.card.card-definition}
+
+Het WWW is dus niet gelijk aan het internet. Het internet, de infrastructuur of het onderliggende netwerksysteem, geeft toegang tot o.a. het WWW. Het Web is dus een service gebouwd bovenop het internet, net zoals email, IRC[^IRC], ... . De meeste gebruikers gebruiken een webbrowser om toegang te krijgen tot het WWW.
+
+
+
+[^WWW]: **WWW**: World Wide Web
+[^IRC]: **IRC**: Internet Relay Chat
+
+{% include shared/figure.html src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/2000px-WWW_logo_by_Robert_Cailliau.svg.png" alt="Origineel W3 logo door Robert Cailliau - Bron: Wikimedia" caption="Origineel W3 logo door Robert Cailliau - Bron: Wikimedia" %}
+
+
+
+
+> References
+> ---
+> - [Technopedia: World Wide Web](https://www.techopedia.com/definition/5217/world-wide-web-www)
+> - [Mozilla Developer Network: World Wide Web](https://developer.mozilla.org/en-US/docs/Glossary/World_Wide_Web)
+{:.card.card-source}
 
 
 Wat is een webpagina?
