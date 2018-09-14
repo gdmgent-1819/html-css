@@ -26,6 +26,24 @@ Er zijn 6 niveaus van koppen:
 > - [Mozilla Developer Network: Heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
 {:.card.card-source}
 
+{% highlight html linenos %}
+<body>
+  <h1>Web &amp; New Media</h1>
+  <h2>Semester 1<h2>
+  <h3>Webtechnology I<h3>
+  <h2>Semester 2<h2>
+  <h3>Webtechnology II<h3>
+</body>
+{% endhighlight %}{:data-file="index.html"}
+
+Dit resulteert in de volgende outline of structuur:
+
+- 1\. Web & New Media
+  - 1.1 Semester 1
+    - 1.1.1 Webtechnology I
+  - 1.2 Semester 2
+    - 1.2.1 Webtechnology II
+
 > Opmerking
 > ---
 > - Heading-elementen zijn blokelementen.
