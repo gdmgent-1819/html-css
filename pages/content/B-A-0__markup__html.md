@@ -31,7 +31,7 @@ Deze tekst kunnen we via HTML structureren als een paragraaf (paragraph) met beh
 > - [Mozilla Developer Network: Getting started with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 {:.card.card-source}
 
-HTML elementen
+HTML-elementen
 --------------
 
 > Opmerking
@@ -100,12 +100,12 @@ In HTML kunnen in elementen meestal andere elementen geplaatst worden. Deze tech
 
 ### Block- en inline elementen
 
-HTML elementen kunnen in twee visuele categorieen onderverdeeld worden, namelijk:
+HTML-elementen kunnen in twee visuele categorieen onderverdeeld worden, namelijk:
 
 - **block-level elementen**  
 Vormen een fysiek visueel blok op een webpagina. Starten op een nieuwe regel (Eng.: new line). De inhoud na dit element start ook op een nieuwe regel. Blokelementen zijn meestal structurele elementen die invloed hebben op de structuur of [outline]() van de webpagina. Een blokelement kan genest worden in een ander blokelement, maar niet in een inline element.
 - **inline elementen**  
-Inline elementen worden meestal genest binnen blokelementen. Bij een inline element wordt er **geen nieuwe regel gegenereerd**. Ze verschijnen meestal binnen een paragraaf van tekst. Enkele [inline elementen](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements): `<a>`, `<em>`, `<strong>`, `<img>`, ... .
+Inline elementen worden meestal genest binnen blokelementen. Bij een inline element wordt er **geen nieuwe regel gegenereerd**. Ze verschijnen meestal binnen een paragraaf van tekst. Enkele [inline elementen](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements): `<article>`, `<em>`, `<strong>`, `<img>`, ... .
 
 > Outline voorbeeld voor de startpagina van de [Arteveldehogeschool](http://www.arteveldehogeschool.be) website
 > ---
@@ -201,5 +201,63 @@ Globale attributen zijn attributen die toepasbaar op alle elementen (soms zonder
 
 > References
 > ---
-> - [Mozilla Developer Network: Global attributen](https://developer.mozilla.org/en-US/docs/Glossary/Global_attribute)
+> - [Mozilla Developer Network: Global attributes](https://developer.mozilla.org/en-US/docs/Glossary/Global_attribute)
+{:.card.card-source}
+
+HTML-commentaar
+---------------
+
+Soms is het handig of zelfs nodig om HTML-code te becommentariëren. Door commentaar te voorzien help je de code te verduidlijken, niet enkel voor andere HTML-coders, maar ook voor je toekomstige zelf, want weet je over pakweg een jaar nog hoe je die complexe webpagina precies hebt opgebouwd? Die commentaar is enkel zichtbaar in de broncode en nooit op de webpagina zelf.
+
+Commentaar schrijven tussen de HTML-code doe je tussen de **begintag** (`<!--`{:.e}) en **eindtag** (`-->`{:.e}).
+
+{% highlight html %}
+<!-- Dit is commentaar. Alles, ook HTML-elementen, binnen deze twee tags wordt genegeerd door de browser. -->
+{% endhighlight %}
+
+> Opmerking
+> ---
+> Overdrijf niet met HTML-commentaar, want bij elk paginabezoek moet die ook gedownload worden terwijl dit geen enkel nut heeft voor de doorsnee websitebezoeker. Liefst wordt de commentaar verwijderd voor de website op de productieserver geplaatst wordt.
+>
+> Duidelijk geschreven code heeft weinig tot geen commentaar nodig, maar als beginner kan het wel een handige geheugensteun zijn. 
+{:.card.card-remark}
+
+> Tip
+> ---
+> Omdat de browser HTML-tags binnen commentaar negeert kan je dit gebruiken om code tijdelijk uit te schakelen, bijvoorbeeld om iets uit te proberen.
+{:.card.card-tip}
+
+{% highlight html %}
+<!--
+  A set / selection of popular portfolio items
+  Each item has an image, title, synopsis and a link to the correspondig detail page
+-->
+<section class="portfolio">
+    <article class="portfolio-item">
+    </article>
+</section>
+{% endhighlight %}
+
+> References
+> ---
+> - [BitDegree: HTML Comments](https://www.bitdegree.org/learn/html-comment/)
+{:.card.card-source}
+
+Conventies
+----------
+
+> References
+> ---
+> - [Google: Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#HTML_Style_Rules)
+> - [W3Schools: HTML5 Style Guide and Coding Conventions](https://www.w3schools.com/html/html5_syntax.asp)
+> - [GitHub: HTML Style Guide](https://gist.github.com/ryansechrest/8693303)
+> - [BitDegree: HTML syntax tips and tricks](https://www.bitdegree.org/learn/html-syntax/)
+{:.card.card-source}
+
+Validatie
+---------
+
+> References
+> ---
+> - [W3: Validator](https://validator.w3.org/nu/#)
 {:.card.card-source}
