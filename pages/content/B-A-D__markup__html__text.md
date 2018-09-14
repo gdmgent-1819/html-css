@@ -31,6 +31,10 @@ Er zijn 6 niveaus van koppen:
 </body>
 {% endhighlight %}{:data-file="index.html"}
 
+Dit resulteert visueel in:
+
+{% include shared/figure.html src="http://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/headings_1.PNG" alt="Headings: voorbeeld 1" caption="Headings: voorbeeld 1" %}
+
 Dit resulteert in de volgende outline of structuur:
 
 - 1\. Web & New Media
