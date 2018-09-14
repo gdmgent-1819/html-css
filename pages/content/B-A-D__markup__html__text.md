@@ -9,7 +9,9 @@ permalink: markup/html/text/
 
 > Definitie
 > ---
-> Heading geeft in HTML de koppen van een tekst weer. Dit gaat van kop 1 tot kop 6.
+> Heading geeft in HTML de koppen van een tekst weer. Dit gaat van kop 1 tot kop 6. Zoekmachines gebruiken de headings om de structuur en inhoud van een webpagina te indexeren.
+
+Users skim your pages by its headings. It is important to use headings to show the document structure.
 {:.card.card-definition}
 
 Er zijn 6 niveaus van koppen:
@@ -49,6 +51,7 @@ Dit resulteert in de volgende outline of structuur:
 > - Sla geen niveau over.
 > - Gebruik niet de lagere niveau's om de lettergrootte aan de passen, daarvoor dient [CSS](../../../styles/css).
 > - Heading-informatie wordt gebruikt door [user agents](https://nl.wikipedia.org/wiki/Useragent) om een inhoudsopgave (Eng.: Table of contents) te genereren van de webpagina.
+> - Bezoekers scannen meestal eerst de headings om een beknopt verhaal te kennen. Wekt dit hun interresse op, dan lezen ze meer.
 {:.card.card-remark}
 
 > References
