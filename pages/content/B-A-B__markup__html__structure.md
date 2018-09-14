@@ -54,76 +54,82 @@ Anatomie van een HTML-document
 
 ### Doctype
 
-<!DOCTYPE html>: The doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. They used to look something like this:
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-However, these days no one really cares about them, and they are really just a historical artifact that needs to be included for everything to work right. <!DOCTYPE html> is the shortest string of characters that counts as a valid doctype; that's all you really need to know.
+> Definitie
+> ---
+> In het doctype[^Doctype] definieren we het type van het document. Het voornaamste doel is om de browser te beletten om te switchen naar een eigenaardige modus (Eng.: quirks mode) die incompatibel is met de standaard specificaties. 
+{:.card.card-definition}
 
-In HTML, the doctype is the required "<!DOCTYPE html>" preamble found at the top of all documents. Its sole purpose is to prevent a browser from switching into so-called “quirks mode” when rendering a document; that is, the "<!DOCTYPE html>" doctype ensures that the browser makes a best-effort attempt at following the relevant specifications, rather than using a different rendering mode that is incompatible with some specifications.
+`<!DOCTYPE html>` zorgt ervoor dat de browser de volledige W3C[^W3C] standaard zal volgen. Enkele jaren geleden werd het doctype nog gebruikt om te linken naar een verzameling van regels die een webpagina moest volgen om te voldoen aan goede geldige HTML.
 
-https://developer.mozilla.org/en-US/docs/Glossary/Doctype
+[^Doctype]: **Doctype**: Document Type
+[^W3C]: **W3C**: World Wide Web Consortium
 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode
+> Opmerking
+> ---
+> Het `<!DOCTYPE html>` staat helemaal bovenaan in het document.
+{:.card.card-remark}
+
+> References
+> ---
+> - [Mozilla Developer Network: Doctype](https://developer.mozilla.org/en-US/docs/Glossary/Doctype)
+> - [Mozilla Developer Network: Quirks Mode](https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode)
+{:.card.card-source}
 
 ### `<html>`{:.e}-element
 
-> Zie ook
-> ---
-> - [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html)
-{:.card.card-book}
-
-> `<html>`{:.e} … `</html>`{:.e}
-
- - Alle andere elementen zitten ertussen vervat, die elementen noemt men **descendants**.
- - Het `<html>`{:.e}-element **moet altijd aanwezig** zijn!
-
 > Definitie
 > ---
-> Alle elementen binnen een bepaald element noemt men **descendants** *(Ned.: nakomelingen)* van dat element.
+> Het `<html>`{:.e}-element bevat alle inhoud (Eng.: content) op de volledige pagina. Dit element is ook gekend als het root-element.
 {:.card.card-definition}
+
+> References
+> ---
+> - [Mozilla Developer Network: HTML element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html)
+{:.card.card-source}
+
+> Opmerking
+> ---
+> - Alle andere elementen zitten ertussen vervat, die elementen noemt men **descendants** (Ned.: nakomelingen).
+> - Het `<html>`{:.e}-element **moet altijd aanwezig** zijn!
+{:.card.card-remark}
 
 ### `<head>`{:.e}-element
 
-> Zie ook
-> ---
-> - [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
-{:.card.card-book}
-
-> `<head>`{:.e} … `</head>`{:.e}
-
- - `<head>`{:.e} Een **descendant** van `<html>`{:.e}.  
- - `<head>`{:.e} is het **eerste child**-element van het root-element (`<html>`{:.e}).  
-
 > Definitie
 > ---
-> Een **child**-element is een **rechtstreekse** descendant *(Ned.: nakomeling).*
+> Het `<head>`{:.e}-element is een container voor al de dingen die je wil toevoegen aan een webpagina, die niet worden getoond aan de bezoeker van deze webpagina. Dit element bevat de **meta**gegevens van het HTML-document. **‘Meta’** wil zeggen gegevens over het document zelf: titel, omschrijving, tekenset, stylesheetkoppelingen, … .
 {:.card.card-definition}
 
-Deze bevat de **meta**gegevens van het HTML-document. **‘Meta’** wil zeggen gegevens over het document zelf: 
+> References
+> ---
+> - [Mozilla Developer Network: Head element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
+> - [Mozilla Developer Network: What’s in the head?](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+{:.card.card-source}
 
- - titel
- - tekenset
- - stylesheetkoppelingen
- - …
-
-    `<title>`{:.e} … `</title>`{:.e} Bevat de titel van de html-pagina. Deze titel verschijnt in het tabblad van de browser en in de favorietenlijst.
+> Opmerking
+> ---
+> - `<head>`{:.e} Een **descendant** van `<html>`{:.e}. 
+> - `<head>`{:.e} is het **eerste child**-element van het root-element (`<html>`{:.e}).  
+> - `<title>`{:.e} … `</title>`{:.e} Bevat de titel van de html-pagina. Deze titel verschijnt in het tabblad van de browser en in de favorietenlijst.
+{:.card.card-remark}
 
 ### `<body>`{:.e}-element
 
-> Zie ook
+> Definitie
+> ---
+> Het `<body>`{:.e}-element bevat de **eigenlijke inhoud** van de webpagina die ja aan de bezoeker van deze webpagina wil tonen, zoals: tekst, afbeeldingen, video's, audio-bestanden, … .
+{:.card.card-definition}
+
+The <body> element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
+
+> References
 > ---
 > - [Mozilla Developer Network: body](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)
 {:.card.card-book}
 
+> Opmerking
+> ---
 > `<body>`{:.e} … `</body>`{:.e}
-
-- `<body>`{:.e} is een **descendant** van `<html>`{:.e}.
-- `<body>`{:.e} is het **tweede child**-element van het root-element (`<html>`{:.e}).  
-
-Deze bevat de **eigenlijke inhoud** van de pagina:
-
- - tekst
- - afbeeldingen
- - audio
- - video
- - …
+> - `<body>`{:.e} is een **descendant** van `<html>`{:.e}.
+> - `<body>`{:.e} is het **tweede child**-element van het root-element (`<html>`{:.e}). 
+{:.card.card-remark}

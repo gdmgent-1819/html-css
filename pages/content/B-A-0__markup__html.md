@@ -221,9 +221,7 @@ Commentaar schrijven tussen de HTML-code doe je tussen de **begintag** (`<!--`{:
 >
 > Duidelijk geschreven code heeft weinig tot geen commentaar nodig, maar als beginner kan het wel een handige geheugensteun zijn. 
 {:.card.card-remark}
-
-> Tip
-> ---
+>
 > Omdat de browser HTML-tags binnen commentaar negeert kan je dit gebruiken om code tijdelijk uit te schakelen, bijvoorbeeld om iets uit te proberen.
 {:.card.card-tip}
 
@@ -241,6 +239,22 @@ Commentaar schrijven tussen de HTML-code doe je tussen de **begintag** (`<!--`{:
 > References
 > ---
 > - [BitDegree: HTML Comments](https://www.bitdegree.org/learn/html-comment/)
+> - [Mozilla Developer Network: HTML Comments](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#HTML_comments)
+{:.card.card-source}
+
+Witruimte in HTML
+-----------------
+
+{% highlight html %}
+<p>Webtechnology is very cool.</p>
+
+<p>Webtechnology        is
+         very cool.</p>
+{% endhighlight %}
+
+> References
+> ---
+> - [Mozilla Developer Network: Whitespace in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Whitespace_in_HTML)
 {:.card.card-source}
 
 Conventies
