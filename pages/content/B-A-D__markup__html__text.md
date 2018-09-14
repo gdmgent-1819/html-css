@@ -21,11 +21,6 @@ Er zijn 6 niveaus van koppen:
  5. `<h5>`{:.e} … `</h5>`{:.e} 
  6. `<h6>`{:.e} … `</h6>`{:.e}: niveau 6 is het **minst** belangrijk.
 
-> References
-> ---
-> - [Mozilla Developer Network: Heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
-{:.card.card-source}
-
 {% highlight html linenos %}
 <body>
   <h1>Web &amp; New Media</h1>
@@ -51,6 +46,11 @@ Dit resulteert in de volgende outline of structuur:
 > - Gebruik niet de lagere niveau's om de lettergrootte aan de passen, daarvoor dient [CSS](../../../styles/css).
 > - Heading-informatie wordt gebruikt door [user agents](https://nl.wikipedia.org/wiki/Useragent) om een inhoudsopgave (Eng.: Table of contents) te genereren van de webpagina.
 {:.card.card-remark}
+
+> References
+> ---
+> - [Mozilla Developer Network: Heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
+{:.card.card-source}
 
 **P**aragraph *(paragraaf, alinea)*
 -----------------------------------
