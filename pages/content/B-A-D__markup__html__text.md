@@ -104,11 +104,7 @@ Er zijn 6 niveaus van koppen:
 > - Je gebruikt beter `<strong>` of CSS!
 {:.alert.alert-info}
 
-Verkorte schrijfwijze van:
 
-{% highlight html %}
-<span style="font-weight: bold"> … </span>
-{% endhighlight %}
 
 
 **Code** *(programmeercode)*
