@@ -10,8 +10,6 @@ permalink: markup/html/text/
 > Definitie
 > ---
 > Een heading-element omschrijft kort het onderwerp over de sectie die het introduceert. Zoekmachines gebruiken de headings om de structuur en inhoud van een webpagina te indexeren. Heading geeft in HTML de koppen van een tekst weer. Dit gaat van kop 1 tot kop 6, kop 1 is de belangrijkste tot kop 6 de minst belangrijke. 
-
-Users skim your pages by its headings. It is important to use headings to show the document structure.
 {:.card.card-definition}
 
 Er zijn 6 niveaus van koppen:
