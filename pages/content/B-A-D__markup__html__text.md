@@ -69,7 +69,7 @@ Er zijn 6 niveaus van koppen:
 
 > References
 > ---
-> - [Mozilla Developer Network: <i>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i)
+> - [Mozilla Developer Network: i](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i)
 {:.card.card-source}
 
 **Strong** importance *(sterke nadruk)*
