@@ -105,8 +105,6 @@ Er zijn 6 niveaus van koppen:
 {:.alert.alert-info}
 
 
-
-
 **Code** *(programmeercode)*
 ----------------------------
 
