@@ -4,10 +4,8 @@ title_long: Tekst
 permalink: markup/html/text/
 ---
 
-
-
 **H**eading *(Ned.: kop)*
--------------------
+-------------------------
 
 > Definitie
 > ---
@@ -23,11 +21,18 @@ Er zijn 6 niveaus van koppen:
  5. `<h5>`{:.e} … `</h5>`{:.e} 
  6. `<h6>`{:.e} … `</h6>`{:.e}: niveau 6 is het **minst** belangrijk.
 
-
 > References
 > ---
 > - [Mozilla Developer Network: Heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
 {:.card.card-source}
+
+> Opmerking
+> ---
+> - Heading-elementen zijn blokelementen.
+> - Sla geen niveau over.
+> - Gebruik niet de lagere niveau's om de lettergroote aan de passen, daarvoor dient [CSS](../../../styles/css).
+> - Heading-informatie wordt gebruikt door [user agents](https://nl.wikipedia.org/wiki/Useragent) om een inhoudsopgave (Eng.: Table of contents) te genereren van de webpagina.
+{:.card.card-remark}
 
 **P**aragraph *(paragraaf, alinea)*
 -----------------------------------
