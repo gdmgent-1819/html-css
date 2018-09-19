@@ -67,6 +67,16 @@ Dit resulteert in de volgende outline of structuur:
 
 `<p>` … `</p>`
 
+{% highlight html linenos %}
+<body>
+  <p>HTML-elementen of tags zijn **case-insensitive**. Dit betekent dat ze geschreven kunnen worden in hoofd- en kleine letters.</p>
+  <p>Toch zullen we steeds, als **Best practice** alle tags of elementen schrijven met **kleine letters (lowercase)** geschreven om de leesbaarheid en de consistentie te bevorderen. </p>
+</body>
+{% endhighlight %}{:data-file="index.html"}
+
+Dit resulteert visueel in:
+
+{% include shared/figure.html src="http://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/paragraaf_1.png" alt="Headings: voorbeeld 1" caption="Headings: voorbeeld 1" %}
 
 > References
 > ---
