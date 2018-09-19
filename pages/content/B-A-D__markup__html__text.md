@@ -65,12 +65,16 @@ Dit resulteert in de volgende outline of structuur:
 > `<p>` … `</p>` groepeert zinnen die bij elkaar horen.
 {:.card.card-definition}
 
-`<p>` … `</p>`
 
 {% highlight html linenos %}
 <body>
-  <p>HTML-elementen of tags zijn **case-insensitive**. Dit betekent dat ze geschreven kunnen worden in hoofd- en kleine letters.</p>
-  <p>Toch zullen we steeds, als **Best practice** alle tags of elementen schrijven met **kleine letters (lowercase)** geschreven om de leesbaarheid en de consistentie te bevorderen. </p>
+  <p>
+    HTML-elementen of tags zijn **case-insensitive**. Dit betekent dat ze geschreven kunnen worden in hoofd- en kleine letters.
+  </p>
+  <p>
+    Toch zullen we steeds, als **Best practice** alle tags of elementen schrijven met **kleine letters (lowercase)**   
+    geschreven om de leesbaarheid en de consistentie te bevorderen. 
+  </p>
 </body>
 {% endhighlight %}{:data-file="index.html"}
 
