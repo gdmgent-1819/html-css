@@ -33,7 +33,7 @@ Er zijn 6 niveaus van koppen:
 
 Dit resulteert visueel in:
 
-{% include shared/figure.html src="http://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/headings_1.PNG" alt="Headings: voorbeeld 1" caption="Headings: voorbeeld 1" %}
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/headings_1.PNG" alt="Headings: voorbeeld 1" caption="Headings: voorbeeld 1" %}
 
 Dit resulteert in de volgende outline of structuur:
 
@@ -79,7 +79,7 @@ Dit resulteert in de volgende outline of structuur:
 
 Dit resulteert visueel in:
 
-{% include shared/figure.html src="http://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/paragraaf_1.png" alt="Headings: voorbeeld 1" caption="Paragraaf: voorbeeld 1" %}
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/paragraaf_1.png" alt="Paragraaf: voorbeeld 1" caption="Paragraaf: voorbeeld 1" %}
 
 > References
 > ---
@@ -110,7 +110,7 @@ Dit resulteert visueel in:
 
 Dit resulteert visueel in:
 
-{% include shared/figure.html src="http://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/italic_1.png" alt="Headings: voorbeeld 1" caption="Italic: voorbeeld 1" %}
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/italic_1.png" alt="Italic: voorbeeld 1" caption="Italic: voorbeeld 1" %}
 
 > References
 > ---
