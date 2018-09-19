@@ -65,7 +65,6 @@ Dit resulteert in de volgende outline of structuur:
 > `<p>` … `</p>` groepeert zinnen die bij elkaar horen.
 {:.card.card-definition}
 
-
 {% highlight html linenos %}
 <body>
   <p>
@@ -80,7 +79,7 @@ Dit resulteert in de volgende outline of structuur:
 
 Dit resulteert visueel in:
 
-{% include shared/figure.html src="http://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/paragraaf_1.png" alt="Headings: voorbeeld 1" caption="Headings: voorbeeld 1" %}
+{% include shared/figure.html src="http://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/paragraaf_1.png" alt="Headings: voorbeeld 1" caption="Paragraaf: voorbeeld 1" %}
 
 > References
 > ---
@@ -95,14 +94,23 @@ Dit resulteert visueel in:
 >  `<i>` … `</i>` wordt gebruikt om tekst cursief te zetten, zonder speciale betekenis.
 {:.card.card-definition}
 
-
-`<i>` … `</i>`
-
 > ##### **Opmerking** :point_up:
 > ---
 > - Vermijd dit element!
 > - Je gebruikt beter `<em>` of CSS!
 {:.alert.alert-info}
+
+{% highlight html linenos %}
+<body>
+  <p>
+    HTML-elementen of tags zijn <i>case-insensitive</i>. Dit betekent dat ze geschreven kunnen worden in hoofd- en kleine letters.
+  </p>
+</body>
+{% endhighlight %}{:data-file="index.html"}
+
+Dit resulteert visueel in:
+
+{% include shared/figure.html src="http://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/italic_1.png" alt="Headings: voorbeeld 1" caption="Italic: voorbeeld 1" %}
 
 > References
 > ---
