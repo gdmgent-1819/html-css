@@ -4,27 +4,67 @@ title_long: head-element onderdelen
 permalink: markup/html/headelements/
 ---
 
+`<head>`{:.e}-element
+---------------------
 
+> Definitie
+> ---
+> Het `<head>`{:.e}-element is een container voor al de dingen die je wil toevoegen aan een webpagina, die niet worden getoond aan de bezoeker van deze webpagina. Dit element bevat de **meta**gegevens van het HTML-document. **‘Meta’** wil zeggen gegevens over het document zelf: titel, omschrijving, tekenset, stylesheetkoppelingen, … .
+{:.card.card-definition}
 
 > References
 > ---
-> - [Mozilla Developer Network: What's in the head?](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
-{:.card.card-book}
+> - [Mozilla Developer Network: Head element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
+> - [Mozilla Developer Network: What’s in the head?](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+{:.card.card-source}
 
 `<title>`{:.e}-element
 ----------------------
 
-`<meta>`{:.e}-element
----------------------
+> Definitie
+> ---
+> Het meest belangrijk SEO[^SEO]-friendly element is het `<title>`{:.e}-element. Het `<title>`{:.e}-element bevat een zeer beknopte omschrijving van de website. De lengte hiervan beperken we tot **maximum 80 karakters**, zodat deze niet wordt afgesneden door de zoekmachines tijdens de weergave in de zoekresultaten. Dit element wordt in een zoekmachine als eerste weergegeven na het zoeken van bepaalde inhoud. Het wordt ook getoond als tekst in een tabblad alsook in de bookmarks.
+{:.card.card-definition}
+
+Het `<title>`{:.e}-element is meestal opgebouwd uit de *titel van de webpagina, subdomein, domein*, bijvoorbeeld: “Start to code \| New Media Development \| Artevelde University College Ghent”. Andere verkiezen een alternatieve indeling:  *domein (merknaam), subdomein en titel van de webpagnia*, bijvoorbeeld: “In The Pocket \| Payconiq x Bancontact x In The Pocket”. Meestal worden de onderdelen binnen een `<title>`{:.e}-element gescheiden door een verticale streep `|` of een koppelteken `-`.
+
+[^SEO]: **SEO**: Search Engine Optimazation (Ned.: zoekmachine vriendelijk)
+
+{% highlight html %}
+...
+<head>
+    <!-- MOST IMPORTANT SEO TAG -->
+    <title>HTML Forms | Webtechnology I | New Media Development</title>
+</head>
+...
+{% endhighlight %}
+
+Na het title-element definiëren we een aantal SEO-friendly meta-elementen in volgorde van belangrijkheid. Deze meta-elementen zijn opgebouwd met twee attributen, namelijk `name` en `content`. In het name-attribuut definiëren we de naam van het `<meta>`{:.e}-element. Het content attribuut bevat de inhoud van meta-element. 
+
+`<meta>`{:.e}-elementen
+-----------------------
+
+> Definitie
+> ---
+> Metadata is data dat andere data beschrijft en wordt in HTML via het `<meta>`-element gerealiseerd. Er bestaan verschillende soorten meta-elementen die elk iets anders beschrijven.
+{:.card.card-definition}
+
+> References
+> ---
+> - [Mozilla Developer Network: Meta element](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Metadata_the_%3Cmeta%3E_element)
+{:.card.card-source}
 
 ### Set van karakters
 
-Het eerste element onder het head-element is bijna altijd de definitie van de set van karakters (Eng.: **Character encoding**). Deze character encoding is belangrijk om de juiste paginaweergave te produceren voor de bezoeker. De character encodig wordt vermeld als waarde van het attribuut `charset`. 
+> Definitie
+> ---
+> Het eerste element onder het `<head>`-element is bijna altijd de definitie van de set van karakters (Eng.: **Character encoding**). Deze character encoding is belangrijk om de juiste paginaweergave te produceren voor de bezoeker. De character encodig wordt vermeld als waarde van het attribuut `charset`. 
+{:.card.card-definition}
 
 De meest gebruikte set karakters zijn:
 
-- UTF-8 (Unicode)
-- ISO-8859-1 (Latin alphabet)
+- UTF-8 (Unicode): universele set van karakters, bevat bijna alle karakters uit de mensentaal, zodat bijna alle talen ondersteund worden.
+- ISO-8859-1 (Latin alphabet), de kans is groot dat de rendering van de pagina niet ok is.
 
 {% highlight html %}
 <head>
@@ -34,68 +74,33 @@ De meest gebruikte set karakters zijn:
 
 ### Rendering engines
 
-IE8 en IE9 bevatten verschillende “rendering engines” waardoor het mogelijk is dat een bezoeker, die gebruik maakt van één van deze browsers, niet de laatste “rendering engine” gebruikt. Het meta-element **X-UA-Compatible** laat toe om een “rendering engine” te definiëren. We forceren IE om de meest up-to-date beschikbare “rendering engine” te gebruiken via de instelling: `IE=edge`. Daarna stellen we het eventuele gebruik van Google Chrome Frame in als “rendering engine” via de instelling `chrome=1` . Het meta-element X-UA-Compatible moet na de character encoding gedefinieerd worden. Volgorde is heel belangrijk in het head-element. Indien bijvoorbeeld de “encoding” niet gedefinieerd is, dan moet de browser de “encodering” automatisch detecteren. Autodetectie kan soms leiden tot een verkeerde inschatting van de browser, wat kan resulteren in een gebroken pagina.
+> Definitie
+> ---
+> IE8 en IE9 bevatten verschillende “rendering engines” waardoor het mogelijk is dat een bezoeker, die gebruik maakt van één van deze browsers, niet de laatste “rendering engine” gebruikt. Het meta-element **X-UA-Compatible** laat toe om een “rendering engine” te definiëren. We forceren IE om de meest up-to-date beschikbare “rendering engine” te gebruiken via de instelling: `IE=edge`.
+{:.card.card-definition}
+
+Het `<meta>`{:.e}-element X-UA-Compatible moet na de character encoding gedefinieerd worden. Volgorde is heel belangrijk in het `<head>`{:.e}-element. Indien bijvoorbeeld de “encoding” niet gedefinieerd is, dan moet de browser de “encodering” automatisch detecteren. Autodetectie kan soms leiden tot een verkeerde inschatting van de browser, wat kan resulteren in een gebroken pagina.
 
 {% highlight html %}
 <head>	
 	<!-- CHARACTER ENCODING -->
 	<meta charset="UTF-8"> 
 	<!-- LATEST VERSION OF RENDERING ENGINE -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
-
 {% endhighlight %}
 
-Bij voorkeur worden de meta-elementen: “charset”, “X-UA-Compatible” en “base” vermeld in de http response headers. Dit kunnen we in PHP realiseren via “.htaccess” bestand. In ASP.NET doen we dit via het “global.asax of web.config” bestand, meer bepaald in de `Application_BeginRequest` methode hiervan. Deze laatste aanpak heeft een positieve invloed op de performantie van de webpagina. Indien, om één of andere redenen, we het “.htaccess”, “global.asax of web.config” bestand niet kunnen aanpassen, vermelden we de meta-elementen in volgorde.
+> References
+> ---
+> - [lifewire: X-UA-Compatible Meta Tag Description and Uses](https://www.lifewire.com/xua-compatible-meta-tag-3469059)
+{:.card.card-source}
 
-**Web.config** aanpassingen voor rendering engines:
+### Omschrijving (Eng.: description)
 
-{% highlight xml %}
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <system.webServer>
-    <httpProtocol>
-      <customHeaders>
-        <clear />
-        <add charset="UTF-8" />
-        <add name="X-UA-Compatible" value="IE=edge,chrome=1" />
-      </customHeaders>
-    </httpProtocol>
-  </system.webServer>
-</configuration>
-{% endhighlight %}
-
-{% highlight txt %}
-.htaccess aanpassingen voor rendering engines:
-
-Header set X-UA-Compatible "IE=edge,chrome=1"
-
-{% endhighlight %}
-
-In Apache kunnen we deze headers ook op een alternatieve manier implementeren, meer bepaald via mod_headers[^modheadersxua].
-
-
-### Search Engine Optimization
-
-De meest belangrijk SEO-friendly element is het title-element. Dit element wordt in een zoekmachine als eerste weergegeven na het zoeken van bepaalde inhoud.
-
-Het title-element bevat een zeer beknopte omschrijving van de website. De lengte hiervan beperken we tot **maximum 80 karakters**, zodat deze niet wordt afgesneden door de zoekmachines tijdens de weergave in de zoekresultaten. Dit title-element wordt eveneens weergegeven bovenaan in het browservenster. Het title-element is meestal opgebouwd uit de *merknaam, primaire keywords en secundaire keywords*, bijvoorbeeld: “Initializr - Start an HTML5 Boilerplate project in 15 seconds!”.
-
-{% highlight html %}
-...
-<head>
-    <!-- MOST IMPORTANT SEO TAG -->
-    <title>HTML5 | Webdesign II | GDM</title>
-</head>
-...
-{% endhighlight %}
-
-Na het title-element definiëren we een aantal SEO-friendly meta-elementen in volgorde van belangrijkheid. Deze meta-elementen zijn opgebouwd met twee attributen, namelijk `name` en `content`. In het name-attribuut definiëren we de naam van het meta-element. Het content attribuut bevat de inhoud van meta-element. 
-
-> **Een voorbeeld van de wijs website:**
-> "Lees hier alles over de nieuwste online trends en ontwikkelingen. De Wijs medewerkers delen hun inzichten, tips &amp; tricks graag met jou!".
-
-De lengte van het meta-element **description**, beknopte omschrijving van de webpagina, beperken we tot *maximaal 24 woorden of 250 karakters*. In dit element vertellen we de gebruiker wat we aanbieden via deze webpagina! 
+> Definitie
+> ---
+> Het `<meta>`{:.e}-element **description** geeft een beknopte omschrijving (Eng. synopsis) over de webpagina. De lengte ervan beperken we tot *maximaal 24 woorden of 250 karakters*. In dit element vertellen we de gebruiker wat we aanbieden via deze webpagina!
+{:.card.card-definition}
 
 {% highlight html %}
 ...
@@ -106,14 +111,50 @@ De lengte van het meta-element **description**, beknopte omschrijving van de web
 ...
 {% endhighlight %}
 
-Het volgende belangrijk meta-element is de **keywords**. Hierin beschrijven we de webpagina m.b.v. een aantal kernwoorden. Overdrijf hierin niet, want dit kan nadelig zijn voor de rang in zoekresultaten. We beperken ons meestal tot **maximaal 8 kernwoorden** . Deze kernwoorden moeten ook minstens eenmaal voorkomen in de inhoud van deze webpagina. 
+Wanneer we zoeken naar "In The Pocket" via de Google zoekmachine, dan krijgen we als eerste resultaat informatie over de startpagina van de InThePocket website.
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/meta_description.PNG" alt="Meta-element description: voorbeeld In The Pocket" caption="Meta-element description: voorbeeld In The Pocket" %}
+
+In de resultaten merken we per resultaat de volgende onderdelen op:
+
+- De **titel** van de webpagina, inclusief een link naar deze webpagina. In dit geval: "We're a Digital Product Studio - In The Pocket"
+- De **URL** van de webpagina.
+- De **omschrijving** van de webpagina.
+
+Navigeren we vervolgens naar deze webpagina, via de link, dan kunnen we de bron (Eng.: source) van deze pagina bekijken door de **rechtermuistoets** te klikken en vervolgens de optie "inspecteren" (Eng.: Inspect) te selecteren. Op deze manier kunnen we o.a. de bron van de webpagina bekijken. We kunnen hierdoor o.a. de title en description bekijken.
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/meta_source.png" alt="Meta-element description: voorbeeld In The Pocket via de source" caption="Meta-element description: voorbeeld In The Pocket via de source" %}
+
+### Kernwoorden (Eng.: keywords)
+
+> Definitie
+> ---
+> Het volgende belangrijk meta-element is de **keywords**. Hierin beschrijven we de webpagina m.b.v. een aantal kernwoorden. Overdrijf hierin niet, want dit kan nadelig zijn voor de rang in zoekresultaten. We beperken ons meestal tot **maximaal 8 kernwoorden** . Deze kernwoorden moeten ook minstens eenmaal voorkomen in de inhoud van deze webpagina. 
+{:.card.card-definition}
 
 > **Een voorbeeld van de BBC website:**
+>
 > "BBC, bbc.co.uk, bbc.com, Search, British Broadcasting Corporation, BBC iPlayer, BBCi".
+> **Een voorbeeld van de In The Pocket website:**
+> "virtual reality, mobile development, Mobile applications, Internet of Things, Product design, Development, digital product studio, web development, harald".
+> **Een voorbeeld van de Marlon website:**
+> "web, application, design, development, mobile".
+> **Een voorbeeld van de Hyperion website:**
+> "web, application, design, development, mobile".
 
-Het meta-element **author** heeft geen invloed op de indexering van de webpagina, toch maakt het deel uit van de meta-element standaarden. In dit meta-element definiëren we de auteurs van de webpagina, meestal is dit de eigenaar van de website.
+### Auteur(s) (Eng.: author(s))
 
-Het meta-element **copyright** heeft eveneens geen invloed op de indexering. In dit meta-element definiëren we gegevens omtrent de **intellectuele eigendom**. De bescherming van de intellectuele eigendom wordt niet verzekerd door dit meta-element, daarvoor zijn andere middelen noodzakelijk, zoals bijvoorbeeld een disclaimer of privacy statement.
+> Definitie
+> ---
+> Het meta-element **author** heeft geen invloed op de indexering van de webpagina, toch maakt het deel uit van de meta-element standaarden. In dit meta-element definiëren we de auteurs van de webpagina, dikwijls is dit de eigenaar van de website.
+{:.card.card-definition}
+
+### Copyright
+
+> Definitie
+> ---
+> Het meta-element **copyright** heeft eveneens geen invloed op de indexering. In dit meta-element definiëren we gegevens omtrent de **intellectuele eigendom**. De bescherming van de intellectuele eigendom wordt niet verzekerd door dit meta-element, daarvoor zijn andere middelen noodzakelijk, zoals bijvoorbeeld een disclaimer of privacy statement.
+{:.card.card-definition}
 
 {% highlight html %}
 <head>	
@@ -124,14 +165,17 @@ Het meta-element **copyright** heeft eveneens geen invloed op de indexering. In 
 	<meta name="description" content="Lees hier alles over nieuwe media, html5 en andere ontwikkelingen in webdevelopment en mobile development. De docenten MMP willen graag hun kennis delen met jou!">
 	<meta name="keywords" content="HTML5, JavaScript, jQuery, CSS3">
 	<meta name="author" content="Arteveldehogeschool - Bachelor in de grafische en digitale media | MMP">
-	<meta name="copyright" content="Copyright 2010-14 Arteveldehogeschool. All Rights Reserved.">
+	<meta name="copyright" content="Copyright 2010-19 Arteveldehogeschool. All Rights Reserved.">
 	...
 </head>
 {% endhighlight %}
 
 ### Viewport
 
-Door de toename van mobiele webbrowsers is het aangewezen om een extra meta-element te voorzien, namelijk **viewport**. Wanneer een gebruiker een webpagina bekijkt met een breedte van 960 pixels op een mobiel toestel met een breedte-resolutie van 320 pixels, dan zal deze webpagina visueel verkleind worden zodat dit past binnen deze breedte. De tekst is dan meestal niet meer leesbaar zonder in te zoomen. 
+> Definitie
+> ---
+> Door de toename van mobiele webbrowsers is het aangewezen om een extra meta-element te voorzien, namelijk **viewport**. Wanneer een gebruiker een webpagina bekijkt met een breedte van 960 pixels op een mobiel toestel met een breedte-resolutie van 320 pixels, dan zal deze webpagina visueel verkleind worden zodat dit past binnen deze breedte. De tekst is dan meestal niet meer leesbaar zonder in te zoomen. 
+{:.card.card-definition}
 
 Meestal stellen we als waarde voor dit meta-element viewport de waarde `width=device-width` in. De breedte van de viewport zal ingesteld worden op de breedte van het device waarop we de webpagina bekijken. Andere viewport instellingen, zoals `height=device-height`, `initial-scale=1`, … zijn ook toepasbaar, doch niet echt noodzakelijk. De `initial-scale` eigenschap bepaalt het zoomniveau wanneer de pagina wordt geladen. De eigenschap `initial-scale` vermelden we niet in het meta-element viewport omdat dit bugs veroorzaakt op iOS tijdens de rotatie van het toestel. “Rotate/zoom” en “Pinch/zoom” worden hierdoor niet meer negatief beïnvloed en eventuele JS-hacks zijn niet meer noodzakelijk. 
 
@@ -148,7 +192,17 @@ De bijkomende eigenschappen voor het meta-element `viewport: minimum-scale`, `ma
 
 ### Linken van stijlbestanden
 
-Om een website een leuk ogend uiterlijk en gebruiksvriendelijke interface te geven is het natuurlijk noodzakelijk om stijlen te koppelen hetzij via de `style` elementen of via gekoppelde stijlbestanden. Bij voorkeur via externe stijlbestanden.
+> Definitie
+> ---
+> Om een website een mooi ogend uiterlijk en gebruiksvriendelijke interface te geven is het natuurlijk noodzakelijk om stijlen te koppelen. Een extern stijlbestand (CSS-file) wordt gekoppeld via het `<link>`-element met waarde `stylesheet` via het `rel`-attribuut en de referentie naar het CSS-bestand via het `href`-attribuut.
+{:.card.card-definition}
+
+Naast het linken van externe stijlbestanden, bij voorkeur, kunnen stijlen ook toegevoegd worden via:
+
+- `<style>`{:.e}-element
+- `style`{:.a}-attribuut
+- andere attributen afhankelijk van het element type
+
 
 Om alle “browser-eigen” html en CSS instellingen te wissen, moeten we deze resetten, beter gekend als normaliseren. Op deze manier kunnen we vertrekken “vanaf 0” voor iedere browser. De meeste browsers geven aan hyperlinks een blauwe kleur en wanneer deze link werd bezocht, wordt de kleur ervan paars. Tabellen krijgen standaard een border en een bepaalde “padding”. De grootte van een lettertype voor de headings h1, h2, … varieert van browser tot browser.  Nog een frappant voorbeeld is de “submit-knop” die in elke browser een ander uiterlijk krijgt. Omwille van deze redenen is een reset-bestand absoluut noodzakelijk.
 
