@@ -94,11 +94,11 @@ Dit resulteert visueel in:
 >  `<i>` … `</i>` wordt gebruikt om tekst cursief te zetten, zonder speciale betekenis.
 {:.card.card-definition}
 
-> ##### **Opmerking** :point_up:
+> Opmerking
 > ---
 > - Vermijd dit element!
 > - Je gebruikt beter `<em>` of CSS!
-{:.alert.alert-info}
+{:.card.card-remark}
 
 {% highlight html linenos %}
 <body>
@@ -125,8 +125,6 @@ Dit resulteert visueel in:
 > `<strong>` … `</strong>` wordt gebruikt om sterke nadruk te leggen op bepaalde woorden.
 {:.card.card-definition}
 
-`<strong>` … `</strong>`
-
  - De standaardopmaak is vet.
 
 > References
@@ -141,21 +139,25 @@ Dit resulteert visueel in:
 > `<b>` … `</b>` Wordt gebruikt om tekst vet te zetten, zonder speciale betekenis.
 {:.card.card-definition}
 
-`<b>` … `</b>`
-
-> ##### **Opmerking** :point_up:
+> Opmerking
 > ---
 > - Vermijd dit element!
 > - Je gebruikt beter `<strong>` of CSS!
-{:.alert.alert-info}
+{:.card.card-remark}
+
+> References
+> ---
+> - [Mozilla Developer Network: b: The Bring Attention To element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b)
+{:.card.card-source}
 
 
 **Code** *(programmeercode)*
 ----------------------------
+> Definitie
+> ---
+> `<code>` … `</code>` Wordt gebruikt om code in de inhoud te zetten.
+{:.card.card-definition}
 
-`<code>` … `</code>`
-
-Wordt gebruikt om code in de inhoud te zetten
 
 - Een descendant van `<body>`
 - Standaard wordt een monospace lettertype gebruikt.
@@ -164,16 +166,23 @@ Wordt gebruikt om code in de inhoud te zetten
 <code>&lt;meta&gt;</code>
 {% endhighlight %}
 
-Ziet er dan zo uit:
+Dit resulteert visueel in:
 
 <code>&lt;meta&gt;</code>
 
+> References
+> ---
+> - [Mozilla Developer Network: code: The Inline Code element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)
+{:.card.card-source}
+
 **Pre**formatted text *(voorgeformateerde tekst)*
 -------------------------------------------------
+> Definitie
+> ---
+> `<pre>` … `</pre>` wordt gebruikt om de witruimte van voorgeformaatterde tekst te behouden.
+{:.card.card-definition}
 
 `<pre>` … `</pre>`
-
-Wordt gebruikt om de witruimte van voorgeformaatterde tekst te behouden.
 
 - Een descendant van `<body>`
 - Standaard wordt een monospace lettertype gebruikt.
@@ -181,10 +190,12 @@ Wordt gebruikt om de witruimte van voorgeformaatterde tekst te behouden.
 
 **Abbr**eviation *(afkorting)*
 ------------------------------
+> Definitie
+> ---
+> `<abbr>`{:.e} … `</abbr>` wordt gebruikt om een afkorting te verklaren. De verklaring wordt getoond via het `title`{:.a}-attribuut als je over het `<abbr>`{:.e}-element hovert.
+{:.card.card-definition}
 
 > `<abbr>`{:.e} … `</abbr>`{:.e}
-
-Wordt gebruikt om een afkorting te verklaren. De verklaring wordt getoond via het `title`{:.a}-attribuut als je over het `<abbr>`{:.e}-element hovert.
 
 - Een descendant van `<body>`
 
@@ -195,10 +206,27 @@ Wordt gebruikt om een afkorting te verklaren. De verklaring wordt getoond via he
 Line **br**eak *(Ned.: regeleinde)*
 -----------------------------------
 
-`<br>`{:.e}
+> Definitie
+> ---
+> `<br>`-element geeft een regeleinde weer in een tekst. De tekst zal op de volgende lijn starten.
+{:.card.card-definition}
 
+`<br>`
  - Is een descendant van `<body>`
  - Zelfsluitende tag.
+
+{% highlight html %}
+<p>
+  Roses are red,<br>
+  Violets are blue,<br>
+  sugar is sweet,<br>
+  And so are you.<br>
+</p>
+{% endhighlight %}
+
+Dit resulteert visueel in:
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/linebreak_1.png" alt="Line break: voorbeeld 1" caption="Line break: voorbeeld 1" %}
 
 > Opmerking
 > ---
@@ -210,12 +238,21 @@ Line **br**eak *(Ned.: regeleinde)*
 > Gebruik dit element **nooit** om tekst te schikken, want daar moet je CSS voor gebruiken.
 {:.card.card-warning}
 
+> References
+> ---
+> - [Mozilla Developer Network: : br: The Line Break element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br)
+{:.card.card-source}
+
+
 **H**orizontal **r**uler *(Ned.: horizontale lijn)*
 ---------------------------------------------------
 
-`<hr>`{:.e}
+> Definitie
+> ---
+> `<hr>` wordt gebruikt om een **thematic break** *(Ned.: veranderend onderwerp)* tussen paragraafelementen (`<p>`{:.e}) aan te geven.
+{:.card.card-definition}
 
-Wordt gebruikt om een **thematic break** *(Ned.: veranderend onderwerp)* tussen paragraafelementen (`<p>`{:.e}) aan te geven.
+`<hr>`{:.e}
 
  - Een descendant van `<body>`
  - Zelfsluitende tag.
@@ -223,7 +260,10 @@ Wordt gebruikt om een **thematic break** *(Ned.: veranderend onderwerp)* tussen 
 HTML Character Entities
 -----------------------
 
-Soms worden speciale tekens niet goed afgebeeld.
+> Definitie
+> ---
+> Soms worden speciale tekens niet goed afgebeeld. Entiteiten worden gebruikt om die gereserveerde tekens, die door HTML anders worden geïnterpreteerd, weer te geven. 
+{:.card.card-definition}
 
  - Gebruik UTF-8 als tekenset (zie `<meta charset="UTF-8">`)
  - Indien dat niet helpt, gebruik dan **Escape Characters**
@@ -246,8 +286,9 @@ Soms worden speciale tekens niet goed afgebeeld.
 | `…`   | `&hellip;` | **H**orizontal **ellip**sis (beletselteken) |
 {:.table.table--primary}
 
-> Zie ook
+
+> References
 > ---
-> - <https://dev.w3.org/html5/html-author/charref>
-> - Handboek p. 193-194!
-{:.card.card-link}
+> - [Mozilla Developer Network: Entity](https://developer.mozilla.org/en-US/docs/Glossary/Entity)
+> - [Officiele lijst met entiteiten](https://dev.w3.org/html5/html-author/charref)
+{:.card.card-source}
