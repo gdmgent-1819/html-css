@@ -2,7 +2,7 @@
 title: Applicaties
 title_long: Applicaties
 permalink: introduction/applications/
-published: true
+published: false
 ---
 
 > Taken
