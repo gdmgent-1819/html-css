@@ -2,7 +2,7 @@
 title: Introductie
 title_long: Introductie
 permalink: introduction/
-published: true
+published: false
 ---
 
 - [Het internet](./internet)

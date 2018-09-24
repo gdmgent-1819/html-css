@@ -2,7 +2,7 @@
 title: Internet
 title_long: Internet
 permalink: introduction/internet/
-published: true
+published: false
 ---
 
 > Taken

@@ -2,7 +2,7 @@
 title: World Wide Web
 title_long: World Wide Web
 permalink: introduction/www/
-published: true
+published: false
 ---
 
 Het World Wide Web
