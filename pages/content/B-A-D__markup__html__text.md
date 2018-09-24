@@ -62,7 +62,7 @@ Dit resulteert in de volgende outline of structuur:
 
 > Definitie
 > ---
-> `<p>` … `</p>` groepeert zinnen die bij elkaar horen.
+> `<p>`{:.e} … `</p>`{:.e} groepeert zinnen die bij elkaar horen.
 {:.card.card-definition}
 
 {% highlight html linenos %}
@@ -97,7 +97,7 @@ Dit resulteert visueel in:
 > Opmerking
 > ---
 > - Vermijd dit element!
-> - Je gebruikt beter `<em>` of CSS!
+> - Je gebruikt beter `<em>`{:.e} of CSS!
 {:.card.card-remark}
 
 {% highlight html linenos %}
@@ -122,7 +122,7 @@ Dit resulteert visueel in:
 -----------------------------
 > Definitie
 > ---
-> `<em>` … `</em>` wordt gebruikt om een nadruk te leggen op bepaalde woorden.
+> `<em>`{:.e} … `</em>`{:.e} wordt gebruikt om een nadruk te leggen op bepaalde woorden.
 {:.card.card-definition}
 
 - De standaardopmaak is schuin.
@@ -136,7 +136,7 @@ Dit resulteert visueel in:
 ----------------
 > Definitie
 > ---
-> `<b>` … `</b>` Wordt gebruikt om tekst vet te zetten, zonder speciale betekenis.
+> `<b>`{:.e} … `</b>`{:.e} Wordt gebruikt om tekst vet te zetten, zonder speciale betekenis.
 {:.card.card-definition}
 
 > Opmerking
@@ -155,7 +155,7 @@ Dit resulteert visueel in:
 
 > Definitie
 > ---
-> `<strong>` … `</strong>` wordt gebruikt om sterke nadruk te leggen op bepaalde woorden.
+> `<strong>`{:.e} … `</strong>`{:.e} wordt gebruikt om sterke nadruk te leggen op bepaalde woorden.
 {:.card.card-definition}
 
  - De standaardopmaak is vet.
@@ -174,7 +174,7 @@ Dit resulteert visueel in:
 {:.card.card-definition}
 
 
-- Een descendant van `<body>`
+- Een descendant van `<body>`{:.e}
 - Standaard wordt een monospace lettertype gebruikt.
 
 {% highlight html %}
@@ -190,16 +190,16 @@ Dit resulteert visueel in:
 > - [Mozilla Developer Network: code: The Inline Code element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)
 {:.card.card-source}
 
-**Pre**formatted text *(voorgeformateerde tekst)*
+**Pre**formatted text *(voorgeformatteerde tekst)*
 -------------------------------------------------
 > Definitie
 > ---
-> `<pre>` … `</pre>` wordt gebruikt om de witruimte van voorgeformaatterde tekst te behouden.
+> `<pre>` … `</pre>` wordt gebruikt om de witruimte van voorgeformatteerde tekst te behouden.
 {:.card.card-definition}
 
-`<pre>` … `</pre>`
+`<pre>`{:.e} … `</pre>`{:.e}
 
-- Een descendant van `<body>`
+- Een descendant van `<body>`{:.e}
 - Standaard wordt een monospace lettertype gebruikt.
 
 
@@ -207,12 +207,12 @@ Dit resulteert visueel in:
 ------------------------------
 > Definitie
 > ---
-> `<abbr>`{:.e} … `</abbr>` wordt gebruikt om een afkorting te verklaren. De verklaring wordt getoond via het `title`{:.a}-attribuut als je over het `<abbr>`{:.e}-element hovert.
+> `<abbr>` … `</abbr>` wordt gebruikt om een afkorting te verklaren. De verklaring wordt getoond via het `title`{:.a}-attribuut als je over het `<abbr>`-element hovert.
 {:.card.card-definition}
 
 > `<abbr>`{:.e} … `</abbr>`{:.e}
 
-- Een descendant van `<body>`
+- Een descendant van `<body>`{:.e}
 
 {% highlight html %}
 <abbr title="Hypertext Markup Language">HTML</abbr>
@@ -226,8 +226,8 @@ Line **br**eak *(Ned.: regeleinde)*
 > `<br>`-element geeft een regeleinde weer in een tekst. De tekst zal op de volgende lijn starten.
 {:.card.card-definition}
 
-`<br>`
- - Is een descendant van `<body>`
+`<br>`{:.e}
+ - Is een descendant van `<body>`{:.e}
  - Zelfsluitende tag.
 
 {% highlight html %}
@@ -269,7 +269,7 @@ Dit resulteert visueel in:
 
 `<hr>`{:.e}
 
- - Een descendant van `<body>`
+ - Een descendant van `<body>`{:.e}
  - Zelfsluitende tag.
 
 HTML Character Entities
