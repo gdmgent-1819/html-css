@@ -86,8 +86,8 @@ Dit resulteert visueel in:
 > - [Mozilla Developer Network: The Paragraph element](https://developer.mozilla.org/nl/docs/Web/HTML/Element/p)
 {:.card.card-source}
 
-
-### **I**talic
+## **I**talic *(schuin)*
+------------------------
 
 > Definitie
 > ---
@@ -117,19 +117,19 @@ Dit resulteert visueel in:
 > - [Mozilla Developer Network: i](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i)
 {:.card.card-source}
 
-**Strong** importance *(sterke nadruk)*
----------------------------------------
 
+## **Em**phasis *(benadrukt)*
+-----------------------------
 > Definitie
 > ---
-> `<strong>` … `</strong>` wordt gebruikt om sterke nadruk te leggen op bepaalde woorden.
+> `<em>` … `</em>` wordt gebruikt om een nadruk te leggen op bepaalde woorden.
 {:.card.card-definition}
 
- - De standaardopmaak is vet.
+- De standaardopmaak is schuin.
 
 > References
 > ---
-> - [Mozilla Developer Network: The Strong Importance element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong)
+> - [Mozilla Developer Network: The Strong Importance element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em)
 {:.card.card-source}
 
 **B**old *(vet)*
@@ -148,6 +148,21 @@ Dit resulteert visueel in:
 > References
 > ---
 > - [Mozilla Developer Network: b: The Bring Attention To element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b)
+{:.card.card-source}
+
+**Strong** importance *(sterke nadruk)*
+---------------------------------------
+
+> Definitie
+> ---
+> `<strong>` … `</strong>` wordt gebruikt om sterke nadruk te leggen op bepaalde woorden.
+{:.card.card-definition}
+
+ - De standaardopmaak is vet.
+
+> References
+> ---
+> - [Mozilla Developer Network: The Strong Importance element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong)
 {:.card.card-source}
 
 
