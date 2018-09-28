@@ -129,18 +129,17 @@ Navigeren we vervolgens naar deze webpagina, via de link, dan kunnen we de bron 
 
 > Definitie
 > ---
-> Het volgende belangrijk meta-element is de **keywords**. Hierin beschrijven we de webpagina m.b.v. een aantal kernwoorden. Overdrijf hierin niet, want dit kan nadelig zijn voor de rang in zoekresultaten. We beperken ons meestal tot **maximaal 8 kernwoorden** . Deze kernwoorden moeten ook minstens eenmaal voorkomen in de inhoud van deze webpagina. 
+> Het volgende belangrijk meta-element zijn de **keywords**. Hierin beschrijven we de webpagina m.b.v. een aantal kernwoorden. Overdrijf hierin niet, want dit kan nadelig zijn voor de rang in zoekresultaten. We beperken ons meestal tot **maximaal 8 kernwoorden** . Deze kernwoorden moeten ook minstens eenmaal voorkomen in de inhoud van deze webpagina. 
 {:.card.card-definition}
 
-> **Een voorbeeld van de BBC website:**
->
-> "BBC, bbc.co.uk, bbc.com, Search, British Broadcasting Corporation, BBC iPlayer, BBCi".
-> **Een voorbeeld van de In The Pocket website:**
-> "virtual reality, mobile development, Mobile applications, Internet of Things, Product design, Development, digital product studio, web development, harald".
-> **Een voorbeeld van de Marlon website:**
-> "web, application, design, development, mobile".
-> **Een voorbeeld van de Hyperion website:**
-> "web, application, design, development, mobile".
+> - **Een voorbeeld van de BBC website:**  
+"BBC, bbc.co.uk, bbc.com, Search, British Broadcasting Corporation, BBC iPlayer, BBCi".
+> - **Een voorbeeld van de In The Pocket website:**  
+"virtual reality, mobile development, Mobile applications, Internet of Things, Product design, Development, digital product studio, web development, harald".
+> - **Een voorbeeld van de Marlon website:**  
+"web, application, design, development, mobile".
+> - **Een voorbeeld van de Hyperion website:**  
+"web, application, design, development, mobile".
 
 ### Auteur(s) (Eng.: author(s))
 
