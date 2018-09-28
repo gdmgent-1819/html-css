@@ -138,6 +138,9 @@ Willen we nog uitgebreide toelichting geven aan iedere artiest in het bovenstaan
 > References
 > ---
 > - [Mozilla Developer Network: Figure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
+> - <https://www.sitepoint.com/quick-tip-the-right-way-to-use-figure-and-figcaption-elements/>
+> - <http://www.anysurfer.be/nl/blog/detail/html5-figure-en-figcaption>
+> - <https://www.w3.org/WAI/tutorials/images/groups/>
 {:.card.card-source}
 
 **Picture**
@@ -161,14 +164,6 @@ Het `<picture>`{:.e}-element wordt gebruikt om meerdere versies van een afbeeldi
 {% endhighlight %}
 
 *In bovenstaand voorbeeld zal een afbeelding van Donald Duck getoond worden als de viewport minstens 650px is. Bij kleinere schermformaten (groter dan of gelijk aan 465px maar kleiner dan 650px) wordt Goofy getoond. Indien de viewport nog kleiner is, zal Mickey Mouse verschijnen. De img-tag staat er als fallback indien de browser de `<picture`{:.e}-tag niet ondersteunt.*
-
-> Zie ook
-> ---
-> - <https://www.sitepoint.com/quick-tip-the-right-way-to-use-figure-and-figcaption-elements/>
-> - <https://developer.mozilla.org/nl/docs/Web/HTML/Element/figure>
-> - <http://www.anysurfer.be/nl/blog/detail/html5-figure-en-figcaption>
-> - <https://www.w3.org/WAI/tutorials/images/groups/>
-{:.card.card-link}
 
 > References
 > ---
