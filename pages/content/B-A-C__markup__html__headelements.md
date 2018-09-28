@@ -148,6 +148,15 @@ Navigeren we vervolgens naar deze webpagina, via de link, dan kunnen we de bron 
 > Het meta-element **author** heeft geen invloed op de indexering van de webpagina, toch maakt het deel uit van de meta-element standaarden. In dit meta-element definiëren we de auteurs van de webpagina, dikwijls is dit de eigenaar van de website.
 {:.card.card-definition}
 
+{% highlight html %}
+...
+<head>
+	<!-- OTHER IMPORTANT SEO TAGS -->
+    <meta name="description" content="Drdynscript wil graag met jullie zijn app en kennis delen omtrent HTML5, CSS3 en JavaScript.">
+</head>
+...
+{% endhighlight %}
+
 ### Copyright
 
 > Definitie
@@ -176,7 +185,7 @@ Navigeren we vervolgens naar deze webpagina, via de link, dan kunnen we de bron 
 > Door de toename van mobiele webbrowsers is het aangewezen om een extra meta-element te voorzien, namelijk **viewport**. Wanneer een gebruiker een webpagina bekijkt met een breedte van 960 pixels op een mobiel toestel met een breedte-resolutie van 320 pixels, dan zal deze webpagina visueel verkleind worden zodat dit past binnen deze breedte. De tekst is dan meestal niet meer leesbaar zonder in te zoomen. 
 {:.card.card-definition}
 
-Meestal stellen we als waarde voor dit meta-element viewport de waarde `width=device-width` in. De breedte van de viewport zal ingesteld worden op de breedte van het device waarop we de webpagina bekijken. Andere viewport instellingen, zoals `height=device-height`, `initial-scale=1`, … zijn ook toepasbaar, doch niet echt noodzakelijk. De `initial-scale` eigenschap bepaalt het zoomniveau wanneer de pagina wordt geladen. De eigenschap `initial-scale` vermelden we niet in het meta-element viewport omdat dit bugs veroorzaakt op iOS tijdens de rotatie van het toestel. “Rotate/zoom” en “Pinch/zoom” worden hierdoor niet meer negatief beïnvloed en eventuele JS-hacks zijn niet meer noodzakelijk. 
+Meestal stellen we als waarde voor dit meta-element **viewport** de waarde `width=device-width` in. De breedte van de viewport zal ingesteld worden op de breedte van het device waarop we de webpagina bekijken. Andere viewport instellingen, zoals `height=device-height`, `initial-scale=1`, … zijn ook toepasbaar, doch niet echt noodzakelijk. De `initial-scale` eigenschap bepaalt het zoomniveau wanneer de pagina wordt geladen. De eigenschap `initial-scale` vermelden we niet in het meta-element viewport omdat dit bugs veroorzaakt op iOS tijdens de rotatie van het toestel. “Rotate/zoom” en “Pinch/zoom” worden hierdoor niet meer negatief beïnvloed en eventuele JS-hacks zijn niet meer noodzakelijk. 
 
 De bijkomende eigenschappen voor het meta-element `viewport: minimum-scale`, `maximum-scale` en `user-scalable` vermelden we ook niet. Deze eigenschappen hebben invloed op de voorkeuren van de gebruiker op hun persoonlijk toestel. Dit gaat regelrecht in tegen de gebruiksvriendelijkheid en toegankelijkheid .
 
@@ -209,21 +218,23 @@ Veel gebruikte “reset css” bestanden zijn:
 
 - Erick Meyers “Reset CSS” 2.0 
 - HTML5 Doctor CSS Reset
-- Normalize.css 1.0 
+- Normalize.css 8.0 
 - Universal Selector ‘*’ Reset
 - Yahoo (YUI 3) Reset CSS
 
 De keuze tussen deze reset bestanden hangt niet alleen af van de functionaliteit, maar ook van de populariteit. De vorige versie van “Erick Meyers Reset CSS”, die XHTML als doel had, was één van de populairste, maar de nieuwe versie moet zich nog bewijzen en verspreiden.
 
-> ##### **Normalize.css 1.0** voor HTML5 is voorlopig de meest aanvaarde en populairste "css-reset" optie en gaat verder dan de andere mogelijkheden:* :star:
+> ##### **Normalize.css 8.0** voor HTML5 is voorlopig de meest aanvaarde en populairste "css-reset" optie en gaat verder dan de andere mogelijkheden:* :star:
 > ---
 > - Gebruiksklare basisstijlen gebaseerd op “best practices”.
 > - Normaliseren van stijlen voor de meeste elementen. Deze actie wordt ook de andere “css reset” bestanden uitgevoerd.
 > - Oplossen van bugs voor inconsistenties in de browser.
 > - Gebruiksvriendelijkheid verhogen.
-{:.alert.alert-success}
+{:.card.card-remark}
 
-Normalize houdt ook rekening met de informatie verstrekt door WHATWG, IE UASS en CSS2.1 UASSD, waardoor een uniforme aanpak werd geëxtraheerd voor het oplossen van bugs en het implementeren van basisstijlen.  
+Normalize houdt ook rekening met de informatie verstrekt door WHATWG[^WHATWG], IE UASS en CSS2.1 UASSD, waardoor een uniforme aanpak werd geëxtraheerd voor het oplossen van bugs en het implementeren van basisstijlen. 
+
+[^WHATWG]: **WHATWG**: Web Hypertext Application Technology Working Group
 
 Downloaden van het normalize.css bestand via:
 
@@ -235,22 +246,22 @@ Downloaden van het normalize.css bestand via:
 > ---
 > - Zoals vele JavaScript bibliotheken bestaat de  aangeleverde versie uit twee typen, namelijk de development-versie en de deployment-versie. De deployment-versie is herkenbaar door het gebruik van "min" in de naamgeving van het bestand. 
 > - Het verschil tussen een development-versie en een deployment-versie is de bestandsgrootte. In de deployment-versie worden alle commentaren, returns, tabs en spaties verwijderd uit de deployment-versie.
-{:.alert.alert-success}
+{:.card.card-remark}
 
 Beide versies bewaren we in de folder `styles/vendor`. We kunnen ook gebruik maken van de CDN[^cdn]-versie van normalize.
 
 Het structureren van de css-bestanden is heel belangrijk om alles te kunnen onderhouden in de toekomst. Sommige designers en developers opteren om de css-bestanden op te delen in:
 
-- alerts.css
-- buttons.css
-- forms.css
-- helpers.css
-- layout.css
-- media.css
-- navigation.css
-- pagination.css
-- tables.css
-- typograpy.css
+- `alerts.css`
+- `buttons.css`
+- `forms.css`
+- `helpers.css`
+- `layout.css`
+- `media.css`
+- `navigation.css`
+- `pagination.css`
+- `tables.css`
+- `typograpy.css`
 
 De bovenstaande css-bestanden zijn patronen die we op elke pagina kunnen gebruiken. Basistijlen voor heel de webapplicatie kunnen we best implementeren in een `base.css` bestand. Dit bestand bevat o.a. de header, footer, navigatie en dergelijke. Elke pagina kan daarnaast zijn eigen css-bestand bevatten, bijv.: `home.css`.
 
