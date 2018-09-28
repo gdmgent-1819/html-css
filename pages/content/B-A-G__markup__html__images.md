@@ -37,7 +37,12 @@ De volgende markupelementen hebben te maken met afbeeldingen:
 **Im**a**g**e *(Ned.: Afbeeldig)*
 ------------------------------
 
-Het `<img>`{:.e}-element wordt gebruikt om een afbeelding te plaatsen op een webpagina. Het bronbestand wordt opgegeven met een `src`{:.a}-attribuut *(Eng.: source).* We kunnen als waarde van dit attribuut de volgende waarden vermelden:
+> Definitie
+> ---
+> Het `<img>`{:.e}-element wordt gebruikt om een afbeelding te plaatsen op een webpagina. Het bronbestand wordt opgegeven met een `src`{:.a}-attribuut *(Eng.: source).
+{:.card.card-definition}
+
+We kunnen als waarde van dit attribuut de volgende waarden vermelden:
 
 - **absolute koppeling**;
   - via `http`of `https`;
@@ -80,12 +85,15 @@ In het bovenstaande voorbeeld definiëren we een afbeelding via het `<img>`{:.e}
 **Figure** *(Ned.: figuur)*
 ------------------------------
 
+> Definitie
+> ---
+> Het `<figure>`{:.e}-element wordt gebruikt om één of meerdere illustraties (afbeeldingen, video's, codeblokken, svg, canvas …) te omsluiten die op zichzelf kunnen bestaan ongeacht de inhoud die er rond staat. De gebruiker moet via dit element al voldoende weet over de inhoud van deze illustratie(s). Dit element groepeert gelijksoortige illustraties als een zelf voorziene eenheid. Dit betekent dat we dit element ook op andere plaatsen binnen een website kunnen plaatsen.
+{:.card.card-definition}
+
 Child-elementen:
 
  - `<img>`{:.e}
  - `<figcaption>`{:.e}
-
-Het `<figure>`{:.e}-element wordt gebruikt om één of meerdere illustraties (afbeeldingen, video's, codeblokken, svg, canvas …) te omsluiten die op zichzelf kunnen bestaan ongeacht de inhoud die er rond staat. De gebruiker moet via dit element al voldoende weet over de inhoud van deze illustratie(s). Dit element groepeert gelijksoortige illustraties als een zelf voorziene eenheid. Dit betekent dat we dit element ook op andere plaatsen binnen een website kunnen plaatsen.
 
 Het `<figure>`{:.e}-element bevat voor een afbeelding minimaal één a `<img>`{:.e}-element of `<picture>`{:.e}-element en wordt meestal aangevuld met maximaal één `<figcaption>`{:.e}-element.
 
@@ -146,7 +154,10 @@ Willen we nog uitgebreide toelichting geven aan iedere artiest in het bovenstaan
 **Picture**
 ------------
 
-Het `<picture>`{:.e}-element wordt gebruikt om meerdere versies van een afbeelding aan te bieden. Afhankelijk van het display van een device wordt een bepaalde versie van de afbeelding geactiveerd.
+> Definitie
+> ---
+> Het `<picture>`{:.e}-element wordt gebruikt om meerdere versies van een afbeelding aan te bieden. Afhankelijk van het display van een device wordt een bepaalde versie van de afbeelding geactiveerd.
+{:.card.card-definition}
 
 - Een descendant van `<body>`{:.e}
 - Child-elementen:
