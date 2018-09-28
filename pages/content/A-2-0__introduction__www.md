@@ -16,7 +16,6 @@ Het World Wide Web
 Het WWW is dus niet gelijk aan het internet. Het internet, de infrastructuur of het onderliggende netwerksysteem, geeft toegang tot o.a. het WWW. Het Web is dus een service gebouwd bovenop het internet, net zoals email, IRC[^IRC], ... . De meeste gebruikers gebruiken een webbrowser om toegang te krijgen tot het WWW.
 
 
-
 [^WWW]: **WWW**: World Wide Web
 [^IRC]: **IRC**: Internet Relay Chat
 
