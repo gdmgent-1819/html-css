@@ -50,8 +50,11 @@ De volgende markupelementen hebben te maken met afbeeldingen:
 
 ### Intro afbeeldingen
 
-{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/logo_itp.png" alt="In The Pocket: logo" caption="In The Pocket: logo" %}
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/copper_mountain.png" alt="https://www.newlegend4x4.com/builds/69-copper-mountain-2/" caption="https://www.newlegend4x4.com/builds/69-copper-mountain-2/" %}
 
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/monreallondon.png" alt="https://www.monreallondon.com/" caption="https://www.monreallondon.com/" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/taotajima.png" alt="hhttp://taotajima.jp/" caption="http://taotajima.jp/" %}
 
 ### Illustraties
 
