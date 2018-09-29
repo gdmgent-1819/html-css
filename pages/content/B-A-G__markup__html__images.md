@@ -50,7 +50,7 @@ We kunnen als waarde van dit attribuut de volgende waarden vermelden:
 - **relatieve koppeling**;
   - betekent t.o.v. de plaats van het huidige webdocument;
   - bv.: `./assets/images/detail1_VanHoeckeJulie.png`;  
-  `assets` staat op dezelfde plaats dan het webdocument. `images` is een submap van de map `assets`. Het bestand `detail1_VanHoeckeJulie.png` is ondergebracht in deze laatste map.
+  `assets`-folder staat op dezelfde plaats dan het webdocument. `images` is een submap van de map `assets`. Het bestand `detail1_VanHoeckeJulie.png` is een afbeelding ondergebracht in deze laatste map.
 - **gegevens-URI**.  
 Integratie van de echte gegevens van de afbeelding. Zonder koppeling gewoon de pure data. We vermelden het type, de tekenset *(Eng.: tekenset),* de codering *(Eng.: encoding)* en tenslotte de gecodeerde gegevens *(Eng.: encoded data).*
 
@@ -174,7 +174,7 @@ Willen we nog uitgebreide toelichting geven aan iedere artiest in het bovenstaan
 </picture>
 {% endhighlight %}
 
-*In bovenstaand voorbeeld zal een afbeelding van Donald Duck getoond worden als de viewport minstens 650px is. Bij kleinere schermformaten (groter dan of gelijk aan 465px maar kleiner dan 650px) wordt Goofy getoond. Indien de viewport nog kleiner is, zal Mickey Mouse verschijnen. De img-tag staat er als fallback indien de browser de `<picture`{:.e}-tag niet ondersteunt.*
+In bovenstaand voorbeeld zal een afbeelding van Donald Duck getoond worden als de viewport minstens 650px is. Bij kleinere schermformaten (groter dan of gelijk aan 465px maar kleiner dan 650px) wordt Goofy getoond. Indien de viewport nog kleiner is, zal Mickey Mouse verschijnen. De img-tag staat er als fallback indien de browser de `<picture`{:.e}-tag niet ondersteunt.
 
 > References
 > ---
@@ -188,18 +188,18 @@ Bestandsformaten
 
 | Formaat | Uitspraak   | Best geschikt voor                                               |
 |---------|-------------|------------------------------------------------------------------|
-| GIF     | Jif of Djif | Animaties                                                        |
-| JPEG    | Jay-Peg     | Foto's                                                           |
-| PNG     | Ping        | Illustraties met veel kleurherhaling of foto's met transparantie |
-| SVG     | S-V-G       | Illustraties, iconen voor hoogresolutieschermen                  |
+| [GIF](https://en.wikipedia.org/wiki/Graphics_Interchange_Format)     | Jif of Djif | Animaties                                                        |
+| [JPEG](https://en.wikipedia.org/wiki/JPEG)    | Jay-Peg     | Foto's                                                           |
+| [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics)     | Ping        | Illustraties met veel kleurherhaling of foto's met transparantie |
+| [APNG](https://developer.mozilla.org/en-US/docs/Animated_PNG_graphics)     | Animated Ping        | Geanimeerde Illustraties met veel kleurherhaling of foto's met transparantie (voorlopig enkel voor Mozilla) |
+| [SVG](https://developer.mozilla.org/en-US/docs/SVG)     | S-V-G       | Illustraties, iconen voor hoogresolutieschermen                  |
 
+Niet geschikte beeldformaten voor websites:
 
-JPEG met wavelets
+- [BMP](https://en.wikipedia.org/wiki/BMP_file_format): Bitmap, een rasterafbeelding zonder compressie.
+- [TIFF](https://en.wikipedia.org/wiki/TIFF): Tagged Image File Format
 
-Speel met de kwaliteitsinstellingen om een goed compromis te vinden tussen bestandsgrootte en visuele kwaliteit.
-
-> Tip
+> Opmerking
 > ---
 > De gemiddelde webpagina is 3 tot 4 mb groot met alle afbeeldingen inbegrepen. Probeer hieronder te blijven, tenzij er een heel goede reden voor is (bijv. website van een fotograaf met heel veel kwalitatieve foto's).
-{:.card.card-tip}
-
+{:.card.card-remark}
