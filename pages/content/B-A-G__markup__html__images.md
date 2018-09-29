@@ -219,7 +219,7 @@ Bestandsformaten
 | [GIF](https://en.wikipedia.org/wiki/Graphics_Interchange_Format)     | Jif of Djif | Animaties                                                        |
 | [JPEG](https://en.wikipedia.org/wiki/JPEG)    | Jay-Peg     | Foto's                                                           |
 | [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics)     | Ping        | Illustraties met veel kleurherhaling of foto's met transparantie |
-| [APNG](https://developer.mozilla.org/en-US/docs/Animated_PNG_graphics)     | Animated Ping        | Geanimeerde Illustraties met veel kleurherhaling of foto's met transparantie (voorlopig enkel voor Mozilla) |
+| [APNG](https://developer.mozilla.org/en-US/docs/Animated_PNG_graphics)     | Animated Ping        | Geanimeerde illustraties met veel kleurherhaling of foto's met transparantie (voorlopig enkel voor Mozilla) |
 | [SVG](https://developer.mozilla.org/en-US/docs/SVG)     | S-V-G       | Illustraties, iconen voor hoogresolutieschermen                  |
 {:.table.table--primary}
 
