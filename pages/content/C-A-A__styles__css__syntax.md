@@ -30,3 +30,55 @@ body {
     /* Dit is nog een commentaarregel. */
 }
 {% endhighlight %}
+
+CSS Toevoegen
+-------------
+
+- Inline *(Bad Practice)*
+- Embedded (op paginaniveau)
+- Externe stylesheet (op websiteniveau) 
+
+### Inline (Bad Practice)
+
+{% highlight html linenos %}
+<p style="background-color: green;"> 
+    Dit is tekst die op een groene achtergrondkleur te lezen is.
+</p>
+{% endhighlight %}
+
+### Embedded (op paginaniveau)
+
+{% highlight html %}
+<head>
+    <style>
+        p {
+            background-color: green; 
+        }
+    </style>
+</head> 
+<body>
+    <p>Hier staat wat tekst.</p> 
+</body>
+{% endhighlight %}
+
+### Externe stylesheet (op websiteniveau)
+
+Gebruik externe stylesheets. Stop ze altijd op dezelfde plaats.
+
+{% highlight html %}
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+    <p>Hier komt wat tekst.</p> 
+</body>
+{% endhighlight %}
+
+> Mappen & Bestanden
+> ---
+> - projectmap/
+>   - images/
+>   - css/
+>       - style.css
+>   - index.html
+{:.card.card-tree}
