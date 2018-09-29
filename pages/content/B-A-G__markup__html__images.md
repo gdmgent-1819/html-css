@@ -34,6 +34,25 @@ De volgende markupelementen hebben te maken met afbeeldingen:
   - `<svg>`{:.e}
   - `<canvas>`{:.e}
 
+### Logo's
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/logo_itp.png" alt="In The Pocket: logo" caption="In The Pocket: logo" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/logo_itp_mobile.png" alt="In The Pocket: mobile logo" caption="In The Pocket: mobile logo" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/logo_showpad.png" alt="Showpad: logo" caption="Showpad: logo" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/logo_wijs.png" alt="Showpad: wijs" caption="Showpad: wijs" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/logo_marlon.png" alt="Marlon: logo" caption="Marlon: logo" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/logo_waxinteractive.png" alt="WAX Interactive: logo" caption="WAX Interactive: logo" %}
+
+### Intro afbeeldingen
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/logo_itp.png" alt="In The Pocket: logo" caption="In The Pocket: logo" %}
+
+
 ### Illustraties
 
 {% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/showpad_services.png" alt="Showpad: product features" caption="Showpad: product features" %}
