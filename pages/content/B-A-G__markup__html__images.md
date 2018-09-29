@@ -30,9 +30,17 @@ De volgende markupelementen hebben te maken met afbeeldingen:
   - `<figcaption>`{:.e}
   - `<picture>`{:.e}
   - `<source>`{:.e}
-- Graphics
+- GraphicsShow
   - `<svg>`{:.e}
   - `<canvas>`{:.e}
+
+### Illustraties
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/showpad_services.png" alt="Showpad: product features" caption="Showpad: product features" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/inthepocket_services.png" alt="In The Pocket: services" caption="In The Pocket: services" %}
+
+
 
 **Im**a**g**e *(Ned.: Afbeeldig)*
 ------------------------------
@@ -164,7 +172,6 @@ Willen we nog uitgebreide toelichting geven aan iedere artiest in het bovenstaan
 > - `<source>`{:.e}
 > - `<img>`{:.e}
 
-### Voorbeeld
 {% highlight html %}
 <picture>
     <source media="(min-width: 650px)" srcset="./images/donald_duck.png">
@@ -182,7 +189,6 @@ In bovenstaand voorbeeld zal een afbeelding van Donald Duck getoond worden als d
 > - [Mozilla Developer Network: Source element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source)
 {:.card.card-source}
 
-
 Bestandsformaten
 ----------------
 
@@ -193,6 +199,7 @@ Bestandsformaten
 | [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics)     | Ping        | Illustraties met veel kleurherhaling of foto's met transparantie |
 | [APNG](https://developer.mozilla.org/en-US/docs/Animated_PNG_graphics)     | Animated Ping        | Geanimeerde Illustraties met veel kleurherhaling of foto's met transparantie (voorlopig enkel voor Mozilla) |
 | [SVG](https://developer.mozilla.org/en-US/docs/SVG)     | S-V-G       | Illustraties, iconen voor hoogresolutieschermen                  |
+{:.table.table--primary}
 
 Niet geschikte beeldformaten voor websites:
 

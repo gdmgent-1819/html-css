@@ -351,8 +351,6 @@ Omdat Modernizr direct uitgevoerd moet worden, zullen we deze attributen niet to
 Speciale elementen in  \<head\>
 -------------------------------
 
-
-
 ### Iconen
 
 Iconen worden gebruikt om een logo of een ander grafisch object weer te geven in het url-veld of adresveld van een browser en ook in het favorieten menu van deze browser, na het toevoegen van een bookmark van deze webpagina. Ook kunnen webpagina’s toegevoegd worden op mobiele toestellen binnen de lijst van apps of binnen de lijst van favoriete bookmarks. Google Chrome laat daarnaast ook toe om een snelkoppeling te maken op het bureaublad, startmenu en/of de taakbalk.
@@ -364,6 +362,11 @@ Voor desktop-browsers gebruiken we een favicon meestal standaard met een resolut
 - 48x48 (256) Desktop Shortcut
 
 Omwille van deze formaten is het aan te raden om zo’n favicon aan te maken met verschillende resoluties: 16x16, 32x32, 48x48, ... pixels. Een favicon heeft de extensie `.ico`. Het aanmaken van zo’n icoon kunnen we m.b.v. Photoshop, Microsoft Paint, andere grafische IDE’s of door conversie van een bestaande afbeelding naar een ico-afbeelding via convertico, xiconeditor of andere online webapplicatie.
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/favicon_mozilla.png" alt="Favicon: Mozilla" caption="Favicon: Mozilla" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/favicon_ahs.png" alt="Favicon: Arteveldehogeschool" caption="Favicon: Arteveldehogeschool" %}
+
 
 ### Humans.txt
 
