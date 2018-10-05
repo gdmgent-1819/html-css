@@ -4,6 +4,18 @@ title_long: Lay-out
 permalink: markup/html/layout/
 ---
 
+Gekende web lay-outs
+-------------------
+
+> References
+> ---
+> - [Mozilla Developer Network: What do common web layouts contain?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Common_web_layouts)
+{:.card.card-source}
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction
+
+
 Lay-out Elementen
 -----------------
 
@@ -12,6 +24,7 @@ Lay-out Elementen
 - `<section>`
 - `<aside>`
 - `<header>`
+- `<footer>`
 - `<nav>`
 - `<div>`
 - `<span>` 
@@ -98,6 +111,70 @@ Het is herbruikbaar en onafhankelijk distribueerbaar in syndicatie. Het kan een 
 > - [Mozilla Developer Network: Article element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)
 {:.card.card-source}
 
+### `<section>`{:.e}-elementen
+
+> Definitie
+> ---
+> Een `<section>`-element definieert een sectie in een web-document. Het groepeert gelijksoortige inhoud die samen slechts een eigenschap of thema vormen.
+{:.card.card-definition}
+
+{% highlight html %}
+<article>
+    <h1>Lay-out</h1>
+    <section>
+        <h2>Gekende web lay-outs</h2>
+        <p>...</p>
+    </section>
+    <section>
+        <h2>Lay-out Elementen</h2>
+        <p>...</p>
+    </section>
+    <section>
+        ...
+    </section>
+/<article>
+{% endhighlight %}
+
+> Opmerking
+> ---
+> - Een section bevat meestal een hoofdding. Iedere section zou geïdentificeerd moeten worden via `<h1>`-`<h6>`-element als een kind van dit element.
+> - Een section mag niet gebruikt worden als een generieke container. 
+> - Een section verschijnt in de ouline van het web-document via zijn hoofdding. 
+> - Een section mag niet gebruikt worden in het geval dat article, aside of nav elementen beter geschikt zijn in bepaalde situaties.
+{:.card.card-remark}
+
+> References
+> ---
+> - [Mozilla Developer Network: Section element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)
+{:.card.card-source}
+
+### `<aside>`{:.e}-elementen
+
+> References
+> ---
+> - [Mozilla Developer Network: Aside element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside)
+{:.card.card-source}
+
+### `<header>`{:.e}-elementen
+
+> References
+> ---
+> - [Mozilla Developer Network: Header element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
+{:.card.card-source}
+
+### `<footer>`{:.e}-elementen
+
+> References
+> ---
+> - [Mozilla Developer Network: Footer element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)
+{:.card.card-source}
+
+### `<nav>`{:.e}-elementen
+
+> References
+> ---
+> - [Mozilla Developer Network: Nav element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)
+{:.card.card-source}
 
 ### `<span>`{:.e}-elementen
 
