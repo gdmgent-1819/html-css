@@ -117,7 +117,7 @@ In het bovenstaande voorbeeld definiëren we een afbeelding via het `<img>`{:.e}
 
 > Definitie
 > ---
-> Het `<figure>`{:.e}-element wordt gebruikt om één of meerdere illustraties (afbeeldingen, video's, codeblokken, svg, canvas …) te omsluiten die op zichzelf kunnen bestaan ongeacht de inhoud die er rond staat. De gebruiker moet via dit element al voldoende weet over de inhoud van deze illustratie(s). Dit element groepeert gelijksoortige illustraties als een zelf voorziene eenheid. Dit betekent dat we dit element ook op andere plaatsen binnen een website kunnen plaatsen.
+> Het `<figure>`{:.e}-element wordt gebruikt om één of meerdere illustraties (afbeeldingen, video's, codeblokken, svg, canvas …) te omsluiten die op zichzelf kunnen bestaan ongeacht de inhoud die er rond staat. De gebruiker moet via dit element al voldoende weten over de inhoud van deze illustratie(s). Dit element groepeert gelijksoortige illustraties als een zelf voorziene eenheid. Dit betekent dat we dit element ook op andere plaatsen binnen een website kunnen plaatsen.
 {:.card.card-definition}
 
 Child-elementen:
@@ -125,7 +125,7 @@ Child-elementen:
  - `<img>`{:.e}
  - `<figcaption>`{:.e}
 
-Het `<figure>`{:.e}-element bevat voor een afbeelding minimaal één a `<img>`{:.e}-element of `<picture>`{:.e}-element en wordt meestal aangevuld met maximaal één `<figcaption>`{:.e}-element.
+Het `<figure>`{:.e}-element bevat voor een afbeelding minimaal één `<img>`{:.e}-element of `<picture>`{:.e}-element en wordt meestal aangevuld met maximaal één `<figcaption>`{:.e}-element.
 
 {% highlight html %}
 <figure>
