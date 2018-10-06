@@ -7,9 +7,24 @@ permalink: markup/html/layout/
 Gekende web lay-outs
 -------------------
 
+Webpagina's zien er meestal anders uit ten opzichte van elkaar, maar ze bevatten structureel meestal dezelfde standaard componenten:
+
+- **Header**  
+Meestal zichtbaar op iedere webpagina van een website. Het bevat relevantie informatie voor alle webpagina's, zoals: de naam van de website, het logo, [courtesy navigation](http://maxsnitser.com/blog/7-tips-about-navigation-in-ux-design) en meestal ook de hoofdnavigatie (Eng.: main navigation). Dikwijls blijft deze component plakken (Eng.: stick) bovenaan in de browser tijdens het scrollen.
+- **Hoofdnavigatie**  
+Bevat links naar de belangrijkste interne webpagina's. Deze links worden meestal weergegeven via knoppen, ankers of tabs. Net zoals de header, is deze hoofdnavigatie consisten voor heel de website (aanwezig op iedere webpagina). De hoofdnavigatie, meestal gekend als de "navigation bar" is dikwijls een onderdeel van de header, maar kan ook onafhankelijk gestructureerd worden.
+- **Hoofdinhoud**  
+De hoofdinhoud (Eng.: main content) bevat de unieke inhoud eigen aan een webpagina. Deze inhoud varieert per webpagina, bijv.: een bepaald artikel, video, e.d. . Alles wat gerelateerd is met deze inhoud behoort tot de hoofdinhoud, meestal via een sidebar of een blokelement binnen dit element.
+- **Sidebar**  
+Bevat randinformatie (Eng.: peripheral info) omtrent de hoofdinhoud, zoals: gerelateerde informatie, quotes, advertienties (Eng.: ads), biography van de auteur e.d. en dikwijls een secundaire navigatie (Eng.: secondary navigation) waarin onderliggende belangrijke referenties worden gelinkt.
+- **Footer**  
+De footer staat bijna altijd onderaan de webpagina en bevat meestal: copyright info, gdpr info, cookie-beleid, links naar belangrijke / populaire inhouden, e.d. . De informatie die hierin staat is van secundair (Eng.: secondary) niveau. Deze inhoud kan ook de zoekmachines (Eng.: search engines) assisteren om de website te promoten.
+
 > References
 > ---
 > - [Mozilla Developer Network: What do common web layouts contain?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Common_web_layouts)
+> - [Max Snitser: 7 TIPS ABOUT NAVIGATION IN UX DESIGN](http://maxsnitser.com/blog/7-tips-about-navigation-in-ux-design)
+> - [Mozilla Developer Network: Document and website structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
 {:.card.card-source}
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode
