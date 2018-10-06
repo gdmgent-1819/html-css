@@ -239,6 +239,36 @@ Een <footer> element bevat afsluitende inhoud voor de omsluitende sectie. De inh
 
 ### `<nav>`{:.e}-elementen
 
+> Definitie
+> ---
+> Het `<nav>`-element representeert een sectie van een webpagina dat links bevat naar andere pagina’s of naar onderdelen binnen deze webpagina. Kortom het is een sectie met navigatielinks. Een `<nav>`-element groepeert links en zorgt voor betere semantische structuur ten behoeve van **screenreaders**.
+{:.card.card-definition}
+
+{% highlight html %}
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Over Ons</a></li>
+    <li><a href="#">Diensten</a></li>
+    <li><a href="#">Cases</a></li>
+    <li><a href="#">Inzichten</a></li>
+    <li><a href="#">Werken bij thefabric</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+{% endhighlight %}
+
+Het `<nav>`-element wordt voornamelijk gebruikt voor primaire en secundaire navigatie. Niet zozeer voor de links vermeld in de footer van een webpagina. Dit element kan ook gebruikt worden voor: TOC (Table Of Contents), breadcrumbs, zoekformulier in de navigatie en eventueel paginering.
+
+{% highlight html %}
+<footer>
+  <p>Copyright © 2019 The Fabriek</p>
+  <p><a href="about.html">Over Ons</a> -
+  <a href="policy.html">Privacy Policy</a> -
+  <a href="contact.html">Contact Ons</a></p>
+</footer>
+{% endhighlight %}
+
 > References
 > ---
 > - [Mozilla Developer Network: Nav element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)
@@ -284,4 +314,24 @@ Een winkelmandje (Eng.: Shopping Cart) behoort niet tot (ter zijde van `<aside>`
 > ---
 > Gebruik enkel een `<div>` wanneer er geen betere sematische oplossing van toepassing is. Beperk het gebruik van `<div>`-elementen binnen een webpagina omdat dit zorgt voor een onoverzichtelijke structuur.
 {:.card.card-remark}
->>>>>>> 8400e9bc03141df519a17e2443ebfcec9712027b
+
+### `<time>`{:.e}-elementen
+
+> Definitie
+> ---
+> Het `<time>`-element representeert een tijd op een 24-uren klok of een precieze datum in de Gregorian calendar (met optioneel de tijd en tijdzone). De intentie van dit element is om datums en tijd te presenteren in een leesbaar formaat voor machines. Het machine leesbare gedeelte zit vervat in het attribuut datetime van dit element. Datums worden uitgedrukt in **YYYY-MM-DD**.
+{:.card.card-definition}
+
+- `<time datetime="1975">`jaar 1975
+- `<time datetime="1975-12">` betekent Decenmber 1975
+- `<time datetime="12-12">` betekent 12 december elk jaar
+- `<time datetime="1975-W49">` betekent week 49 van 1975
+- `<time datetime="1975-12-12T08:45">` betekent 12 December 1975 om 8:45 uur
+- `<time datetime="08:45+2">` is 8:45 uur UTC+2
+- `<time datetime="P2D">` is een duur van 2 dagen
+- `<time datetime="PT23H 9M 2.343S">` is een duur van 23 uren, 9 minuten en 2.343 seconden
+
+> References
+> ---
+> - [Mozilla Developer Network: Time element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time)
+{:.card.card-source}
