@@ -151,7 +151,7 @@ Navigeren we vervolgens naar deze webpagina, via de link, dan kunnen we de bron 
 {% highlight html %}
 ...
 <head>
-    <meta name="author" content="Drdynscript">
+    <meta name="author" content="Arteveldehogeschool - Bachelor in de grafische en digitale media | MMP">
 </head>
 ...
 {% endhighlight %}
