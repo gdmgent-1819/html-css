@@ -151,8 +151,7 @@ Navigeren we vervolgens naar deze webpagina, via de link, dan kunnen we de bron 
 {% highlight html %}
 ...
 <head>
-	<!-- OTHER IMPORTANT SEO TAGS -->
-    <meta name="description" content="Drdynscript wil graag met jullie zijn app en kennis delen omtrent HTML5, CSS3 en JavaScript.">
+    <meta name="author" content="Drdynscript">
 </head>
 ...
 {% endhighlight %}
