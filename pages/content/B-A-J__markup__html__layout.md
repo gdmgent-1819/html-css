@@ -20,15 +20,54 @@ Bevat randinformatie (Eng.: peripheral info) omtrent de hoofdinhoud, zoals: gere
 - **Footer**  
 De footer staat bijna altijd onderaan de webpagina en bevat meestal: copyright info, gdpr info, cookie-beleid, links naar belangrijke / populaire inhouden, e.d. . De informatie die hierin staat is van secundair (Eng.: secondary) niveau. Deze inhoud kan ook de zoekmachines (Eng.: search engines) assisteren om de website te promoten.
 
+### 1-column layout
+
+Enkele kolom lay-out (Eng.: Single Column Lay-out) presenteert de webpagina in een enkele vertikale kolom. Deze lay-out is belangrijk om de webpagina te bezoeken via mobiele browsers. De gebruiker kan vertikaal scrollen om verschillende inhoud van de webpagina te zien. Het wordt ook gebruikt in websites die een minimalistische lay-out hebben, zoals microblogs ([Tumblr](https://www.tumblr.com/)), [Medium](https://medium.com/s/story/from-clockworks-to-computers-on-our-wrists-11a709a20000) en ook in de oude [reddit](https://old.reddit.com/) website.
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/reddit_old.png" alt="Reddit: Old 1-column lay-out" caption="Reddit: Old 1-column lay-out" %}
+
+> Opmerking
+> ---
+> Probeer de hoofdnavigatie steeds bereikbaar te maken doorheen de webpagina. Dat kan je doen door deze vast te haken (sticky navigation) bovenaan of onderaan het browservenster tijdens het scrollen.
+{:.card.card-remark}
+
+### 2-column layout
+
+Twee kolommen lay-out wordt vaak toegepast in websites die een zijbalk gebruiken naast de hoofdinhoud. Deze zijbalk wordt links of rechts geplaatst t.o.v. de hoofdinhoud. Deze lay-out is belangrijk op tablets, omdat we meer beschikbare ruimte hebben t.o.v. een smartphone, maar minder dan op een desktop pc.
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/reddit_new.png" alt="Reddit: New 2-column lay-out" caption="Reddit: New 2-column lay-out" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/syllabus.png" alt="Syllabus: 2-column lay-out" caption="Syllabus: 2-column lay-out" %}
+
+Een scherm gescheiden in twee (Eng.: **split screen**) is ook een voorbeeld van een 2-kolommen lay-out. Iedere kolom in deze lay-out is even belangrijk (Eng.: equal importance) en worden simultaan getoond aan de eindgebruiker.
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/littlemissrobot.png" alt="Little Miss Robot: 2-column lay-out" caption="Little Miss Robot: Split screen lay-out" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/studiometa.png" alt="Studio Meta: 2-column lay-out" caption="Studio Meta: Split screen lay-out" %}
+
+Een asymetrische lay-out (Eng.: **asymmetrical lay-out**) is een 2-column lay-out waarin het scherm ongelijk gesplitst wordt.
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/dropbox.png" alt="Dropbox: asymmetrical lay-out" caption="Dropbox: asymmetrical lay-out" %}
+
+### 3-column layout
+
+Drie kolommen lay-out wordt toegepast in websites die worden bekeken op grote schermen, zoals een desktop pc.
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/smashingmagazine.png" alt="Smashing Magazine: 3-column lay-out" caption="Smashing Magazine: 3-column lay-out" %}
+
+### Multi-column layout
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/behance.png" alt="Behance: Multi-column lay-out" caption="Behance: Multi-column lay-out" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/pinterest.png" alt="Pinterest: Multi-column lay-out" caption="Pinterest: Multi-column lay-out" %}
+
 > References
 > ---
 > - [Mozilla Developer Network: What do common web layouts contain?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Common_web_layouts)
 > - [Max Snitser: 7 TIPS ABOUT NAVIGATION IN UX DESIGN](http://maxsnitser.com/blog/7-tips-about-navigation-in-ux-design)
 > - [Mozilla Developer Network: Document and website structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
+> - [Adobe Blog: 11 Website Layouts That Made Content Shine in 2017](https://theblog.adobe.com/11-website-layouts-that-made-content-shine-in-2017/)
 {:.card.card-source}
-
-https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode
-https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction
 
 
 Lay-out Elementen
