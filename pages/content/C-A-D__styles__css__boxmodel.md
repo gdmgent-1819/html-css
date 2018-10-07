@@ -23,7 +23,7 @@ Binnen &rarr; buiten:
  5. **Offset Positioning**  
    Afstand ten opzichte van de normale plaatsing.
 
-{% include shared/figure.html src="https://www.gdm.gent/1718-webtech1/assets/img/content/box-model.svg" alt="Box Model en Offset Positioning" caption="Box Model en Offset Positioning" local=true %}
+{% include shared/figure.html src="https://www.gdm.gent/1718-webtech1/assets/img/content/box-model.svg" alt="Box Model en Offset Positioning" caption="Box Model en Offset Positioning" %}
 
 
 > Zie ook
