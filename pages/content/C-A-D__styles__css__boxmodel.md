@@ -25,10 +25,6 @@ Binnen &rarr; buiten:
 
 {% include shared/figure.html src="content/box-model.svg" alt="Box Model en Offset Positioning" caption="Box Model en Offset Positioning" local=true %}
 
-> HTML & CSS: design and build websites (Duckett, 2011)
-> ---
-> - Chapter 10 – **Introducing CSS** (p. 229 e.v.)
-{:.card.card-book}
 
 > Zie ook
 > ---
@@ -86,10 +82,6 @@ De inhoud heeft een `height:`{:.p} *(Ned.: hoogte)* en `width:`{:.p} *(Ned.: bre
 > van mijn **winterjas** (`border`{:.p}, rand).  
 > Ik loop op **10 cm** (`margin`{:.p}, marge) van een pas geschilderde muur, dus moet ik opletten dat mijn jas niet vuil wordt.
 
-> HTML & CSS: design and build websites (Duckett, 2011)
-> ---
-> - Chapter 13 – **Boxes** (p. 307 e.v.)
-{:.card.card-book}
 
 ### Invloed van Doctype op Box Model
 
