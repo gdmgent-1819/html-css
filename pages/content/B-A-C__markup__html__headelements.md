@@ -151,8 +151,8 @@ Navigeren we vervolgens naar deze webpagina, via de link, dan kunnen we de bron 
 {% highlight html %}
 ...
 <head>
-	<!-- OTHER IMPORTANT SEO TAGS -->
-    <meta name="description" content="Drdynscript wil graag met jullie zijn app en kennis delen omtrent HTML5, CSS3 en JavaScript.">
+	<!-- OTHER SEO FRIENDLY TAGS -->
+    <meta name="author" content="Arteveldehogeschool - Bachelor in de grafische en digitale media | MMP">
 </head>
 ...
 {% endhighlight %}
