@@ -82,4 +82,5 @@ Intermediair
 > References
 > ---
 > - [Mozilla Developer Network: Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
+> - [UX Design: Design better Data tables](https://uxdesign.cc/design-better-data-tables-4ecc99d23356)
 {:.card.card-source}
