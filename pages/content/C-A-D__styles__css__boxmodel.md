@@ -396,3 +396,76 @@ div {
     margin: 0 auto;
 }
 {% endhighlight %}{:data-file=""}
+
+Voorbeelden
+-----------
+
+### Boxes
+
+{% highlight html lineos %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tables: Basics</title>
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+  <div class="box">
+    <p>We don't need no wings to fly I'm in pieces, so come fix me I like The Notebook. What you got, a billion could've never bought worst birthday ever if I was your boyfriend, I'd never let you go. When I met you girl my heart went knock knock when I met you girl my heart went knock knock no matter how much I try, I can't figure out how to not be adorable. If I was your boyfriend, I'd never let you go no one can stop me I could be your Buzz Lightyear fly across the globe.</p>
+  </div>
+  <div class="box box--wow">
+      <p>We don't need no wings to fly I'm in pieces, so come fix me I like The Notebook. What you got, a billion could've never bought worst birthday ever if I was your boyfriend, I'd never let you go. When I met you girl my heart went knock knock when I met you girl my heart went knock knock no matter how much I try, I can't figure out how to not be adorable. </p>
+    </div>
+    <div class="box box--wower">
+        <p>We don't need no wings to fly I'm in pieces, so come fix me I like The Notebook. What you got, a billion could've never bought worst birthday ever if I was your boyfriend, I'd never let you go. When I met you girl my heart went knock knock when I met you girl my heart went knock knock no matter how much I try, I can't figure out how to not be adorable. </p>
+      </div>
+  </div>
+</body>
+</html>
+{% endhighlight %}
+
+{% highlight css lineos %}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+
+  background: rgba(15, 255, 32,1);
+}
+
+.box {
+  width: 360px;
+  height: 240px;
+  margin: 0 auto 24px;
+  padding: 16px 24px;
+
+  background: rgba(33, 33, 33, 1);
+  border: 16px solid rgba(255, 15, 32,1);
+  color: rgba(232, 232, 232, 1);
+}
+.box--wow {
+  box-sizing: border-box;
+
+  border-style: dotted;
+  border-color: rgba(32, 15, 255,1);
+}
+.box--wower {
+  box-sizing: border-box;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  border-width: 8px;
+  border-style: dashed;
+  border-color: rgba(15, 255, 255,1);
+}
+{% endhighlight %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/boxmodel_1.png" alt="Box model: voorbeeld 1" caption="Box model: voorbeeld 1" %}
