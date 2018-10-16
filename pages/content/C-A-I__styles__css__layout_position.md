@@ -1,6 +1,6 @@
 ---
 title: Lay-out position
-title_long: Lay-out
+title_long: Lay-out Flow - position
 permalink: styles/css/layout/position
 ---
 
