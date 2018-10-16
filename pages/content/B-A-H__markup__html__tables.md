@@ -68,8 +68,6 @@ Een cel ( `<td>`{:.e} of  `<th>`{:.e}) heeft een aantal optionele attributen.
 | `rowspan`{:.a} | `«aantal»`{:.v} | de cel overspant een `«aantal»`{:.v} **rijen**    |
 {:.table.table--primary}
 
-Intermediair
-------------
 
 | HTML-element   | Betekenis              | Aantal toegestaan per tabel |
 |----------------|------------------------|-----------------------------|
@@ -78,9 +76,53 @@ Intermediair
 | `<tfoot>`{:.e} | *table foot row group* | 1                           |
 {:.table.table--secondary}
 
+{% highlight html %}
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Column 1</td>
+      <td>Column 2</td>
+      <td>Column 3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Table Footer</td>
+    </tr>
+  </tfoot>
+</table>
+{% endhighlight %}
+
+{% highlight css %}
+table {
+	  border-collapse: collapse;
+}
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+{% endhighlight %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/table_1.png" alt="Table: Simpele structuur met thead, tbody en tfoot" caption="Pinterest: Table: Simpele structuur met thead, tbody en tfoot" %}
+
 
 > References
 > ---
 > - [Mozilla Developer Network: Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
 > - [UX Design: Design better Data tables](https://uxdesign.cc/design-better-data-tables-4ecc99d23356)
+> - [Mozilla Developer Network: border-collapse](https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse)
 {:.card.card-source}
