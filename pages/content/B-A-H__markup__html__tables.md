@@ -49,7 +49,7 @@ Deze regels zijn weliswaar niet vastgelegd in een standaard, maar worden toch al
 
 > Definitie
 > ---
-> Het `<table>`{:.e}-element representeert tabulaire (Eng.: tabular) data, dat is informatie dat beschreven is een twee dimensionale (Eng.: two-dimensional) tabel (cfr. array) bestaande uit rijen (Eng.: rows) en kolommen (Eng.: columns).
+> Het `<table>`{:.e}-element representeert tabulaire (Eng.: tabular) data, dat is informatie dat beschreven is een twee dimensionale (Eng.: two-dimensional) tabel (cfr. array) bestaande uit rijen (Eng.: rows) en kolommen (Eng.: columns). Een tabel laat toe om snel en eenvoudig waarden op te zoeken op basis van een correlatie tussen kolommen en rijen, bv: leeftijd van een persoon, dag van de week, ... .
 {:.card.card-definition}
 
 | HTML-element   | Betekenis                      |
@@ -58,7 +58,15 @@ Deze regels zijn weliswaar niet vastgelegd in een standaard, maar worden toch al
 | `<tr>`{:.e}    | *table row*, tabelrij          |
 | `<td>`{:.e}    | *table data*, tabelgegevenscel |
 | `<th>`{:.e}    | *table heading*, tabelkopcel   |
+| `<thead>`{:.e} | *table head row group* | 1                           |
+| `<tbody>`{:.e} | *table body row group* | 1 of meer                   |
+| `<tfoot>`{:.e} | *table foot row group* | 1                           |
+| `<colgroup>`{:.e} | *group of columns within the table* | 1                           |
+| `<col>`{:.e} | *column within the colgroup*<br>definiëren van gelijke semantiek op specifieke kolommen  | 1 of meer                          |
+| `<caption>`{:.e} | *table caption*<br>toelichting van de tabel  | 1                          |
 {:.table.table--primary}
+
+The HTML <col> element defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a <colgroup> element.
 
 Een cel ( `<td>`{:.e} of  `<th>`{:.e}) heeft een aantal optionele attributen.
 
@@ -66,15 +74,26 @@ Een cel ( `<td>`{:.e} of  `<th>`{:.e}) heeft een aantal optionele attributen.
 |----------------|---------------|-----------------------------------------------------|
 | `colspan`{:.a} | `«aantal»`{:.v} | de cel overspant een `«aantal»`{:.v} **kolommen** |
 | `rowspan`{:.a} | `«aantal»`{:.v} | de cel overspant een `«aantal»`{:.v} **rijen**    |
+| `scope`{:.a} | `row`{:.v} of `col`{:.v} | visuele associatie |
 {:.table.table--primary}
 
+### Gebruik
 
-| HTML-element   | Betekenis              | Aantal toegestaan per tabel |
-|----------------|------------------------|-----------------------------|
-| `<thead>`{:.e} | *table head row group* | 1                           |
-| `<tbody>`{:.e} | *table body row group* | 1 of meer                   |
-| `<tfoot>`{:.e} | *table foot row group* | 1                           |
-{:.table.table--secondary}
+- Agenda (academische kalender, ...)
+- Planning
+- Schedule (symposium, workshops, ...)
+- Product vergelijkingen
+- Nieuwsbrief (e-mailbericht)
+- Backoffice
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/table_2.png" alt="Table: Agenda" caption="Table: Agenda" %}
+
+> Opgelet
+> ---
+> **Nooit** tabellen gebruiken voor de lay-out van een webpagina! Tabellen voor lay-out zorgt voor een **zeer complexe** structuur die moeilijk te beheren valt. Daarnaast is het heel moeilijk om de webpagina responsive te maken. Tenslotte zullen [screenreaders](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility#Screenreaders) het moeilijk hebben om de structuur / inhoud te interpreteren.
+{:.card.card-warning}
+
+### Structuur
 
 {% highlight html %}
 <table>
@@ -117,12 +136,13 @@ tr:nth-child(even) {
 }
 {% endhighlight %}
 
-{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/table_1.png" alt="Table: Simpele structuur met thead, tbody en tfoot" caption="Pinterest: Table: Simpele structuur met thead, tbody en tfoot" %}
 
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/table_1.png" alt="Table: Simpele structuur met thead, tbody en tfoot" caption="Table: Simpele structuur met thead, tbody en tfoot" %}
 
 > References
 > ---
 > - [Mozilla Developer Network: Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)
+> - [Mozilla Developer Network: Basics](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics)
 > - [UX Design: Design better Data tables](https://uxdesign.cc/design-better-data-tables-4ecc99d23356)
 > - [Mozilla Developer Network: border-collapse](https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse)
 {:.card.card-source}
