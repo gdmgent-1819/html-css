@@ -10,7 +10,7 @@ Background
 
 > References
 > ---
-> - [Mozilla Developer Network: Background](https://developer.mozilla.org/nl/docs/Web/CSS/background)
+> - [Mozilla Developer Network: background](https://developer.mozilla.org/nl/docs/Web/CSS/background)
 {:.card.card-source}
 
 - `background:`{:.p} `«background-color»`{:.v} `«background-image»`{:.v} `«background-repeat»`{:.v} `«background-attachment»`{:.v} `«background-position»`{:.v}
@@ -28,21 +28,21 @@ Background
 
 > References
 > ---
-> - [Mozilla Developer Network: Background-attachment](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
+> - [Mozilla Developer Network: background-attachment](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
 {:.card.card-source}
 
 ### Background-origin
 
 > References
 > ---
-> - [Mozilla Developer Network: Background-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin)
+> - [Mozilla Developer Network: background-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin)
 {:.card.card-source}
 
 ### Background-clip
 
 > References
 > ---
-> - [Mozilla Developer Network: Background-clip](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)
+> - [Mozilla Developer Network: background-clip](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)
 {:.card.card-source}
 
 Box shadow
