@@ -25,10 +25,25 @@ Background
 
 ### Background-attachment
 
+
+> References
+> ---
+> - [Mozilla Developer Network: Background-attachment](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
+{:.card.card-source}
+
 ### Background-origin
+
+> References
+> ---
+> - [Mozilla Developer Network: Background-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin)
+{:.card.card-source}
 
 ### Background-clip
 
+> References
+> ---
+> - [Mozilla Developer Network: Background-clip](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)
+{:.card.card-source}
 
 Box shadow
 ----------
