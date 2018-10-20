@@ -25,6 +25,8 @@ Background
 Box shadow
 ----------
 
-??Box outline
+Box outline
+-----------
+
     border vs outline
     https://developer.mozilla.org/en-US/docs/Web/CSS/outline
