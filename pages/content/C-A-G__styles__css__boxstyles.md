@@ -7,7 +7,16 @@ permalink: styles/css/boxstyles/
 Background
 ----------
 
+
+> References
+> ---
+> - [Mozilla Developer Network: Background](https://developer.mozilla.org/nl/docs/Web/CSS/background)
+{:.card.card-source}
+
+
+
 - `background:`{:.p} `«background-color»`{:.v} `«background-image»`{:.v} `«background-repeat»`{:.v} `«background-attachment»`{:.v} `«background-position»`{:.v}
+
 
 
 
