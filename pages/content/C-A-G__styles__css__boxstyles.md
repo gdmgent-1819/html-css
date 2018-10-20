@@ -7,6 +7,10 @@ permalink: styles/css/boxstyles/
 Background
 ----------
 
+- `background:`{:.p} `«background-color»`{:.v} `«background-image»`{:.v} `«background-repeat»`{:.v} `«background-attachment»`{:.v} `«background-position»`{:.v}
+
+
+
 ### Background-image
 
 ### Background-position
