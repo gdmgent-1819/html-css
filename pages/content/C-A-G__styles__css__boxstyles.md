@@ -13,12 +13,7 @@ Background
 > - [Mozilla Developer Network: Background](https://developer.mozilla.org/nl/docs/Web/CSS/background)
 {:.card.card-source}
 
-
-
 - `background:`{:.p} `«background-color»`{:.v} `«background-image»`{:.v} `«background-repeat»`{:.v} `«background-attachment»`{:.v} `«background-position»`{:.v}
-
-
-
 
 ### Background-image
 
@@ -41,5 +36,9 @@ Box shadow
 Box outline
 -----------
 
-    border vs outline
-    https://developer.mozilla.org/en-US/docs/Web/CSS/outline
+> References
+> ---
+> - [Mozilla Developer Network: Outline]( https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
+{:.card.card-source}
+
+### border vs outline
