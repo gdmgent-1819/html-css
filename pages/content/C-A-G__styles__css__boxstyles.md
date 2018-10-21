@@ -106,7 +106,14 @@ Je kan volgende richtingen definiëren:
 
 <iframe height='500' scrolling='no' title='background-image gradient' src='//codepen.io/fredroeg/embed/OBEYbX/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
 
-Er bestaan ook herhalende kleurverlopen (zie resources).
+Er bestaan ook herhalende kleurverlopen (zie references hieronder).
+
+> References
+> ---
+> - [Mozilla Developer Network: Repeating Linear Gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-linear-gradient)
+> - [Mozilla Developer Network: Repeating Radial Gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient)
+{:.card.card-source}
+
 
 ### background-repeat
 
@@ -129,29 +136,43 @@ Je kan dit veranderen met de `background-repeat`-property.
 
 Standaard wordt de achtergrondafbeelding linksboven in het element geplaatst, maar je kan het veranderen met de `background-position`{:.p}-property.
 
-<iframe height='265' scrolling='no' title='background-image position' src='//codepen.io/fredroeg/embed/qJKGpz/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/fredroeg/pen/qJKGpz/'></iframe>
+<iframe height='500' scrolling='no' title='background-image position' src='//codepen.io/fredroeg/embed/qJKGpz/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
+
+### background-size
+
+`background-size:` `auto`{:.v} &#124; `length`{:.v} &#124; `cover`{:.v} &#124; `contain`{:.v} 
+
+Deze property zit **niet** in de `background:` shorthand-notatie.
+
+Een achtergrondafbeelding neemt standaard zijn originele afmeting over.  
+- Als de afbeelding bijvoorbeeld 800px breed is en 600px hoog, maar de div waarop die toegepast is slechts 200x200 px groot is, zien we maar een fractie van de afbeelding, de rest is eraf gesneden.
+- Is de afbeelding kleiner, dan wordt die standaard herhaald tot het element gevuld is (tenzij de `background-repeat` anders gedefinieerd is)
 
 
+- `background-size:`{:.p}
+    - `auto`{:.k.d} (standaard, de afbeelding wordt op zijn originele afmeting getoond)
+    - `length`{:.k} (vb `200px 300px`, de afbeelding neemt de ingegeven waardes over. Eerste waarde = breedte, tweede waarde = hoogte)
+    - `percentage`{:.k} (vb. `20% 50%`) de afbeelding neemt de ingegeven waardes over, in verhouding tot het parent element. Eerste waarde = breedte, tweede waarde = hoogte)
+    - `cover`{:.k} (het element wordt volledig, proportioneel gevuld met de bijgeschaalde achtergrondafbeelding. Langs de randen wordt de "overschot" weggesneden)
+    - `contain`{:.k} (de afbeelding wordt bijgeschaald tot de breedte en/of de hoogte de randen raakt.)
 
-### Background-size
+<iframe height='750' scrolling='no' title='background-image size' src='//codepen.io/fredroeg/embed/qJKGwE/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
 
-
-### Background-attachment
-
+### background-attachment
 
 > References
 > ---
 > - [Mozilla Developer Network: background-attachment](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
 {:.card.card-source}
 
-### Background-origin
+### background-origin
 
 > References
 > ---
 > - [Mozilla Developer Network: background-origin](https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin)
 {:.card.card-source}
 
-### Background-clip
+### background-clip
 
 > References
 > ---
