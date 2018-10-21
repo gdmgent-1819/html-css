@@ -32,8 +32,14 @@ Met de `background`-property kan je verkort alle achterground-eigenschappen van 
 
 ### background-color
 
+Hiermee pas je een achtergrondkleur toe op een element
 
-
+{% highlight css %}
+/* Afbeelding staat in de images-folder */
+div {
+    background-color: tomato;
+}
+{% endhighlight %}
 
 ### background-image
 
@@ -102,11 +108,12 @@ Je kan volgende richtingen definiëren:
 
 Er bestaan ook herhalende kleurverlopen (zie resources).
 
-### Background-repeat
+### background-repeat
 
 `background-repeat:`{:.p} `repeat`{:.k.d} &#124; `repeat-x`{:.k} &#124; `repeat-y`{:.k} &#124; `no-repeat`{:.k} &#124; …
 
-Standaard wordt de achtergrondafbeelding herhaald over zowel de x-as als de y-as. Je kan dit veranderen met de `background-repeat`-property.
+Standaard wordt de achtergrondafbeelding herhaald over zowel de x-as als de y-as.  
+Je kan dit veranderen met de `background-repeat`-property.
 
 - `background-repeat:`{:.p}
     - `repeat`{:.k.d} (horizontaal herhalen + verticaal herhalen)
@@ -122,7 +129,7 @@ Standaard wordt de achtergrondafbeelding herhaald over zowel de x-as als de y-as
 
 Standaard wordt de achtergrondafbeelding linksboven in het element geplaatst, maar je kan het veranderen met de `background-position`{:.p}-property.
 
-
+<iframe height='265' scrolling='no' title='background-image position' src='//codepen.io/fredroeg/embed/qJKGpz/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/fredroeg/pen/qJKGpz/'></iframe>
 
 
 
