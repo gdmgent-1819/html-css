@@ -179,15 +179,38 @@ Een achtergrondafbeelding neemt standaard zijn originele afmeting over.
 > - [Mozilla Developer Network: background-clip](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)
 {:.card.card-source}
 
-Box shadow
+Box Shadow
 ----------
 
-Box outline
------------
+> References
+> ---
+> - [Mozilla Developer Network: background-clip](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+{:.card.card-source}
+
+Outline
+-------
+
+`outline:`{:.p} `<<outline-width>`{:.v} `<<outline-style>>`{:.v} `<<outline-color>>`{:.v}
+`outline-offset:`{:.p} 
+
+{% highlight css %}
+a {
+  outline: 4px dotted #e73;
+  outline-offset: 4px;
+  background: #ffa;
+}
+{% endhighlight %}
 
 > References
 > ---
 > - [Mozilla Developer Network: Outline]( https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
 {:.card.card-source}
 
-### border vs outline
+### Border vs Outline
+
+Borders en outlines zijn heel gelijkend, hoewel ze van elkaar verschillen op volgende vlakken:
+
+- Een outline neemt **nooit** plaats in, het is geen onderdeel van het box model, dus zal geen invloed hebben op de positie van het element of aangrenzende elementen.
+- Het bevat altijd alle zijdes, je kan niet een specifieke zijde kiezen, zoals bij een border
+- Je kan een outline niet afronden (in tegenstelling tot border-radius)
+- Een outline hoeft niet per se rechthoekig te zijn (maar is het meestal wel)
