@@ -2,6 +2,7 @@
 title: Lay-out grid
 title_long: Lay-out grid
 permalink: styles/css/layout/cssgrid
+published: false
 ---
 
 CSS Grid Layout
