@@ -104,12 +104,6 @@ In css:
 }
 {% endhighlight %}
 
-> Voorbeeld
-> ---
-> - [Fixed Positioning (1)]({{ '/examples/pages/04_fixed_positioning.html' | relative_url }})  
->   Het element is gepositioneerd ten opzichte van het browservenser
-{:.card.card-example}
-
 
 Sticky Positioning
 ------------------
