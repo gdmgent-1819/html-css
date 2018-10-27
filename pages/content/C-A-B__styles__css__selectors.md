@@ -377,8 +377,16 @@ De sibling-elementen die na het element komen en voldoen aan de selector.
 
 <p data-height="265" data-theme-id="light" data-slug-hash="ZBqVJJ" data-default-tab="css,result" data-user="olivierparent" data-embed-version="2" data-pen-title="ZBqVJJ" class="codepen">See the Pen <a href="http://codepen.io/olivierparent/pen/ZBqVJJ/">ZBqVJJ</a> by Olivier Parent (<a href="http://codepen.io/olivierparent">@olivierparent</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
 Stijlvoorrang
 -------------
+
+> References
+> ---
+> - [Mozilla Developer Network: Cascade and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance)
+{:.card.card-source}
+
+
 
 > De **voorrang** van een stijl wordt bepaald door:
 >
