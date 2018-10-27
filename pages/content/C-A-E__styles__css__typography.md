@@ -6,8 +6,9 @@ permalink: styles/css/typography/
 
 {% include_relative _includes-css/typografie.md %}
 
-> Typografische CSS-eigenschappen
-> ---
+Typografische CSS-eigenschappen
+------------------------------------
+
 > - `color:`{:.p} `«kleur»`{:.v}
 > - `font-family:`{:.p}
 > - `font-size:`{:.p} `«lettergrootte»`{:.v}
@@ -33,3 +34,14 @@ permalink: styles/css/typography/
 {:.card.card-source}
 
 
+Text layout
+-----------
+> References
+> ---
+> - [Mozilla Developer Network: Text Layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals#Text_layout)
+{:.card.card-source}
+
+- Text alignment
+- Line height
+- Letter and word spacing
+- ...
