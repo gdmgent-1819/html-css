@@ -15,6 +15,12 @@ Lay-out en Flow
 
 > `position:`{:.p} `static`{:.k.d} &#124; `relative`{:.k} &#124; `absolute`{:.k} &#124; `fixed`{:.k}  &#124; `sticky`{:.k}
 
+> References
+> ---
+> - [Mozilla Developer Network: Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
+{:.card.card-source}
+
+
 Normal Flow
 -----------
 
