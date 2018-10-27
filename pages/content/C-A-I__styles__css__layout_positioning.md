@@ -11,8 +11,9 @@ Lay-out en Flow
  1. Relative Positioning
  1. Absolute Positioning
  1. Fixed Positioning
+ 1. Sticky Positioning
 
-> `position:`{:.p} `static`{:.k.d} &#124; `relative`{:.k} &#124; `absolute`{:.k} &#124; `fixed`{:.k}
+> `position:`{:.p} `static`{:.k.d} &#124; `relative`{:.k} &#124; `absolute`{:.k} &#124; `fixed`{:.k}  &#124; `sticky`{:.k}
 
 Normal Flow
 -----------
