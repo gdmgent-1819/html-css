@@ -1,12 +1,23 @@
 ---
-title: Lay-out flexbox
-title_long: Lay-out flexbox
+title: Lay-out Flexbox
+title_long: Lay-out Flexbox
 permalink: styles/css/layout/flexbox
 published: false
 ---
 
-CSS Flexible Box Layout
------------------------
+CSS Flexbox: Het flexible box model
+-----------------------------------
+
+Met behulp van flexbox kunnen we elementen op een webpagina **dynamisch positioneren** zonder hierbij `float` of `position` te gaan gebruiken.
+Flexbox zorgt ervoor dat de `width` en `height` van child elementen automatisch wordt aangepast om op een zo optimaal mogelijke manier gebruik te maken van de ruimte in een container. Dit is bijzonder handig wanneer we **responsive en mobiel-vriendelijke** webpaginas willen ontwikkelen.
+We onderscheiden twee hoofdcategorieën van elementen bij flexbox: de container en de items. 
+
+Flexbox **container** = parent
+--------------------------
+
+Flexbox **items** = children
+----------------------------
+
 
 > Zie ook
 > ---
@@ -17,6 +28,9 @@ CSS Flexible Box Layout
 > - [W3C / CSS Flexible Box Layout Module](https://www.w3.org/TR/css-flexbox/)
 > - [CSS Tricks / A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 {:.card.card-book}
+
+Samenvatting
+------------
 
 ### Flex Container (parent-element)
 
