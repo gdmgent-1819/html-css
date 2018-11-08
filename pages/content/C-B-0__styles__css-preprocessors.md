@@ -5,322 +5,93 @@ permalink: styles/css-preprocessors/
 published: true
 ---
 
+Wat is een CSS preprocessor?
+----------------------------
+
 > Definitie
 > ---
-> Sass, Syntactically Awesome Stylesheets, is een scripttaal dat geïnterpreerd of geconverteerd wordt in Cascading Style Sheets (CSS). Sass bestanden zijn herkenbaar door de extensies `.sass` en `.scss`.
+> CSS preprocessors zijn "scripting talen" om de CSS-taal uit te breiden met eigenschappen (Eng.: features) die standaard niet ondersteund worden door de CSS-taal. Ze voegen functinaliteit toe, die standaard niet bestaan in CSS, zoals: variabelen (Eng.: variables), nesten (Eng.: nesting), overerving (Eng.: inheritance), functies (Eng.: functions), operatoren (Eng.: operators), ... . Deze functionaliteiten zorgen ervoor dat de opmaak beter leesbaar, herbruikbaar (Eng.: Reusable), uitbreidbaar (Eng.: extensible) en beheersbaar (Eng.: maintainable), vooral bij grote en complexe projecten, zal worden.
 {:.card.card-definition}
 
-De `.sass`-bestanden bevatten de oude syntax die gebasseerd is op **indentation** en **new line characters**. De nieuwere syntax in `.scss`-bestanden gebruikt **block formatting** zoals in CSS, een blok wordt gestart met `{` en afgesloten met `}`. Punt-comma's (semi-colons) `;` worden gebruikt om lijnen code binnen een blok te separeren. Kortom de synax van `.scss`-bestanden is nagenoeg identiek dan die van pure CSS. SassScript is de scripttaal voor Sass en brengt extra nuttige functies en eigenschappen toe aan Sass.
-
-Alternatieven voor Sass zijn o.a. Less en Stylus. In de opleiding kiezen we voor de nieuwere syntax `.scss`.
+De CSS preprocessor talen hebben een **eigen unieke syntax** die **gecompileerd** (Eng.: compiled) of **geconverteerd** (Eng.: transpiled) moet worden naar reguliere "native" CSS-code. Deze talen vereisen dus dat er een CSS-compiler aanwezig actief is om hun eigen **syntax** te vertalen naar reguliere CSS.
 
 > References
 > ---
-> - [Sass language](http://sass-lang.com/)
-> - [Less language](http://lesscss.org/)
-> - [Stylus language](http://stylus-lang.com/)
+> - [Mozilla Developer Network: CSS preprocessor](https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor)
+> - [ByteScout: Front-End Tooling Trends 2018 Plus…](https://bytescout.com/blog/front-end-trends-2018.html)
+> - [Medium: CSS Preprocessors — Effective Tools for Faster Styling of Web Pages and User Interfaces](https://medium.com/@cabot_solutions/css-preprocessors-effective-tools-for-faster-styling-of-web-pages-and-user-interfaces-6ed4737a9804)
+> - [Raygun: 10 Reasons to Use a CSS Preprocessor in 2018](https://raygun.com/blog/10-reasons-css-preprocessor/)
+> - [Creative Bloq: Which is the best CSS preprocessor?](https://www.creativebloq.com/features/best-css-preprocessor)
+> - [Wikipedia: Sass (stylesheet language)](https://en.wikipedia.org/wiki/Sass_(stylesheet_language))
 {:.card.card-source}
 
-Syntax
-------
 
-Sass laat toe om **variables**, **nested rules**, **mixins**, **inline imports**, ... te implementeren met een CSS-compatiebele syntax. Via Sass kunnen we grote stylesheets goed organiseren.
+Populaire CSS preprocessors
+---------------------------
 
-### Variables
+De meest populaire CSS preprocessors zijn:
 
-{% highlight sass %}
-$primary-color: #3bbfce;
-$margin: 16px;
+- [Sass language](http://sass-lang.com/)
+- [Less language](http://lesscss.org/)
+- [Stylus language](http://stylus-lang.com/)
+- [PostCSS language](http://postcss.org/)
 
-h1 {
-  color: $primary-color;
-  margin: $margin/2 0;
-}
-{% endhighlight %}
+Reguliere CSS
+-------------
 
-De resulterende CSS:
+### Variabelen
 
-{% highlight css %}
-h1 {
-    color: #3bbfce;
-    margin: 8px 0;
-}
-{% endhighlight %}
-
-### Nesting
-
-{% highlight sass %}
-nav {
-    background-color: #e50000;
-    ul {
-        list-style: none;
-        li { 
-            margin: 10px;
-            float: left;
-        }
-    }
-}
-
-{% endhighlight %}
-
-De resulterende CSS:
+In reguliere CSS kunnen we gebruik maken van variabelen. In tegenstelling tot variabelen in CSS preprocessors bevatten variabelen in regulaire CSS "scope".
 
 {% highlight css %}
-nav {
-    background-color: #e50000;
+:root {
+	--color-blue: #0052CC;
 }
-nav ul { 
-    list-style: none;
-}
-nav ul li {
-    margin: 10px;
-    float: left;
+
+body {
+	background-color: var(--color-blue);
 }
 {% endhighlight %}
 
-### Mixins
+CSS variabelen worden aangeduid met `--`(Eng.: double hyphen) en worden meestal geplaatst in de selector `:root`. Dit betekent dat deze variabelen globaal toegankelijk zijn binnen alle gekoppelde CSS-bestanden. Definiëren we een variabele binnen een bepaalde selector, bijvoorbeeld: `.article`, dan is deze variabele toegankelijk door deze selector en de geneste selectoren.
 
-Group of css code with the possibility to pass a variable
-
-{% highlight sass %}
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
-
-.block {
-    @include border-radius(10px);
-}
+{% highlight html %}
+<div class="article">
+	<h1 class="article__title">
+		NMD like Graphics love Code
+	</h1>
+</div>
+<p class="jumbotron">dfjkjdlfjdlk</p>
 {% endhighlight %}
-
-De resulterende CSS:
 
 {% highlight css %}
-.block {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
+.article {
+	--article-font-size: 44px;
+}
+.article > .article__title {
+	font-size: var(--article-font-size);
+}
+
+.jumbotron {
+	font-size: var(--article-font-size);
 }
 {% endhighlight %}
 
-### Loops
-
-`@for`, `@each`, `@while`
-
-{% highlight sass %}
-$columns: 12;
-@for $i from 1 through $columns {
-  .col-#{$i} {
-    width: 100% / ($columns/$i);
-    display: block;
-    float: left;
-   }
-}
-{% endhighlight %}
-
-De resulterende CSS:
+De selector `.article__title` heeft toegang tot de variabele `--article-font-size`. De selector `.jumbotron` heeft geen toegang tot deze variabele, omdat deze niet is toegekend aan één van de kinderen binnen het `article`-element.
 
 {% highlight css %}
-.col-1 {
-  width: 100%;
-  display: block;
-  float: left; 
-}
-...
-.col-12 {
-  width: 8.33333%;
-  display: block;
-  float: left; 
+.headline {
+    color: var(--base-text-color);
+	font-size: var(--base-font-size, 16px);
 }
 {% endhighlight %}
 
-### Inheritance
+Wat gebeurt er indien een variabele niet gedeclareerd is en we deze toch toekennen aan een CSS-eigenschap? `--base-text-color` is niet gedefinieerd binnen CSS. In dit geval zal de `color`-eigenschap de waarde `black` bevatten. `black` is het standaard kleur. De browser kijkt eigenlijk naar de boomstructuur van het document en gaat op zoek, steeds op een hoger niveau, naar de `color`-eigenschap. Wordt er één gevonden, dan zal hij de waarde hiervan toekennen als waarde van de `color`-eigenschap binnen de `headline`-selector.
 
-{% highlight sass %}
-.message {
-    display: block;
-    padding: 15px;
-    @include border-radius(10px);
-}
 
-.error {
-    color: #F00;
-    @extend .message;
-}
-
-{% endhighlight %}
-
-De resulterende CSS:
-
-{% highlight css %}
-.message {
-    display: block;
-    padding: 15px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border-radius: 10px;
-}
-
-.error {
-    color: #F00;
-    display: block;
-    padding: 15px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border-radius: 10px;
-}
-{% endhighlight %}
 
 > References
 > ---
-> - [Sass language: full documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
+> - [Mozilla Developer Network: Using CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
+> - [W3C: CSS Custom Properties for Cascading Variables Module Level 1](https://www.w3.org/TR/css-variables/)
 {:.card.card-source}
-
-Transpiling
------------
-
-### Optie 1: Via software
-
-> References
-> ---
-> - [Koala app](http://koala-app.com/)
-> - [Scout-App](http://scout-app.io/)
-{:.card.card-source}
-
-### Optie 2: Sass CLI
-
-Installatie (globale) van het Sass CLI-tool via npm.
-
-{% highlight bash %}
-npm install -g sass
-{% endhighlight %}
-
-Op macOS is het mogelijk dat we dit commando moeten uitvoeren met `sudo`:
-
-{% highlight bash %}
-sudo npm install -g sass
-{% endhighlight %}
-
-### VSCode-pluigins
-
-> References
-> ---
-> - Indented Sass syntax highlighting, autocomplete & snippets for VSCode(https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented)
-> - Live Sass Compiler(https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
-> - Sass Lint(https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint)
-> - Beautify css/sass/scss/less(https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint)
-{:.card.card-source}
-
-### Optie 3: Gulp
-
-#### Stap 1: npm (Node Package Manager)
-
-Controlleer of je reeds npm geinstalleerd hebt door de versie op te vragen
-
-{% highlight bash %}
-npm --version
-{% endhighlight %}
-
-Indien niet installeer [node.js](https://nodejs.org/en/download/)
-
-#### Stap 2: node-sass installeren
-
-{% highlight bash %}
-npm install -g node-sass
-{% endhighlight %}
-
-Mac gebruikers moeten eventueel dit commando uitvoeren onder Super User:
-
-{% highlight bash %}
-sudo npm install -g node-sass
-{% endhighlight %}
-
-#### Stap : gulp en gulp-sass installeren
-
-{% highlight bash %}
-npm install -g gulp
-{% endhighlight %}
-
-{% highlight bash %}
-npm install -g gulp gulp-sass
-{% endhighlight %}
-
-Mac
-
-{% highlight bash %}
-sudo npm install -g gulp
-{% endhighlight %}
-
-{% highlight bash %}
-sudo npm install -g gulp gulp-sass
-{% endhighlight %}
-
-#### Stap 4: creating a project
-
-!!! In de **root** van je website run volgend commando uitvoeren
-
-{% highlight bash %}
-npm init --yes
-{% endhighlight %}
-
-Dit zal een package.json aanmaken in de root van je website.
-Daarna voer je volgende commando uit:
-
-{% highlight bash %}
-npm install gulp --save-dev
-{% endhighlight %}
-
-{% highlight bash %}
-npm install gulp-sass --save-dev
-{% endhighlight %}
-
-#### Stap 5: Maak je scss file aan
-
-- Maak een folder `sass` aan in de root van je project. Deze folder dient enkel voor het coderen van je css en hoeven dus niet op de server geplaatst worden bij de deploy van je website.
-- In deze folder maak je een main.scss aan met je eerste regels sass.
-- Zorg ook dat er een `styles` folder aanwezig is. De gecompileerde css bestanden zullen in deze folder terecht komen.
-
-#### Stap 6: gulp file
-
-> **Automation of your workflow**
-
-Maak een gulp file `gulpfile.js` aan in de root van je project
-
-{% highlight js %}
-'use strict';
- 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
- 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./styles'));
-});
-
-gulp.task('watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
-});
-{% endhighlight %}
-
-Run via terminal in de directory van je project:
-
-{% highlight bash %}
-gulp watch
-{% endhighlight %}
-
-#### Uitbereidingen
-
-Je kan in deze gulp file nog meer automatisatie toevoegen. 
-Zoals bijvoorbeeld:
-- Javascript en css bestanden opkuisen en comprimeren (minify)
-- Automatisch herladen van je browservenster telkens je aanpassingen doet aan je scss
-- ...
-
-[Lees meer over deze workflow en uitbereidingen hierop](https://css-tricks.com/gulp-for-beginners/)
-
