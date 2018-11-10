@@ -2,7 +2,7 @@
 title: Lay-out Flexbox
 title_long: Lay-out Flexbox
 permalink: styles/css/layout/flexbox
-published: false
+published: true
 ---
 
 CSS Flexbox: Het flexible box model
