@@ -1,5 +1,5 @@
 ---
-title: Lay-out position
+title: Lay-out Position
 title_long: Lay-out Flow - position
 permalink: styles/css/layout/position
 ---

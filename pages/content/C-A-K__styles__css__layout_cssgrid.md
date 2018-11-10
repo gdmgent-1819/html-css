@@ -1,6 +1,6 @@
 ---
-title: Lay-out grid
-title_long: Lay-out grid
+title: Lay-out Grid
+title_long: Lay-out Grid
 permalink: styles/css/layout/cssgrid
 published: false
 ---

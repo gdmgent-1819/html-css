@@ -1,5 +1,5 @@
 ---
-title: Lay-out zwevende elementen
+title: Lay-out Zwevende Elementen
 title_long: Lay-out Zwevende elementen
 permalink: styles/css/layout/zwevendeelementen
 ---
