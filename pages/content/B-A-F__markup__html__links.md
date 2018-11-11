@@ -35,7 +35,8 @@ Een descendant van `<body>`{:.e}
 |               | `_blank`{:.k}  | Open in een nieuw venster of tabblad.                               |
 {:.table.table--primary}
 
-### Bookmark
+Bookmark
+--------
 
 We kunnen binnen onze webpagina een link leggen naar een element binnen dezelfde pagina.
 Hiervoor maken we gebruik van een ID. 
