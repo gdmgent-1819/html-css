@@ -35,3 +35,20 @@ Een descendant van `<body>`{:.e}
 |               | `_blank`{:.k}  | Open in een nieuw venster of tabblad.                               |
 {:.table.table--primary}
 
+### Bookmark
+
+We kunnen binnen onze webpagina een link leggen naar een element binnen dezelfde pagina.
+Hiervoor maken we gebruik van een ID. 
+
+
+{% highlight html %}
+<a href="#articles">Go to articles </a>
+
+
+
+<div id="articles">
+     <h1>Articles</h1>``
+</div>
+{% endhighlight %}
+
+De ```href```-waarde van het anker-element bevat een ```ID - #articles```. Wordt er op dat anker-element geklikt zal de eindgebruiker vespringen naar de plaats in de webpagina waar dit ID staat.
