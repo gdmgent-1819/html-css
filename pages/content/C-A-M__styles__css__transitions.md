@@ -65,12 +65,10 @@ transition-duration: 6s;
 transition-duration: 120ms;
 {% endhighlight %}
 
-> Opmerking 1
+> Opmerking voorbeelden
 > ---
 > Onderstaande transities loopen oneindig lang, ter illustratie. Dit is standaard niet het geval. Een transitie gebeurt standaard slechts één keer van start naar finish. 
-
-De voorbeelden zijn afkomstig van:  
-[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+> De voorbeelden zijn afkomstig van:  [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
 {:.card.card-remark}
 
 `transition-duration: 0.5s`
@@ -229,7 +227,7 @@ Je kan meerdere transities toewijzen, door ze te scheiden met een komma.
 
 In onderstaand voorbeeld zie je dezelfde animatie, met dezelfde duration, maar met verschillende timing-functions.
 
-<iframe height='650' scrolling='no' title='Transition Demo' src='//codepen.io/fredroeg/embed/mQMNLb/?height=648&theme-id=dark&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+<iframe height='650' scrolling='no' title='Transition Demo' src='//codepen.io/fredroeg/embed/mQMNLb/?height=648&theme-id=dark&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 ## Referenties
