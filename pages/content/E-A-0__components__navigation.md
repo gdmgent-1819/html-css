@@ -33,7 +33,7 @@ Stap voor stap bouwen we een horizontale navigatie op.
 We sarten met de basisstructuur in HTML.   
 Een navigatie bouwen we op met de semantische ```nav```-tag. Die bevat een unorderd list ```ul ```. Voor elk menu-item plaatsen we een listitem ``` li ``` met ankerelement ``` a ```.
 
-<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/6/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/39/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/8/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
@@ -51,7 +51,7 @@ We zien dat de tekst een blauwe kleur heeft en onderlijnd is. Dit is de standaar
 
 Nu geef we onze menu wat meer opmaak.
 
-<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/20/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/43/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 We implementeren een active-menu-status. Zo weet de gebruiker waar hij zich bevind op onze website.
 
@@ -61,7 +61,18 @@ We implementeren een active-menu-status. Zo weet de gebruiker waar hij zich bevi
        background-color:#f1f2f6;
      }
 ```
-<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/25/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/44/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+Als laatst voegen we de lay-out toe voor de hover-status,``` :hover ```. Die kan het zelfde zijn als de active-status.
+
+```
+   nav ul li.active, nav ul li:hover {
+       color:#88898c;
+       background-color:#f1f2f6;
+     }
+```
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/44/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ### Verticale navigatie
 
