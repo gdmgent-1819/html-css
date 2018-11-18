@@ -81,7 +81,7 @@ transition-duration: 120ms;
 ### transition-timing-function
 De **transition-timing-function** wordt gebruikt om te beschrijven hoe de tussenliggende waarden van de CSS-eigenschappen beïnvloed worden door het transitie-effect. De snelheid van de transitie varieert over de duur van deze transitie door de acceleratie-curve, gekend als easing-functies.
 
-Veel gebruikte timing-functies zijn `linear`{:.k.d}, `ease`{:.k}, `ease-in`{:.k}, `ease-out`{:.k}, `ease-in-out`{:.k}, `steps()`{:.k}, `step-start`{:.k}, `step-end`{:.k} en `cubic-bezier(x1, y1, x2, y2)`{:.k}.
+Veel gebruikte timing-functies (ook wel easing-functies genoemd) zijn `linear`{:.k.d}, `ease`{:.k}, `ease-in`{:.k}, `ease-out`{:.k}, `ease-in-out`{:.k}, `steps()`{:.k}, `step-start`{:.k}, `step-end`{:.k} en `cubic-bezier(x1, y1, x2, y2)`{:.k}.
 
 
 <table>
@@ -162,6 +162,8 @@ Veel gebruikte timing-functies zijn `linear`{:.k.d}, `ease`{:.k}, `ease-in`{:.k}
   </tbody>
 </table>
 
+Wil je een custom easing-functie, dan kan je zelf een cubic-bezier maken. Neem ook eens een kijkje bij [easings.net](https://easings.net/nl)
+
 De `steps`{:.k} functie definieert het aantal stappen dat binnen de timing functie uitgevoerd zullen worden. Deze functie is beter gekend als een staircase functie. De syntax: `steps(number_of_steps, direction)`{:.k}. De `number_of_steps`{:.k} is een positieve integer (1 of hoger), de `direction`{:.k} is `start`{:.k} of `end`{:.k.d}. Dit laatste argument is facultatief en heeft `end`{:.k.d} als standaard waarde.
 
 <table>
@@ -182,6 +184,8 @@ De `steps`{:.k} functie definieert het aantal stappen dat binnen de timing funct
     </tr>
   </tbody>
 </table>
+
+
 
 #### Voorbeelden
 
