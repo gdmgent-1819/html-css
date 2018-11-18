@@ -37,12 +37,13 @@ Een navigatie bouwen we op met de semantische ```nav```-tag. Die bevat een unord
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/8/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-In de CSS verwijderen we de lijst-iconen met ```list-type```.  
+In de CSS verwijderen we de lijst-iconen met ```list-style:none```.  
 Met flexbox plaatsen we al de listitem naast elkaar. 
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/13/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 De tekst staat in het voorbeeld naast elkaar. Als we alle elementen willen verdelen over de volledige breedte maken we gebruik van ```justify-content: space-around; ```.   
+
 We zien dat de tekst een blauwe kleur heeft en onderlijnd is. Dit is de standaard opmaak van een anker-element. Dit resetten we.
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/16/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
@@ -60,8 +61,7 @@ We implementeren een active-menu-status. Zo weet de gebruiker waar hij zich bevi
        background-color:#f1f2f6;
      }
 ```
-<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/25/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/25/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ### Verticale navigatie
 
