@@ -1,13 +1,12 @@
 ---
-title: Components
-title_long: Components
-permalink: Components/navigation
+title: Navigatie
+title_long: Navigatie
+permalink: components/navigation/
 ---
 
-De navigatie is een belangrijk onderdeel van je website. 
-De navigatie toont je op welke pagina je bent en waar je naar toe kan gaan. 
-
-Het geeft de belangrijke onderdelen van een webite aan. 
+De navigatie is een belangrijk onderdeel van je website.  
+Hij toont je op welke pagina je bent en waar je naar toe kan gaan.  
+De navigatie van een website geeft de belangrijke onderdelen van een webite aan. 
 
 ## Navigatie schema
 
@@ -24,25 +23,27 @@ Hyperlinks die tussen de informatie staat. Wat is er nog gerelateerd aan deze in
 
 **4. Aanvullende navigatie**  
 - Sitemap
-- Site index
+- Siteindex
 
 ## Soorten navigatie op basis van design
   
 ### Horizontale navigatie
 
-Eerst bouwen we de html-structuur op.
-Die bouwen we op met een Unorderd list.
+Stap voor stap bouwen we een horizontale navigatie op.  
+We sarten met de basisstructuur in HTML.   
+Een navigatie bouwen we op met de semantische ```nav```-tag. Die bevat een unorderd list ```ul ```. Voor elk menu-item plaatsen we een listitem ``` li ``` met ankerelement ``` a ```.
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/6/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/8/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-In de CSS verwijderen we de lijst-iconen met ```list-type``` en met flexbox plaatsen we de listitems naast elkaar. 
+In de CSS verwijderen we de lijst-iconen met ```list-type```.  
+Met flexbox plaatsen we al de listitem naast elkaar. 
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/13/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-De tekst staat in het voorbeeld naast elkaar. Als we alle elementen willen verdelen over de volledige breedte maken we gebruik van ```justify-content: space-around; ```. 
-Ook zien we de standaard opmaak van een link, dit resetten we.
+De tekst staat in het voorbeeld naast elkaar. Als we alle elementen willen verdelen over de volledige breedte maken we gebruik van ```justify-content: space-around; ```.   
+We zien dat de tekst een blauwe kleur heeft en onderlijnd is. Dit is de standaard opmaak van een anker-element. Dit resetten we.
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/16/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
