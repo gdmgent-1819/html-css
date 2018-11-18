@@ -77,11 +77,11 @@ Als laatst voegen we de lay-out toe voor de hover-status,``` :hover ```. Die kan
 
 #### Resultaat
 
-<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/qyj07g35/33/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="200" src="//jsfiddle.net/rutsaert/qyj07g35/37/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 #### HTML
 
-<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/qyj07g35/34/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/qyj07g35/35/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 #### CSS 
 
