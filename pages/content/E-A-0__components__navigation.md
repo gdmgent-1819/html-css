@@ -89,3 +89,29 @@ Als laatst voegen we de lay-out toe voor de hover-status,``` :hover ```. Die kan
 
 ### Verticale navigatie
 
+#### Voorbeeld 1
+
+##### Resultaat
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/opfarmb2/2/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+##### HTML
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/opfarmb2/2/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+##### CSS 
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/opfarmb2/2/embedded/css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+### Voorbeeld 2 
+##### Resultaat
+
+<iframe width="100%" height="400" src="//jsfiddle.net/rutsaert/7m0gwacv/7/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+##### HTML
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/7m0gwacv/7/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+##### CSS 
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/7m0gwacv/7/embedded/css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
