@@ -74,5 +74,19 @@ Als laatst voegen we de lay-out toe voor de hover-status,``` :hover ```. Die kan
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/44/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
+### Horizontale menu met dropdown
+
+#### Resultaat
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/qyj07g35/33/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+#### HTML
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/qyj07g35/34/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+#### CSS 
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/qyj07g35/34/embedded/css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
 ### Verticale navigatie
 
