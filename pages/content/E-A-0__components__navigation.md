@@ -61,7 +61,7 @@ We implementeren een active-menu-status. Zo weet de gebruiker waar hij zich bevi
        background-color:#f1f2f6;
      }
 ```
-<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/44/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/47/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 Als laatst voegen we de lay-out toe voor de hover-status,``` :hover ```. Die kan het zelfde zijn als de active-status.
 
@@ -71,8 +71,7 @@ Als laatst voegen we de lay-out toe voor de hover-status,``` :hover ```. Die kan
        background-color:#f1f2f6;
      }
 ```
-
-<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/44/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/49/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ### Horizontale menu met dropdown
 
