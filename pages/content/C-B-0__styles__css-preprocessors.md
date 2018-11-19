@@ -88,7 +88,17 @@ De selector `.article__title` heeft toegang tot de variabele `--article-font-siz
 
 Wat gebeurt er indien een variabele niet gedeclareerd is en we deze toch toekennen aan een CSS-eigenschap? `--base-text-color` is niet gedefinieerd binnen CSS. In dit geval zal de `color`-eigenschap de waarde `black` bevatten. `black` is het standaard kleur. De browser kijkt eigenlijk naar de boomstructuur van het document en gaat op zoek, steeds op een hoger niveau, naar de `color`-eigenschap. Wordt er één gevonden, dan zal hij de waarde hiervan toekennen als waarde van de `color`-eigenschap binnen de `headline`-selector.
 
+{% highlight css %}
+--color-white: 16px;
 
+.footer {
+    color: var(--color-white);
+}
+{% endhighlight %}
+
+Kennen we een niet geldige waarde toe aan een eigenschap, via een CSS variabele, dan zal hieraan een andere waarde aan toegekend worden volgens de boomstructuur of hiërarchie.
+
+### Mixins
 
 > References
 > ---

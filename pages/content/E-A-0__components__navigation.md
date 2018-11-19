@@ -55,22 +55,24 @@ Nu geef we onze menu wat meer opmaak.
 
 We implementeren een active-menu-status. Zo weet de gebruiker waar hij zich bevind op onze website.
 
-```
+{% highlight css %}
      nav ul li.active {
        color:#88898c;
        background-color:#f1f2f6;
      }
-```
+{% endhighlight %}
+
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/47/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 Als laatst voegen we de lay-out toe voor de hover-status,``` :hover ```. Die kan het zelfde zijn als de active-status.
 
-```
+{% highlight css %}
    nav ul li.active, nav ul li:hover {
        color:#88898c;
        background-color:#f1f2f6;
      }
-```
+{% endhighlight %}
+
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/49/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ### Horizontale menu met dropdown
@@ -115,3 +117,23 @@ Als laatst voegen we de lay-out toe voor de hover-status,``` :hover ```. Die kan
 ##### CSS 
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/7m0gwacv/7/embedded/css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+## Inspiratie
+
+### Hoofdnavigatie
+
+#### Wijs.be
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/wijs_desktop.png" alt="Wijs.be: Main navigation - desktop" caption="Wijs.be: Main navigation - desktop" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/wijs_offcanvas_closed.png" alt="Wijs.be: Main navigation - desktop" caption="Wijs.be: Main navigation - mobile (hamburger)" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/wijs_offcanvas_open.png" alt="Wijs.be: Main navigation - desktop" caption="Wijs.be: Main navigation - mobile (expanded)" %}
+
+#### InThePocket.com
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/itp_desktop.png" alt="InThePocket.com: Main navigation - desktop" caption="InThePocket.com: Main navigation - desktop" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/itp_offcanvas_closed.png" alt="InThePocket.com: Main navigation - desktop" caption="InThePocket.com: Main navigation - mobile (hamburger)" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/itp_offcanvas_open.png" alt="InThePocket.com: Main navigation - desktop" caption="InThePocket.com: Main navigation - mobile (expanded)" %}
