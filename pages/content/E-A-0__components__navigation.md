@@ -29,6 +29,8 @@ Hyperlinks die tussen de informatie staat. Wat is er nog gerelateerd aan deze in
   
 ### Horizontale navigatie
 
+#### Voorbeeld 1 
+
 Stap voor stap bouwen we een horizontale navigatie op.  
 We sarten met de basisstructuur in HTML.   
 Een navigatie bouwen we op met de semantische ```nav```-tag. Die bevat een unorderd list ```ul ```. Voor elk menu-item plaatsen we een listitem ``` li ``` met ankerelement ``` a ```.
@@ -72,6 +74,21 @@ Als laatst voegen we de lay-out toe voor de hover-status,``` :hover ```. Die kan
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/58/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/58/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+
+#### Voorbeeld 2
+
+##### Resultaat
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/5hgrdsL6/28/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+##### HTML
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/5hgrdsL6/28/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+##### CSS 
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/5hgrdsL6/28/embedded/css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ### Horizontale menu met dropdown
 
