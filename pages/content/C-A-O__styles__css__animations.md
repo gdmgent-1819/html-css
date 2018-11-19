@@ -15,16 +15,27 @@ Vervolgens koppel je deze animatie aan een element via de stijlregel ‘animatio
 
 ## Properties
 
-> - `animation-name`{:.p} De naam van de keyframe die je wil binden aan de selector
-> - `animation-duration`{:.p} 	Hoeveel (milli)seconden de animatie zal duren voordat de animatie beëindigd is. 
-> - `animation-timing-function`{:.p} 	De snelheidscurve van de animate
-> - `animation-delay`{:.p} 	De wachttijd voordat de animatie mag starten
-> - `animation-iteration-count`{:.p} 	Het aantal keer dat de animatie mag spelen
-> - `animation-direction`{:.p} 	Specifieert in welke richting de animatie moet spelen (voorwaarts, achterwaarts, alternerend, ...)
-> - `animation-fill-mode`{:.p} 	Specifies what values are applied by the animation outside the time it is executing
-> - `animation-play-state`{:.p} 	Specifies whether the animation is running or paused
-> - `animate`{:.p} shorthand-notatie
+- `animation`{:.p}:
+  - `«animation-name»`{:.v} `«animation-duration»`{:.v} `«animation-timing-function»`{:.v}  `«animation-delay»`{:.v} `animation-iteration-count»`{:.v} `«animation-direction»`{:.v} `«animation-fill-mode»`{:.v} `«animation-play-state»`{:.v}
+  - (shorthand notatie)
 
+1. `animation-name`{:.p}
+  - `none`{:.k.d} &#124;  `keyframes-name`{:.k} 
+  - De naam van het keyframe die je wil binden aan de selector
+2. `animation-duration`{:.p} 	
+  - Hoeveel (milli)seconden de animatie zal duren voordat de animatie beëindigd is. 
+3. `animation-timing-function`{:.p} 	
+  - De snelheidscurve van de animate
+4. `animation-delay`{:.p} 	
+  - De uitsteltijd voordat de animatie mag starten
+5. `animation-iteration-count`{:.p} 	
+  - Het aantal keer dat de animatie mag spelen
+6. `animation-direction`{:.p} 	
+  - Specifieert in welke richting de animatie moet spelen (voorwaarts, achterwaarts, alternerend, ...)
+7. `animation-fill-mode`{:.p} 	
+  - Specifies what values are applied by the animation outside the time it is executing
+8. `animation-play-state`{:.p} 	
+  - Specifies whether the animation is running or paused
 
 ## Voorbeelden
 
