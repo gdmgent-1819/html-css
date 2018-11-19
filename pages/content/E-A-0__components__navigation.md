@@ -42,36 +42,36 @@ Met flexbox plaatsen we al de listitem naast elkaar.
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/13/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-De tekst staat in het voorbeeld naast elkaar. Als we alle elementen willen verdelen over de volledige breedte maken we gebruik van ```justify-content: space-around; ```.   
+De tekst staat in het voorbeeld naast elkaar. Als we alle elementen willen verdelen over de volledige breedte maken we gebruik van ```justify-content: space-around; ```.  
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/52/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
 
 We zien dat de tekst een blauwe kleur heeft en onderlijnd is. Dit is de standaard opmaak van een anker-element. Dit resetten we.
+We geven de menu wat meer opmaak.
 
-<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/16/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-
-Nu geef we onze menu wat meer opmaak.
-
-<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/43/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/56/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 We implementeren een active-menu-status. Zo weet de gebruiker waar hij zich bevind op onze website.
 
 ```
-     nav ul li.active {
+     nav ul li.active a{
        color:#88898c;
        background-color:#f1f2f6;
      }
 ```
-<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/47/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 Als laatst voegen we de lay-out toe voor de hover-status,``` :hover ```. Die kan het zelfde zijn als de active-status.
 
 ```
-   nav ul li.active, nav ul li:hover {
+   nav ul li.active a, nav ul li:hover a{
        color:#88898c;
        background-color:#f1f2f6;
      }
 ```
-<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/49/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/58/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+<iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/58/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ### Horizontale menu met dropdown
 
