@@ -1,6 +1,6 @@
 ---
-title: Components
-title_long: Components
-permalink: components/
+title: Componenten
+title_long: Componenten
+permalink: componenten/
 ---
 
