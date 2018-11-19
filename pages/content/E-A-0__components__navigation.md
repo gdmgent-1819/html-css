@@ -29,9 +29,9 @@ Hyperlinks die tussen de informatie staat. Wat is er nog gerelateerd aan deze in
 Navigaties op basis van design
 -----------------------------
   
-## Horizontale navigatie
+### Horizontale navigatie
 
-### Voorbeeld 1 
+#### Voorbeeld 1 
 
 Stap voor stap bouwen we een horizontale navigatie op.  
 We sarten met de basisstructuur in HTML.   
@@ -78,59 +78,59 @@ Als laatst voegen we de lay-out toe voor de hover-status,``` :hover ```. Die kan
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/67854g2f/58/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
-### Voorbeeld 2
+#### Voorbeeld 2
 
-#### Resultaat
+**Resultaat**
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/5hgrdsL6/28/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-#### HTML
+**HTML**
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/5hgrdsL6/28/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-#### CSS 
+**CSS**
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/5hgrdsL6/28/embedded/css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-## Horizontale menu met dropdown
+### Horizontale menu met dropdown
 
-### Resultaat
+**Resultaat**
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/qyj07g35/37/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-### HTML
+**HTML**
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/qyj07g35/35/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-### CSS 
+**CSS**
 
 <iframe width="100%" height="900" src="//jsfiddle.net/rutsaert/qyj07g35/34/embedded/css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-## Verticale navigatie
+### Verticale navigatie
 
-### Voorbeeld 1
+#### Voorbeeld 1
 
-#### Resultaat
+**Resultaat**
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/opfarmb2/2/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-#### HTML
+**HTML**
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/opfarmb2/2/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-#### CSS 
+**CSS**
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/opfarmb2/2/embedded/css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-## Voorbeeld 2 
-#### Resultaat
+### Voorbeeld 2 
+**Resultaat**
 
 <iframe width="100%" height="400" src="//jsfiddle.net/rutsaert/7m0gwacv/7/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-#### HTML
+**HTML**
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/7m0gwacv/7/embedded/html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-#### CSS 
+**CSS**
 
 <iframe width="100%" height="300" src="//jsfiddle.net/rutsaert/7m0gwacv/7/embedded/css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
