@@ -7,11 +7,23 @@ published: true
 
 ## Begrip
 
-In tegenstelling tot CSS transities, waar je meteen de nieuwe staat definieert, moet je bij CSS Animations eerst de animatie via de @keyframes stijlregel definiëren. 
+In tegenstelling tot CSS transities, waar je meteen de nieuwe staat definieert, moet je bij CSS Animations eerst de animatie via de **`@keyframes`** stijlregel definiëren. 
+
+## `@keyframes`
 
 Binnen de `@keyframes` stijlregel specifieer je op welke moment in de animatie er veranderingen in de stijlen moet plaatsvinden. Die momenten definieer je aan de hand van percentages (gaande van 0% tot 100%). Heb je een eenvoudige animatie met twee keyframes: '**0%** tot **100%**', dan kan dit ook vervangen worden door de woorden ‘**from**’ en ‘**to**’. 
 
-Vervolgens koppel je deze animatie aan een element via de stijlregel ‘animation-name’.
+Vervolgens koppel je de `identifier` van deze animatie aan een element via de animation property: `animation-name`.
+
+{% highlight css %}
+@keyframes identifier {
+  0% { top: 0; left: 0; }
+  30% { top: 50px; }
+  68%, 72% { left: 50px; }
+  100% { top: 100px; left: 100%; }
+}
+{% endhighlight %}
+
 
 ## Properties
 
@@ -23,19 +35,34 @@ Vervolgens koppel je deze animatie aan een element via de stijlregel ‘animatio
   - `none`{:.k.d} &#124;  `keyframes-name`{:.k} 
   - De naam van het keyframe die je wil binden aan de selector
 2. `animation-duration`{:.p} 	
+  - `«time»`{:.k.d}
   - Hoeveel (milli)seconden de animatie zal duren voordat de animatie beëindigd is. 
+  - tijd in seconden (s) of milliseconden (ms)
+  - Standaard: 0s. Geen negatieve waardes toegestaan
 3. `animation-timing-function`{:.p} 	
+  - Keuze uit 4 types van timing functions:
+    - `«single-bezier-timing-function»`{:.v} = `linear`{:.k.d}
+    - `«cubic-bezier-timing-function»`{:.v} =  `ease`{:.k} &#124; `ease-in`{:.k} &#124; `ease-out`{:.k} &#124; `ease-in-out`{:.k} &#124; `cubic-bezier(«number», «number», «number», «number»)`{:.k}
+    - `«step-timing-function»`{:.v} = `step-start`{:.k} &#124; `step-end`{:.k} &#124; `steps(«integer»[, [ start &#124; end ] ]?)`{:.k}
+    - `«frames-timing-function»`{:.v} = `frames(«integer»)`{:.k}  
   - De snelheidscurve van de animate
 4. `animation-delay`{:.p} 	
+  - `«time»`{:.k.d}
   - De uitsteltijd voordat de animatie mag starten
+  - tijd in seconden (s) of milliseconden (ms)
+  - Standaard: 0s. Geen negatieve waardes toegestaan
 5. `animation-iteration-count`{:.p} 	
+  - `«number»`{:.k.d} &#124; `infinite`{:.k}
   - Het aantal keer dat de animatie mag spelen
 6. `animation-direction`{:.p} 	
+  - `normal`{:.k.d} &#124; `reverse`{:.k} &#124; `alternate`{:.k} &#124; `alternate-reverse`{:.k}
   - Specifieert in welke richting de animatie moet spelen (voorwaarts, achterwaarts, alternerend, ...)
 7. `animation-fill-mode`{:.p} 	
+  - `none`{:.k.d} &#124; `forwards`{:.k} &#124; `backwards`{:.k} &#124; `both`{:.k}
   - Specifies what values are applied by the animation outside the time it is executing
-8. `animation-play-state`{:.p} 	
-  - Specifies whether the animation is running or paused
+8. `animation-play-state`{:.p} 
+  - `running`{:.k.d} &#124; `paused{:.k}
+  - Animatie spelen of pauzeren
 
 ## Voorbeelden
 
@@ -298,7 +325,7 @@ Je kan de animatie sneller of trager laten gaan door één van volgende classes 
 
 ### Custom aanpassingen
 
-Het is mogelijk om de duration / delay / of aantal keer dat de animatie speelt, te wijzigen.
+Het is mogelijk om de duration / delay / of aantal keer dat de animatie speelt te wijzigen door die properties te overriden.
 
 vb:
 
