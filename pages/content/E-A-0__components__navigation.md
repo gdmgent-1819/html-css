@@ -34,6 +34,10 @@ Navigaties op basis van design
 #### Voorbeeld 1 
 
 Stap voor stap bouwen we een horizontale navigatie op.  
+
+<iframe width="100%" height="200" src="//jsfiddle.net/rutsaert/67854g2f/58/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+
 We sarten met de basisstructuur in HTML.   
 Een navigatie bouwen we op met de semantische ```nav```-tag. Die bevat een unorderd list ```ul ```. Voor elk menu-item plaatsen we een listitem ``` li ``` met ankerelement ``` a ```.
 
@@ -54,7 +58,7 @@ De tekst staat in het voorbeeld naast elkaar. Als we alle elementen willen verde
 We zien dat de tekst een blauwe kleur heeft en onderlijnd is. Dit is de standaard opmaak van een anker-element. Dit resetten we.
 We geven de menu wat meer opmaak.
 
-<iframe width="100%" height="800" src="//jsfiddle.net/rutsaert/67854g2f/56/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="600" src="//jsfiddle.net/rutsaert/67854g2f/56/embedded/css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 We implementeren een active-menu-status. Zo weet de gebruiker waar hij zich bevind op onze website.
 
