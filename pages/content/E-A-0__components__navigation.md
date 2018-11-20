@@ -160,3 +160,9 @@ Als laatst voegen we de lay-out toe voor de hover-status,``` :hover ```. Die kan
 {% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/itp_offcanvas_closed.png" alt="InThePocket.com: Main navigation - desktop" caption="InThePocket.com: Main navigation - mobile (hamburger)" %}
 
 {% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/itp_offcanvas_open.png" alt="InThePocket.com: Main navigation - desktop" caption="InThePocket.com: Main navigation - mobile (expanded)" %}
+
+#### the-reference.com
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/thereference_closed.png" alt="InThePocket.com: Main navigation - desktop" caption="InThePocket.com: Main navigation - mobile (hamburger)" %}
+
+{% include shared/figure.html src="https://www.arteveldehogeschool.be/campusGDM/gdmgent/web-design/thereference_open.png" alt="the-reference.com: Main navigation - desktop" caption="the-reference.com: Main navigation - mobile (expanded)" %}
