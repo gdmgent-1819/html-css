@@ -43,7 +43,32 @@ Hieronder is een beknopt overzicht te vinden van alle attributen die kunnen voor
 
 Input is het meest voorkomende form-element. 
 Door de waarde in het attribuut `type` aan te passen kan het verschillende doeleinden hebben. 
-Type-mogelijkheden: button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit,...
+Er is een heel gamma aan input types beschikbaar om de gebruiker toe te laten verschillende soorten data in te voeren.
+
+- `<input type="checkbox">`: een enkele waarde die kan aan- of afgevinkt worden.
+- `<input type="color">`: een element waarmee een kleur kan gekozen worden. Toont in de meeste browsers een colorpicker.
+- `<input type="date">`:  een element waarmee een datum kan worden ingegeven. Toont in de meeste browsers een datepicker.
+- `<input type="datetime-local">`: een element waarmee een datum en tijd kan worden ingegeven. 
+- `<input type="email">`: een element waarmee een emailadres kan worden ingegeven.
+- `<input type="file">`: een element waarmee een bestand kan geselecteerd worden en opgeladen.
+- `<input type="hidden">`: een element dat niet zichtbaar is voor de gebruiker, maar wel een waarde kan krijgen. Deze waarde wordt meestal ingesteld via javascript.
+- `<input type="month">`: een element waarmee een maand kan worden ingegeven.
+- `<input type="number">`: een element waarmee een nummer kan worden ingegeven.
+- `<input type="password">`: een element waarmee een wachtwoord kan worden ingegeven. De alfanumerieke tekens zijn onleesbaar gemaakt.
+- `<input type="radio">`: een element waarmee een enkele waarde kan worden geselecteerd uit een groep van waardes.
+- `<input type="range">`: een element waarmee een nummer kan worden geselecteerd uit een bepaalde range. Toont in de meeste browsers een slider.
+- `<input type="reset">`: een button die na klikken alle waarden in het formulier te wissen = resetten.
+- `<input type="search">`: een element om een zoekterm in te geven.
+- `<input type="submit">`: een button die na klikken alle waarden in het formulier zal verzenden naar de ingestelde locatie.
+- `<input type="tel">`: een element om een telefoonnummer in te geven.
+- `<input type="text">`: een standaard textvak. Indien het er geen ander element kan gevonden worden is dit meestal de keuze die zal overblijven.
+- `<input type="time">`: een element om een tijdstip in te geven.
+- `<input type="url">`: een element om een url in te geven.
+- `<input type="week">`: een element om een week in te geven.
+
+<iframe height='400' scrolling='no' title='Flexbox: align-content' src='//codepen.io/lesso/embed/ZmVvge/?height=407&theme-id=0&default-tab=html,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+</iframe>
+
 
 Indien er geen ondersteuning is voor een bepaalde `type` dan zal de browser een gewoon tekst-vlak tonen.
 
@@ -60,7 +85,11 @@ Indien er geen ondersteuning is voor een bepaalde `type` dan zal de browser een 
 
 ### Label-elementen
 
-### Button-elementen
-
 Validatie
 ---------
+Bij form validatie zal alle ingegeven (en niet ingegeven ;-)) data worden nagekeken en gevalideerd. Bij het optreden van validatiefouten zal de gebruiker een foutboodschap op het scherm zien verschijnen met de vraag om de foutieve velden aan te passen. Een accurate validatie van een formulier is niet onbelangrijk. We willen namelijk:
+- De juiste data ontvangen, in het correcte formaat
+- Onszelf beschermen tegen kwaadaardige acties van buitenaf
+
+<!-- Er zijn twee types van validatie: validatie langs de client kant en validatie langs de kant van de server. Het is belangrijk om beide types toe te passen omdat aanvallen langs beide kanten mogelijk zijn.
+Sinds de komst van HTML5 is er ingebouwde -client side- validatie mogelijk. Hieronder een summiere samenvatting van hoe we gebruik kunnen maken van de ingebouwde validatie: -->
