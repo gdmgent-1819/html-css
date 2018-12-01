@@ -20,7 +20,7 @@ Een formulier wordt opgemaakt door het gebruik van form-tags.
     <!-- Hier komen alle elementen om data te verzamelen -->
 </form>
 {% endhighlight %}
-Binnen de form-tags staan alle elementen die we nodige hebben om de data te verzamelen van de gebruiker.
+Binnen de form-tags staan alle elementen die we nodig hebben om de data te verzamelen van de gebruiker.
 
 ### Attributen 
 Hieronder is een beknopt overzicht te vinden van alle attributen die kunnen voorkomen op de form-tag en waarvoor ze worden gebruikt:
@@ -34,14 +34,17 @@ Hieronder is een beknopt overzicht te vinden van alle attributen die kunnen voor
 > - `target`: waar het antwoord op het verstuurde formulier wordt getoond. Analoog aan het target attribuut bij anker-elementen. Mogelijke waarden zijn: `_blank`, `_top`, `_self` en `_parent`.
 
 {% highlight html %}
-<form action='./scripts/form.php' method='get' name='formuliertje'>
+<form action='./scripts/form.php' method='get' name='formuliertje' id='formuliertje'>
     <!-- Elementen -->
 </form>
 {% endhighlight %}
 
+### Label-elementen
+
+
 ### Input-elementen
 
-Input is het meest voorkomende form-element. 
+Input is het meest voorkomende element binnen een form tag. 
 Door de waarde in het attribuut `type` aan te passen kan het verschillende doeleinden hebben. 
 Er is een heel gamma aan input types beschikbaar om de gebruiker toe te laten verschillende soorten data in te voeren.
 
@@ -66,32 +69,56 @@ Er is een heel gamma aan input types beschikbaar om de gebruiker toe te laten ve
 - `<input type="url">`: een element om een url in te geven.
 - `<input type="week">`: een element om een week in te geven.
 
-Indien er geen ondersteuning is voor een bepaalde `type` dan zal de browser een gewoon tekst-vlak tonen.
+Indien er geen ondersteuning is voor een bepaalde `type` dan zal de browser een gewoon tekst-vlak tonen. Hieronder een voorbeeld van hoe bovenstaande types kunnen worden gebruikt.
 
-<iframe height='400' scrolling='no' title='Flexbox: align-content' src='//codepen.io/lesso/embed/ZmVvge/?height=407&theme-id=0&default-tab=html,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+<iframe height='400' scrolling='no' title='Formulieren: input types' src='//codepen.io/lesso/embed/ZmVvge/?height=407&theme-id=0&default-tab=html,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 {% highlight html %}
 <form>
-    <input type="text" name="voornaam">
+    <input type="text" id="voornaam" name="voornaam">
 </form>
 {% endhighlight %}
 
 Hierna volgt een overzicht van de belangrijkste attributen van input-elementen:
-> - `type`:
-> - `name`:
-> - `placeholder`:
-> - `disabled`:
-> - `required`:
-> - `pattern`:
-> - `form`:
-> - `value`:  
+> - `type`: hiermee kan het type input-element worden gekozen.
+> - `name`: een naam dat gegeven kan worden aan het input-element.
+> - `placeholder`: een stukje tekst dat wordt getoond in het element als hint.
+> - `disabled`: hiermee kan het element uitgeschakeld worden = het is niet mogelijk de waarde van het element aan te passen. Dit attribuut hoeft geen waarde te krijgen, de naam van het attribuut gebruiken is voldoende.
+> - `required`: hiermee geven we aan dat het veld verplicht in te vullen is. Het formulier kan niet zonder een waarde verzonden worden. Dit attribuut hoeft geen waarde te krijgen, de naam van het attribuut gebruiken is voldoende.
+> - `pattern`: hier kan een [reguliere expressie](https://en.wikipedia.org/wiki/Regular_expression) ingegeven worden om een bepaalde waarde af te dwingen (bijvoorbeeld: 3 numerieke karakters -> [0-9]{3}).
+> - `form`: hier kan een `id` van een form element aan meegegeven worden om het element aan het formulier te koppelen.
+> - `value`: met dit attribuut kan de waarde van het input-element ingesteld worden. 
 
 ### Textarea-elementen
 
+<iframe height='400' scrolling='no' title='Formulieren: textarea' src='//codepen.io/lesso/embed/aQXVQo/?height=407&theme-id=0&default-tab=html,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+</iframe>
+
+{% highlight html %}
+<form>
+    <textarea name="langeTekst" id="langeTekst" cols="100" rows="10" placeholder="Geef je tekst hier in..."></textarea>
+</form>
+{% endhighlight %}
+
 ### Select-elementen
 
-### Label-elementen
+<iframe height='400' scrolling='no' title='Formulieren: select' src='//codepen.io/lesso/embed/zMePeg/?height=407&theme-id=0&default-tab=html,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+</iframe>
+
+{% highlight html %}
+<form>
+    <select name="hobbys" id="hobbys">
+        <option value="">--Gelieve een hobby te selecteren--</option>
+        <option value="voetbal">Voetbal</option>
+        <option value="slapen">Slapen</option>
+        <option value="dansen">Dansen</option>
+        <option value="netflix">Netflix kijken</option>
+        <option value="fietsen">Fietsen</option>
+        <option value="eten">Eten</option>
+    </select>
+</form>
+{% endhighlight %}
 
 Validatie
 ---------
