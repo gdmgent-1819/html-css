@@ -66,18 +66,26 @@ Er is een heel gamma aan input types beschikbaar om de gebruiker toe te laten ve
 - `<input type="url">`: een element om een url in te geven.
 - `<input type="week">`: een element om een week in te geven.
 
+Indien er geen ondersteuning is voor een bepaalde `type` dan zal de browser een gewoon tekst-vlak tonen.
+
 <iframe height='400' scrolling='no' title='Flexbox: align-content' src='//codepen.io/lesso/embed/ZmVvge/?height=407&theme-id=0&default-tab=html,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
-
-Indien er geen ondersteuning is voor een bepaalde `type` dan zal de browser een gewoon tekst-vlak tonen.
-
-
 {% highlight html %}
 <form>
-    <input type="text">
+    <input type="text" name="voornaam">
 </form>
 {% endhighlight %}
+
+Hierna volgt een overzicht van de belangrijkste attributen van input-elementen:
+> - `type`:
+> - `name`:
+> - `placeholder`:
+> - `disabled`:
+> - `required`:
+> - `pattern`:
+> - `form`:
+> - `value`:  
 
 ### Textarea-elementen
 
