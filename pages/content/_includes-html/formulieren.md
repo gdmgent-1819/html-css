@@ -1,11 +1,15 @@
+Een formulier zorgt voor een interactie tussen de gebruiker (bezoeker van de website) en de website/webapplicatie. Dankzij een formulier kan er data verzonden worden. Meestal wordt die data naar een web server gestuurd (om de data bijvoorbeeld te mailen naar een ontvanger of in een database te bewaren).
 
-Een formulier laat de eindgebruiker toe data via je pagina te verzenden.
+{% include shared/figure.html src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/9bc6f0c2-fdfd-42d0-86d1-93d72a370521/member-sign-in.jpg" caption="Bron: smashingmagazine.com" %}
+
+
+Het kan echter ook dat de data niet verzonden wordt nar een webserver, maar de webpagina de data interpreteert voor bijvoorbeeld interactieve doeleinden.
 
 Werking
 --------
 
 1. De gebruiker vult gegevens in, in een formulier op een webpagina.
-2. De gebruiker verzend het formulier.
+2. De gebruiker verzendt het formulier.
 3. De server ontvangt de gegevens en doet er iets mee
 4. De server stuurt een antwoord terug naar de browser van de gebruiker.
 5. De browser toont het antwoord aan de gebruiker.
@@ -14,7 +18,7 @@ Het verwerken van de data op de server zal gebeuren met een andere taal, een ser
 
 Opbouw
 -------
-Een formulier wordt opgemaakt door het gebruik van form-tags. 
+Een formulier wordt steeds omvat door `form`-tags. 
 {% highlight html %}
 <form>
     <!-- Hier komen alle elementen om data te verzamelen -->
@@ -23,15 +27,28 @@ Een formulier wordt opgemaakt door het gebruik van form-tags.
 Binnen de form-tags staan alle elementen die we nodig hebben om de data te verzamelen van de gebruiker.
 
 ### Attributen 
+
+De `form`-tag kan een aantal attributen bevatten.
+
 Hieronder is een beknopt overzicht te vinden van alle attributen die kunnen voorkomen op de form-tag en waarvoor ze worden gebruikt:
-> - `accept-charset`: welke character encoding op de server zal geaccepteerd worden (bijvoorbeeld UTF-8). Meerdere waardes kunnen worden gescheiden door een spatie.
-> - `action`: de URI van het programma of script dat de afhandeling van het formulier zal verzorgen. 
-> - `autocomplete`: of de browser autoaanvulling mag gebruiken op de aanwezige elementen. Mogelijke waarden zijn: `off` en `on`.
-> - `enctype`: instellen van het mediatype ([MIME type](https://en.wikipedia.org/wiki/Media_type)) dat zal worden verstuurd naar de server. Mogelijke waarden zijn: `application/x-www-form-urlencoded` (standaard), `multipart/form-data` (bij versturen van bestanden) en `text/plain (HTML5)`.
-> - `method`: de [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) die moet worden toegepast. De meest gebruikte waarden zijn: `get` en `post`. 
-> - `name`: de (unieke) naam van het formulier.
-> - `novalidate`: wanneer dit attribuut wordt toegevoegd, zal het formulier niet worden gevalideerd aan client side.
-> - `target`: waar het antwoord op het verstuurde formulier wordt getoond. Analoog aan het target attribuut bij anker-elementen. Mogelijke waarden zijn: `_blank`, `_top`, `_self` en `_parent`.
+
+
+| Attibuut      | Waarde         | Betekenis                                                           |
+|---------------|----------------|---------------------------------------------------------------------|
+| `accept-charset`{:.a}   | `«character-set»`{:.v}   | welke character encoding op de server zal geaccepteerd worden (bijvoorbeeld UTF-8).<br> Meerdere waardes kunnen worden gescheiden door een spatie.     |
+| `action`{:.a} | `«URL»`{:.v} | de URI van het programma of script dat de afhandeling van het formulier zal verzorgen.                    |
+| `autocomplete`{:.a} | `on`{:.v} | de browser mag de velden automatisch invullen / aanvullen.                  |
+|               | `off`{:.v}   | geen auto-aanvulling |
+| `enctype`{:.a} | `application/x-www-form-urlencoded`{:.v}   | standaard mediatype ([MIME type](https://en.wikipedia.org/wiki/Media_type)) dat zal worden verstuurd naar de server. |
+|               | `multipart/form-data`{:.v}   | nodig bij versturen van bestanden |
+|               | `text/plain`{:.v}   | html-5 |
+| `method`{:.a} | `get`{:.v}   | De [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) die moet worden toegepast.<br> GET: via de URL als name/value pair |
+|               | `post`{:.v}   | De form-data zit in het HTTP-request |
+| `name`{:.a} | `«name»`{:.v}   | De (unieke) naam van het formulier. |
+| `novalidate`{:.a} | `novalidate`{:.v}   | wanneer dit attribuut wordt toegevoegd, zal het formulier niet worden gevalideerd aan client side. |
+| `target`{:.a} | `...`{:.v}   | Waar het antwoord op het verstuurde formulier wordt getoond. Analoog aan het target attribuut bij anker-elementen. Mogelijke waarden zijn: `_blank`, `_top`, `_self` en `_parent`. |
+|---------------|----------------|---------------------------------------------------------------------|
+{:.table.table--primary}
 
 {% highlight html %}
 <form action='./scripts/form.php' method='get' name='formuliertje' id='formuliertje'>
