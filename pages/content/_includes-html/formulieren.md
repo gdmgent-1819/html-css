@@ -57,6 +57,14 @@ Hieronder is een beknopt overzicht te vinden van alle attributen die kunnen voor
 {% endhighlight %}
 
 ### Label-elementen
+Labels zijn stukjes tekst die bij een formulierveld verschijnen. Ze geven aan wat van de gebruiker verwacht wordt als waarde in de verschillende velden. Met behulp van het `for` attribuut op het label element wordt het label gekoppeld aan het element. In de `for` wordt de `id` van het element in kwestie meegegeven.
+
+{% highlight html %}
+<form>
+    <label for="firstname">Last name (required)</label>
+    <input type="text" name="firstname" id="firstname" required>
+</form>
+{% endhighlight %}
 
 
 ### Input-elementen
@@ -108,17 +116,22 @@ Hierna volgt een overzicht van de belangrijkste attributen van input-elementen:
 > - `value`: met dit attribuut kan de waarde van het input-element ingesteld worden. 
 
 ### Textarea-elementen
+In een textarea kan een tekst ingegeven worden van meerdere lijnen. Het aantal rijen en kolommen kan worden ingesteld met de attributen `cols` en `rows`. Er kan een standaard tekst worden meegegeven door de tekst binnen de `<textarea></textarea>` tags te plaatsen.
 
 <iframe height='400' scrolling='no' title='Formulieren: textarea' src='//codepen.io/lesso/embed/aQXVQo/?height=407&theme-id=0&default-tab=html,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
 {% highlight html %}
 <form>
-    <textarea name="langeTekst" id="langeTekst" cols="100" rows="10" placeholder="Geef je tekst hier in..."></textarea>
+    <textarea name="langeTekst" id="langeTekst" cols="100" rows="10" placeholder="Geef je tekst hier in...">
+        Dit is mijn standaard tekst!
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus tellus ut velit accumsan, sit amet suscipit lacus egestas. Cras sit amet eleifend sem. Aenean dictum vehicula ante, ut hendrerit magna tempor eu.
+    </textarea>
 </form>
 {% endhighlight %}
 
 ### Select-elementen
+Met het select element kan een dropdownlijst worden samengesteld. Dit element wordt gebruikt wanneer we een gebruiker een voorgedefinieerde waarde willen laten kiezen uit een lijst. Deze lijst kan worden samengesteld door binnen de `<select></select>` tag verschillende `<option></option>` tags te definieren. 
 
 <iframe height='400' scrolling='no' title='Formulieren: select' src='//codepen.io/lesso/embed/zMePeg/?height=407&theme-id=0&default-tab=html,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
@@ -143,5 +156,31 @@ Bij form validatie zal alle ingegeven (en niet ingegeven ;-)) data worden nageke
 - De juiste data ontvangen, in het correcte formaat
 - Onszelf beschermen tegen kwaadaardige acties van buitenaf
 
-<!-- Er zijn twee types van validatie: validatie langs de client kant en validatie langs de kant van de server. Het is belangrijk om beide types toe te passen omdat aanvallen langs beide kanten mogelijk zijn.
-Sinds de komst van HTML5 is er ingebouwde -client side- validatie mogelijk. Hieronder een summiere samenvatting van hoe we gebruik kunnen maken van de ingebouwde validatie: -->
+Er zijn twee types van formuliervalidatie mogelijk: validatie langs de kant van de gebruiker (client side) en validatie langs de kant van de server (server side). Het is belangrijk om naast de client side validatie, via de ingeboude browser validatie en/of javascript, ook server validatie toe te passen op de ontvangen data.
+
+### Het `required` attribuut
+Door het attribuut `required` toe te voegen aan een form element, geven we aan dat de gebruiker dit veld verplicht moet invullen. Wanneer de gebruiker het formulier probeert te verzenden zonder een waarde in te vullen, zal de verzending worden gestopt en een foutmelding getoond. 
+
+{% highlight html %}
+<form>
+    <label for="firstname">First name (required)</label>
+    <input type="text" name="firstname" id="firstname" required>
+</form>
+{% endhighlight %}
+
+### Correct gebruik van input types
+Door een correct semantisch gebruik van de verschillende input types, zal de data ook navenant gevalideerd worden. Bijvoorbeeld: bij `<input type="email">` zal worden nagekeken of er weldegelijk een emailadres met '@' wordt ingevuld. Het is dus belangrijk om correct gebruik te maken van de verschillende input types.
+
+### Het `pattern` attribuut
+Indien er geen aangepast input type bestaat kan er worden gekozen voor `<input type="text">` met een `pattern` attribuut. In het pattern attribuut kan een [reguliere expressie](https://en.wikipedia.org/wiki/Regular_expression) worden ingegeven waarnaar we de ingevoerde data willen laten valideren (bijvoorbeeld: 3 numerieke karakters -> [0-9]{3}).
+
+{% highlight html %}
+<form>
+    <label for="numeric">Numerieke code van 3 cijfers (required)</label>
+    <input type="text" name="numeric" id="numeric" required pattern="[0-9]{3}">
+</form>
+{% endhighlight %}
+
+<iframe height='400' scrolling='no' title='Formulieren: validatie' src='//codepen.io/lesso/embed/EOrrOL/?height=407&theme-id=0&default-tab=html,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+</iframe>
+
