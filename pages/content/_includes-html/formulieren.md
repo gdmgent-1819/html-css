@@ -48,7 +48,7 @@ Input is het meest voorkomende element binnen een form tag.
 Door de waarde in het attribuut `type` aan te passen kan het verschillende doeleinden hebben. 
 Er is een heel gamma aan input types beschikbaar om de gebruiker toe te laten verschillende soorten data in te voeren.
 
-- `<input type="checkbox">`: een enkele waarde die kan aan- of afgevinkt worden.
+- `<input type="checkbox">`: een enkele waarde die kan aan- of afgevinkt worden. In een groep van checkboxes kunnen 1 of meerdere waarden aangevinkt worden.
 - `<input type="color">`: een element waarmee een kleur kan gekozen worden. Toont in de meeste browsers een colorpicker.
 - `<input type="date">`:  een element waarmee een datum kan worden ingegeven. Toont in de meeste browsers een datepicker.
 - `<input type="datetime-local">`: een element waarmee een datum en tijd kan worden ingegeven. 
@@ -58,7 +58,7 @@ Er is een heel gamma aan input types beschikbaar om de gebruiker toe te laten ve
 - `<input type="month">`: een element waarmee een maand kan worden ingegeven.
 - `<input type="number">`: een element waarmee een nummer kan worden ingegeven.
 - `<input type="password">`: een element waarmee een wachtwoord kan worden ingegeven. De alfanumerieke tekens zijn onleesbaar gemaakt.
-- `<input type="radio">`: een element waarmee een enkele waarde kan worden geselecteerd uit een groep van waardes.
+- `<input type="radio">`: een element waarmee een enkele waarde kan worden geselecteerd uit een groep van waardes. In een groep van radiobuttons kan slechts 1 waarde aangevinkt worden.
 - `<input type="range">`: een element waarmee een nummer kan worden geselecteerd uit een bepaalde range. Toont in de meeste browsers een slider.
 - `<input type="reset">`: een button die na klikken alle waarden in het formulier te wissen = resetten.
 - `<input type="search">`: een element om een zoekterm in te geven.
