@@ -179,6 +179,18 @@ Een achtergrondafbeelding neemt standaard zijn originele afmeting over.
 > - [Mozilla Developer Network: background-clip](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)
 {:.card.card-source}
 
+Object-fit
+----------
+
+Opgelet: niet ondersteund op IE
+
+> References
+> ---
+> - [Mozilla Developer Network: object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
+{:.card.card-source}
+
+
+
 Box Shadow
 ----------
 
