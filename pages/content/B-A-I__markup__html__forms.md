@@ -286,3 +286,8 @@ Indien er geen aangepast input type bestaat kan er worden gekozen voor `<input t
 <iframe height='400' scrolling='no' title='Formulieren: validatie' src='//codepen.io/lesso/embed/EOrrOL/?height=407&theme-id=0&default-tab=html,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
 </iframe>
 
+<!-- 
+- Datalist
+- Fieldset (+legend)
+- Optgroup
+ -->
