@@ -1,6 +1,6 @@
 ---
-title: Animaties
-title_long: Animaties
+title: Media Queries
+title_long: Media Queries
 permalink: styles/css/mediaqueries/
 published: false
 ---
@@ -119,3 +119,7 @@ body{font-size:30px; color:green;}
 
 {% endhighlight %}
 
+> References
+> ---
+> - [Mozilla Developer Network: Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
+{:.card.card-source}
