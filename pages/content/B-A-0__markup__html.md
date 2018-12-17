@@ -263,7 +263,6 @@ Conventies
 > References
 > ---
 > - [Google: Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#HTML_Style_Rules)
-> - [W3Schools: HTML5 Style Guide and Coding Conventions](https://www.w3schools.com/html/html5_syntax.asp)
 > - [GitHub: HTML Style Guide](https://gist.github.com/ryansechrest/8693303)
 > - [BitDegree: HTML syntax tips and tricks](https://www.bitdegree.org/learn/html-syntax/)
 {:.card.card-source}

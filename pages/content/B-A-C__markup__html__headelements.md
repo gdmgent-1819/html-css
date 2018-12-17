@@ -687,7 +687,7 @@ Bronnen
 
 [^markup]: Markup Language
 
-[^langcodes]: Languages codes : http://www.w3schools.com/tags/ref_language_codes.asp
+
 
 [^declarations]: Conditional Statements door Paul Irish: http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
 
